@@ -12,7 +12,7 @@ a,
 
 a:hover,
 .social-media-list a:hover .username {
-    color: #ba8f8f;
+    color: $main-color-light;
     text-decoration: none;
 }
 
@@ -21,5 +21,5 @@ a:hover,
 }
 
 .site-nav a:hover {
-    color: #ba8f8f;
+    color: $main-color-light;
 }
