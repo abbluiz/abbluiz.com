@@ -1,0 +1,25 @@
+@import "_vars";
+
+body {
+    color: white;
+    background-color: black;
+}
+
+a, 
+.site-nav .page-link {
+    color: $main-color;
+}
+
+a:hover,
+.social-media-list a:hover .username {
+    color: #ba8f8f;
+    text-decoration: none;
+}
+
+.site-nav .page-link {
+    font-weight: bold;
+}
+
+.site-nav a:hover {
+    color: #ba8f8f;
+}
