@@ -1,6 +1,7 @@
 @import "_vars";
 
-body {
+body,
+.site-title {
     color: white;
     background-color: black;
 }
@@ -22,4 +23,13 @@ a:hover,
 
 .site-nav a:hover {
     color: $main-color-light;
+}
+
+.site-header {
+    border-top: 5px solid $main-color;
+    border-bottom: 1px solid black;
+}
+
+.site-footer {
+    border-top: 1px solid black;
 }
