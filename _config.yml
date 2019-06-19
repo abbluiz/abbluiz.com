@@ -1,21 +1,19 @@
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Site Settings
 title: LABB
 author: Luiz Antonio
 email: contact@labb.email
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   A developer's blog & portfolio.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.abbluiz.com/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://www.abbluiz.com/"
+
+# Social Network Links 
 github_username: abbluiz
 twitter_username: abbluiz
 telegram_username: abbluiz
 linkedin_username: abbluiz
 
-# Build settings
+# Build Settings
 markdown: kramdown
 theme: minima
 plugins:
@@ -35,4 +33,5 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Supported Languages
 languages: ["en", "pt"]
