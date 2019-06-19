@@ -1,13 +1,26 @@
 # Site Settings
+
 title: LABB
 author: Luiz Antonio
 email: contact@labb.email
-description: >-
-  A developer's blog & portfolio.
+description: site.description
 baseurl: ""
 url: "https://www.abbluiz.com/"
 
-# Social Network Links 
+# Social Network Links for jekyll-seo-tag
+twitter:
+  username: abbluiz
+  card: summary
+
+social:
+  links:
+    - https://twitter.com/abbluiz
+    - https://www.linkedin.com/in/abbluiz
+    - https://github.com/abbluiz
+    - https://keybase.io/abbluiz
+    - https://t.me/abbluiz
+
+# Minima Social Network Usernames
 github_username: abbluiz
 twitter_username: abbluiz
 telegram_username: abbluiz

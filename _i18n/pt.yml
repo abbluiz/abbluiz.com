@@ -1,5 +1,9 @@
 global:
   portuguese: Português
   english: English
+
+site:
+  description: Blog & portfolio de um desenvolvedor.
+
 pages:
-    about: Sobre
+  about: Sobre

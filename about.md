@@ -1,7 +1,7 @@
 ---
 layout: page
 
-title: About
+title: pages.about
 namespace: about
 
 permalink: /about/
