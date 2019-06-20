@@ -2,6 +2,9 @@ global:
   portuguese: Português
   english: English
 
+title:
+  home: "LABB: Site Pessoal"
+
 site:
   description: Blog & portfólio de um desenvolvedor.
 
