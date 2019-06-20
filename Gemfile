@@ -15,3 +15,5 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem 'jekyll-multiple-languages-plugin'
 
 gem 'jekyll-sitemap'
+
+gem 'bigdecimal'
