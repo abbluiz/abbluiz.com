@@ -3,7 +3,7 @@ global:
   english: English
 
 site:
-  description: Blog & portfolio de um desenvolvedor.
+  description: Blog & portfólio de um desenvolvedor.
 
 pages:
   about: Sobre
