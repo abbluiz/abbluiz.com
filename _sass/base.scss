@@ -218,6 +218,15 @@ pre {
     vertical-align: text-top;
 }
 
+.social-icon {
+    width: 32px;
+    height: 32px;
+    display: inline;
+    fill: #{$grey-color};
+    padding-right: 5px;
+    vertical-align: text-top;
+}
+
 .social-media-list {
   li + li {
     padding-top: 5px;
