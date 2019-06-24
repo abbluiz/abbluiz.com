@@ -1,4 +1,7 @@
 @import "_vars";
+@import "base";
+@import "layout";
+@import "syntax-highlighting";
 
 body,
 .site-title {
@@ -32,4 +35,8 @@ a:hover,
 
 .site-footer {
     border-top: 1px solid black;
+}
+
+.social-media-list li {
+    display: inline;
 }
