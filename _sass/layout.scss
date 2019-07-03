@@ -141,6 +141,11 @@
   color: $grey-color;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
+  text-align: center;
+}
+
+.footer-social {
+  display: inline-block;
 }
 
 .footer-col {
