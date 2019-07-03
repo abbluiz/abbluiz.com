@@ -59,11 +59,9 @@
 
   @include media-query($on-palm) {
     position: absolute;
-    top: 9px;
+    top: 10px;
     right: $spacing-unit / 2;
     background-color: $background-color;
-    border: 1px solid $grey-color-dark;
-    border-radius: 5px;
     text-align: right;
 
     label[for="nav-trigger"] {
@@ -83,6 +81,10 @@
       line-height: 0;
       padding-top: 10px;
       text-align: center;
+      
+      &:hover {
+        cursor: pointer;
+      }
 
       > svg {
         fill: white;
@@ -97,6 +99,8 @@
     input:checked ~ .trigger {
       display: block;
       padding-bottom: 5px;
+      border: 1px solid $grey-color-dark;
+      border-radius: 4px;
     }
 
     .page-link {
@@ -110,8 +114,6 @@
     }
   }
 }
-
-
 
 /**
  * Site footer
@@ -189,7 +191,6 @@
   }
 }
 
-
 /**
  * Page content
  */
@@ -224,8 +225,6 @@
   display: block;
   @include relative-font-size(1.5);
 }
-
-
 
 /**
  * Posts
