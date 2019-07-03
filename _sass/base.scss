@@ -51,8 +51,6 @@ img {
   vertical-align: middle;
 }
 
-
-
 /**
  * Figures
  */
@@ -63,8 +61,6 @@ figure > img {
 figcaption {
   font-size: $small-font-size;
 }
-
-
 
 /**
  * Lists
@@ -80,8 +76,6 @@ li {
   }
 }
 
-
-
 /**
  * Headings
  */
@@ -89,14 +83,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
-
-
 /**
  * Links
  */
 a {
   color: $brand-color;
   text-decoration: none;
+  outline: none;
 
   &:visited {
     color: darken($brand-color, 15%);
