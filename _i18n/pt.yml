@@ -13,7 +13,6 @@ pages:
     title: Sobre
     desc: Descrição de Sobre
     img: about-pt.jpg
-    permalink: sobre
   portfolio:
     title: Portfólio
     desc: Descrição de Portfólio
