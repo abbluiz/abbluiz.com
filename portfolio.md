@@ -1,7 +1,9 @@
 ---
 layout: page
 
-title: pages.portfolio
+title: pages.portfolio.title
+description: pages.portfolio.desc
+img: pages.portfolio.img
 namespace: portfolio
 
 permalink: /portfolio/

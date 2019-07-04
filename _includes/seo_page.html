@@ -1,0 +1,18 @@
+  <!-- Start page SEO -->
+  <title>{% t page.title %} | {{ site.title }}</title>
+  <meta property="og:title" content="{% t page.title %}" />
+  <meta name="author" content="{{ site.author }}" />
+  <meta property="og:locate" content="{{ site.lang }}" />
+  <meta name="description" content="{% t page.description %}" />
+  <meta property="og:description" content="{% t page.description %}" />
+  <meta property="og:image" content="{{ site.url }}/assets/img/pages/{% t page.img %}" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url|remove:'index.html' }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url|remove:'index.html' }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta name="twitter:card" content="{{ site.twitter.card }}" />
+  <meta property="twitter:title" content="{% t page.title %}" />
+  <meta name="twitter:site" content="{{ site.twitter.username }}" />
+  <meta name="twitter:creator" content="{{ site.twitter.username }}" />
+  <!-- application/jd+json -->
+  <!-- Finish page SEO -->

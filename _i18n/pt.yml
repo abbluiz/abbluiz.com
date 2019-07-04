@@ -2,12 +2,19 @@ global:
   portuguese: Português
   english: English
 
-title:
-  home: "LABB: Site Pessoal"
+home: 
+  title: "LABB: Site Pessoal"
 
 site:
   description: Blog & portfólio de um desenvolvedor.
 
 pages:
-  about: Sobre
-  portfolio: Portfólio
+  about:
+    title: Sobre
+    desc: Descrição de Sobre
+    img: about-pt.jpg
+    permalink: sobre
+  portfolio:
+    title: Portfólio
+    desc: Descrição de Portfólio
+    img: portfolio-pt.jpg
