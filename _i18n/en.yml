@@ -13,7 +13,6 @@ pages:
     title: About
     desc: About description
     img: about-en.jpg
-    permalink: about
   portfolio:
     title: Portfolio
     desc: Portfolio description
