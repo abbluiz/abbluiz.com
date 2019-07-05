@@ -6,6 +6,7 @@ email: contact@labb.email
 description: site.description
 baseurl: ""
 url: "https://www.abbluiz.com/"
+rss: rss
 
 # Social Network Links for jekyll-seo-tag
 twitter:

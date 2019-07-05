@@ -7,5 +7,6 @@
   {%- if site.youtube_username -%}<li><a href="https://youtube.com/{{ site.youtube_username| cgi_escape | escape }}"><svg viewBox="0 0 16 16" class="social-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use></svg></a></li>{%- endif -%}
   {%- if site.telegram_username -%}<li><a href="https://t.me/{{ site.telegram_username| cgi_escape | escape }}"><svg class="social-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#telegram' | relative_url }}"></use></svg></a></li>{%- endif -%}
   {%- if site.keybase_username -%}<li><a href="https://keybase.io/{{ site.keybase_username| cgi_escape | escape }}"><svg viewBox="0 0 24 24" class="social-icon"><use xlink:href="{{ '/assets/keybase.svg#icon' | relative_url }}"></use></svg></a></li>{%- endif -%}
-  {%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}"><svg class=""><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg></a></li>{%- endif -%}
+  {%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}"><svg viewBox="0 0 16 16" class="social-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg></a></li>{%- endif -%}
+  {%- if site.email -%}<li><a href="mailto:contact@labb.email"><svg viewBox="0 0 485 485" class="social-icon"><use xlink:href="{{ '/assets/email-envelope.svg#icon' | relative_url }}"></use></svg></a></li>{%- endif -%}
 </ul>
