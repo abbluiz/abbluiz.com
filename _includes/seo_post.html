@@ -1,12 +1,12 @@
   
   <!-- Start post SEO -->
   <title>{{ page.title }}</title>
-  <meta name="author" content="{{ site.author }}" />
-  <meta name="description" content="{{ page.excerpt }}" />
+  <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}" />
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip }}{% endif %}" />
   <link rel="canonical" href="{{ site.url }}{{ page.url|remove:'index.html' }}">
   
   <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:description" content="{{ page.excerpt }}" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip }}{% endif %}" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ site.url }}{{ page.url|remove:'index.html' }}" />
   <meta property="og:locale" content="{{ site.lang }}_{%- t site.territory -%}" />
@@ -14,8 +14,8 @@
   <meta property="og:site_name" content="{{ site.title }}" />
 
   <meta property="twitter:title" content="{{ page.title }}" />
-  <meta name="twitter:card" content="{{ site.twitter.card }}" />
+  <meta name="twitter:card" content="{{ site.data.social.twitter.username }}" />
   <meta name="twitter:site" content="{{ site.data.social.twitter.username }}" />
-  <meta name="twitter:creator" content="{{ site.data.social.twitter.username }}" />
+  <meta name="twitter:creator" content="{% if page.author_twitter %}{{ page.author_twitter }}{% elsif page.author == nil %}{{ site.data.social.twitter.username }}{% endif %}" />
   <!-- application/jd+json -->
   <!-- Finish post SEO -->
