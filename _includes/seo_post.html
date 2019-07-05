@@ -1,8 +1,9 @@
+  
   <!-- Start post SEO -->
-  <title>{{ post.title }}</title>
+  <title>{{ page.title }}</title>
   <meta property="og:title" content="{{ page.title }}" />
   <meta name="author" content="{{ site.author }}" />
-  <meta property="og:locate" content="{{ site.lang }}" />
+  <meta property="og:locale" content="{{ site.lang }}_{%- t site.territory -%}" />
   <meta name="description" content="{{ page.excerpt }}" />
   <meta property="og:description" content="{{ page.excerpt }}" />
   <meta property="og:image" content="{{ site.url }}/assets/img/posts/{{ page.img }}" />
@@ -12,7 +13,7 @@
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta name="twitter:card" content="{{ site.twitter.card }}" />
   <meta property="twitter:title" content="{{ page.title }}" />
-  <meta name="twitter:site" content="{{ site.twitter.username }}" />
-  <meta name="twitter:creator" content="{{ site.twitter.username }}" />
+  <meta name="twitter:site" content="{{ site.data.social.twitter.username }}" />
+  <meta name="twitter:creator" content="{{ site.data.social.twitter.username }}" />
   <!-- application/jd+json -->
   <!-- Finish post SEO -->

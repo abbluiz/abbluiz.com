@@ -16,8 +16,11 @@
   <meta name="theme-color" content="#ba8f8f">
   <!-- Finish LABB Favicons -->
 
-  {%- include seo_post.html -%}
-  {%- include seo_page.html -%}
+  {%- if page.layout == 'post' -%}
+    {%- include seo_post.html -%}
+  {%- elsif page.layout == 'page' -%}
+    {%- include seo_page.html -%}
+  {%- endif -%}
 
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   {%- feed_meta -%}

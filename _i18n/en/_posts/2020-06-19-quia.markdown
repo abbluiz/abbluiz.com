@@ -3,6 +3,7 @@ layout: post
 title:  "Quia expedita saepe inventore provident. Est reprehenderit officiis possimus. Iste veritatis numquam dicta est exercitationem saepe. Eos est et ut eum quidem aut."
 date:   2019-06-19 09:05:00 -0400
 categories: inventore
+img: quia.jpg
 ---
 
 Quia expedita saepe inventore provident. Est reprehenderit officiis possimus. Iste veritatis numquam dicta est exercitationem saepe. Eos est et ut eum quidem aut. Veniam sed aperiam molestiae ratione quod et et. Et fuga hic voluptas eius adipisci ut magnam.
