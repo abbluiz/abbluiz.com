@@ -14,7 +14,7 @@
   <meta property="og:site_name" content="{{ site.title }}" />
 
   <meta property="twitter:title" content="{{ page.title }}" />
-  <meta name="twitter:card" content="{{ site.data.social.twitter.username }}" />
+  <meta name="twitter:card" content="{% if page.twitter_card %}{{ page.twitter_card }}{% else %}{{ site.data.social.twitter.defaultcard }}{% endif %}" />
   <meta name="twitter:site" content="{{ site.data.social.twitter.username }}" />
   <meta name="twitter:creator" content="{% if page.author_twitter %}{{ page.author_twitter }}{% elsif page.author == nil %}{{ site.data.social.twitter.username }}{% endif %}" />
   <!-- application/jd+json -->
