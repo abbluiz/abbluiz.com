@@ -8,26 +8,6 @@ baseurl: ""
 url: "https://www.abbluiz.com/"
 rss: rss
 
-# Social Network Links for jekyll-seo-tag
-twitter:
-  username: abbluiz
-  card: summary
-
-social:
-  links:
-    - https://twitter.com/abbluiz
-    - https://www.linkedin.com/in/abbluiz
-    - https://github.com/abbluiz
-    - https://keybase.io/abbluiz
-    - https://t.me/abbluiz
-
-# Minima Social Network Usernames
-github_username: abbluiz
-twitter_username: abbluiz
-telegram_username: abbluiz
-linkedin_username: abbluiz
-keybase_username: abbluiz
-
 # Build Settings
 markdown: kramdown
 theme: minima
@@ -35,18 +15,6 @@ plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
   - jekyll-sitemap
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 
 # Supported Languages
 languages: ["en", "pt"]
