@@ -20,6 +20,8 @@
     {%- include seo_post.html -%}
   {%- elsif page.layout == 'page' -%}
     {%- include seo_page.html -%}
+  {%- else -%}
+    {%- include seo_default.html -%}
   {%- endif -%}
 
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
