@@ -20,6 +20,8 @@
     {%- include seo_post.html -%}
   {%- elsif page.layout == 'page' -%}
     {%- include seo_page.html -%}
+  {%- elsif page.layout == 'home' -%}
+    {%- include seo_home.html -%}
   {%- else -%}
     {%- include seo_default.html -%}
   {%- endif -%}
