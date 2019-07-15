@@ -17,5 +17,19 @@
   <meta name="twitter:card" content="{% if page.twitter_card %}{{ page.twitter_card }}{% else %}{{ site.data.social.twitter.defaultcard }}{% endif %}" />
   <meta name="twitter:site" content="{{ site.data.social.twitter.username }}" />
   <meta name="twitter:creator" content="{{ site.data.social.twitter.username }}" />
-  <!-- application/jd+json -->
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "WebPage",
+      "name": "{% t page.title %}",
+      "image": "{% if page.img %}{{ site.url }}/assets/img/pages/{% t page.img %}{% else %}{{ site.url }}/assets/img/pages/default.jpg{% endif %}",
+      "description": "{% t page.description %}",
+      "url": "{{ site.url }}{{ page.url|remove:'index.html' }}",
+      "author": "{{ site.author }}",
+      "license": "{% t site.license %}",
+      "inLanguage": "{{ site.lang }}"
+    }
+  </script>
+
   <!-- Finish page SEO -->

@@ -1,8 +1,10 @@
   
   <!-- Start home SEO -->
   <title>{% t home.title %}</title>
+  
   <meta name="description" content="{% t site.description %}" />
   <meta name="author" content="{{ site.author }}" />
+  
   <link rel="canonical" href="{{ site.url }}{{ page.url|remove:'index.html' }}">
 
   <meta property="og:title" content="{% t home.title %}" />
@@ -17,5 +19,18 @@
   <meta name="twitter:card" content="{% if page.twitter_card %}{{ page.twitter_card }}{% else %}{{ site.data.social.twitter.defaultcard }}{% endif %}" />
   <meta name="twitter:site" content="{{ site.data.social.twitter.username }}" />
   <meta name="twitter:creator" content="{{ site.data.social.twitter.username }}" />
-  <!-- application/jd+json -->
+  
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "WebSite",
+      "name": "{% t home.title %}",
+      "image": "{{ site.url }}/assets/img/pages/default.jpg",
+      "description": "{% t site.description %}",
+      "url": "{{ site.url }}{{ page.url|remove:'index.html' }}",
+      "author": "{{ site.author }}",
+      "license": "{% t site.license %}",
+      "inLanguage": "{{ site.lang }}",
+    }
+  </script>
   <!-- Finish home SEO -->

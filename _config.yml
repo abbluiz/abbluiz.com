@@ -7,6 +7,7 @@ description: site.description
 baseurl: ""
 url: "https://www.abbluiz.com/"
 rss: rss
+license: site.license
 
 # Build Settings
 markdown: kramdown

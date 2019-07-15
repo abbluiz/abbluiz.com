@@ -8,6 +8,7 @@ home:
 site:
   description: A developer's blog & portfolio.
   territory: CA
+  license: https://creativecommons.org/licenses/by/4.0/
 
 pages:
   about:

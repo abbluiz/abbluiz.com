@@ -8,6 +8,7 @@ home:
 site:
   description: Blog & portfólio de um desenvolvedor.
   territory: BR
+  license: https://creativecommons.org/licenses/by/4.0/deed.pt_BR
 
 pages:
   about:

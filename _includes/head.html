@@ -4,6 +4,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
   <!-- Begin LABB Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
@@ -26,8 +28,6 @@
   {%- else -%}
     {%- include seo_default.html -%}
   {%- endif -%}
-
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 
   {%- feed_meta -%}
 
