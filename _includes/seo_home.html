@@ -13,7 +13,7 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url|remove:'index.html' }}" />
   <meta property="og:locale" content="{{ site.lang }}_{%- t site.territory -%}" />
   <meta property="og:image" content="{{ site.url }}/assets/img/pages/default.jpg" />
-  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:site_name" content="{% t home.title %}" />
   
   <meta property="twitter:title" content="{% t home.title %}" />
   <meta name="twitter:card" content="{% if page.twitter_card %}{{ page.twitter_card }}{% else %}{{ site.data.social.twitter.defaultcard }}{% endif %}" />
