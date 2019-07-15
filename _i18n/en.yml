@@ -7,6 +7,9 @@ home:
 
 site:
   description: A developer's blog & portfolio.
+  language:
+    name: English
+    alternateName: en
   territory: CA
   license: https://creativecommons.org/licenses/by/4.0/
 

@@ -17,5 +17,23 @@
   <meta name="twitter:card" content="{% if page.twitter_card %}{{ page.twitter_card }}{% else %}{{ site.data.social.twitter.defaultcard }}{% endif %}" />
   <meta name="twitter:site" content="{{ site.data.social.twitter.username }}" />
   <meta name="twitter:creator" content="{% if page.author_twitter %}{{ page.author_twitter }}{% elsif page.author == nil %}{{ site.data.social.twitter.username }}{% endif %}" />
-  <!-- application/jd+json -->
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "Article",
+      "name": "{{ page.title }}",
+      "image": "{% if page.img %}{{ site.url }}/assets/img/posts/{{ page.img }}{% else %}{{ site.url }}/assets/img/posts/default.jpg{% endif %}",
+      "description": "{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip }}{% endif %}",
+      "url": "{{ site.url }}{{ page.url|remove:'index.html' }}",
+      "author": "{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}",
+      "license": "{% t site.license %}",
+      "inLanguage": {
+        "@type": "Language",
+        "name": "{% t site.language.name %}"
+        "alternateName": "{% t site.language.alternateName %}"
+      }
+    }
+  </script>
+
   <!-- Finish post SEO -->

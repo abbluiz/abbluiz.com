@@ -28,7 +28,11 @@
       "url": "{{ site.url }}{{ page.url|remove:'index.html' }}",
       "author": "{{ site.author }}",
       "license": "{% t site.license %}",
-      "inLanguage": "{{ site.lang }}"
+      "inLanguage": {
+        "@type": "Language",
+        "name": "{% t site.language.name %}"
+        "alternateName": "{% t site.language.alternateName %}"
+      }
     }
   </script>
 
