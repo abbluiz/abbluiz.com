@@ -1,6 +1,8 @@
 global:
-  portuguese: Português
   english: English
+  portuguese: Português
+  pt: Português
+  en: English
 
 home: 
   title: "LABB: Personal Website"
@@ -22,3 +24,6 @@ pages:
     title: Portfolio
     desc: Portfolio description
     img: portfolio-en.jpg
+
+word:
+  lang: Language

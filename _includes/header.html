@@ -3,7 +3,26 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- assign availableLanguages = site.languages -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+                      
+    {%- if availableLanguages.size > 1 and (page.layout == "home" or page.layout == "page") -%} 
+    <nav class="lang-nav">
+      <input type="checkbox" id="lang-nav-trigger" class="lang-nav-trigger" />
+      <label for="lang-nav-trigger">
+        <span class="lang-icon"><span id="lang-word">{%- t word.lang -%} </span> 文A</span>
+      </label>
+      <div class="trigger-lang">
+        {%- for language in availableLanguages -%}
+          {%- if language == "en" -%}
+            <a href="{{ site.baseurl_root }}{% tl {{ page.namespace }} {{ language }} %}" class="lang-link">{%- t global.{{ language }} -%}</a>
+          {%- else -%}
+            <a href="{{ site.baseurl_root }}{% tl {{ page.namespace }} {{ language }} %}" class="lang-link">{%- t global.{{ language }} -%}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </nav>
+    {%- endif -%}
 
     {%- if page_paths -%}
       <nav class="site-nav">

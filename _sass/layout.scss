@@ -30,12 +30,89 @@
 
 }
 
+.lang-nav {
+
+  z-index: 7;
+
+  @include media-query($on-palm) {
+    right: $spacing-unit * 2;
+
+    #lang-word {
+      display: none;
+    }
+
+  }
+
+  background-color: $background-color;
+  position: absolute;
+  right: $spacing-unit / 2;
+  line-height: $base-line-height * $base-font-size * 2.25;
+  text-align: right;
+
+  .lang-nav-trigger {
+    display: none;
+  }
+
+  .lang-icon {
+
+    color: $labb-color;
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
+      color: $text-color;
+    }
+
+  }
+
+  label[for="lang-nav-trigger"] {
+    display: block;
+    float: right;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  input ~ .trigger-lang {
+    clear: both;
+    display: none;
+  }
+
+  input:checked ~ .trigger-lang {
+    display: block;
+    padding-bottom: 5px;
+    border: 1px solid $grey-color-dark;
+    border-radius: 4px;
+  }
+
+  .lang-link {
+      color: $text-color;
+      line-height: $base-line-height;
+      display: block;
+      padding: 5px 10px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: $labb-color-light;
+        text-decoration: none;
+      }
+
+      margin-left: 20px;
+    }
+
+}
+
 .site-nav {
+
+  z-index: 1;
+
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
-      display: none;
+    display: none;
   }
 
   .menu-icon {
@@ -97,6 +174,7 @@
     }
 
     input:checked ~ .trigger {
+      margin-top: 44px;
       display: block;
       padding-bottom: 5px;
       border: 1px solid $grey-color-dark;
