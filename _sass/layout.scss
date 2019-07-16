@@ -34,15 +34,6 @@
 
   z-index: 7;
 
-  @include media-query($on-palm) {
-    right: $spacing-unit * 2;
-
-    #lang-word {
-      display: none;
-    }
-
-  }
-
   background-color: $background-color;
   position: absolute;
   right: $spacing-unit / 2;
@@ -101,6 +92,19 @@
 
       margin-left: 20px;
     }
+
+    @include media-query($on-palm) {
+      right: $spacing-unit * 2;
+
+      .lang-icon {
+        color: $text-color;
+      }
+
+      #lang-word {
+        display: none;
+      }
+
+  }
 
 }
 
