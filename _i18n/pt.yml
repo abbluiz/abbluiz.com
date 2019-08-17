@@ -29,3 +29,9 @@ string:
   lang: Língua
   pinned-projects: Projetos Fixados
   other-projects: Outros Projetos
+
+project:
+  labb-personal-website:
+    name: "LABB: Site Pessoal"
+  privacidade-digital:
+    name: Privacidade Digital

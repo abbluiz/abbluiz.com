@@ -17,7 +17,7 @@ permalink_pt: /portfolio/
 {% assign pinned_projects = site.projects | where: "pinned", true %}
 
 {% for pinned_project in pinned_projects %}
-  * {{ pinned_project.name }}
+  * {% t pinned_project.name %}
 {% endfor %}
 
 {% t string.other-projects %}
