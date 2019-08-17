@@ -10,6 +10,7 @@ rss: rss
 license: site.license
 
 # Build Settings
+
 markdown: kramdown
 theme: minima
 plugins:
@@ -17,5 +18,11 @@ plugins:
   - jekyll-multiple-languages-plugin
   - jekyll-sitemap
 
+# My Collections
+
+collections:
+  - projects
+
 # Supported Languages
+
 languages: ["en", "pt"]
