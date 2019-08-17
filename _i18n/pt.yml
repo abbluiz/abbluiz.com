@@ -25,5 +25,7 @@ pages:
     desc: Descrição de Portfólio
     img: portfolio-pt.jpg
 
-word:
+string:
   lang: Língua
+  pinned-projects: Projetos Fixados
+  other-projects: Outros Projetos

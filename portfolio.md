@@ -11,3 +11,13 @@ permalink_pt: /portfolio/
 ---
 
 {% translate_file portfolio/portfolio.md %}
+
+{% t string.pinned-projects %}
+
+{% assign pinned_projects = site.projects | where: "pinned", true %}
+
+{% for pinned_project in pinned_projects %}
+  * {{ pinned_project.name }}
+{% endfor %}
+
+{% t string.other-projects %}

@@ -25,5 +25,7 @@ pages:
     desc: Portfolio description
     img: portfolio-en.jpg
 
-word:
+string:
   lang: Language
+  pinned-projects: Pinned Projects
+  other-projects: Other Projects
