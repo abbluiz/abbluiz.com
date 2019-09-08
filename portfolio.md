@@ -14,10 +14,16 @@ permalink_pt: /portfolio/
 
 {% t string.pinned-projects %}
 
+{% assign all_projects = site.projects %}
+
 {% assign pinned_projects = site.projects | where: "pinned", true %}
 
 {% for pinned_project in pinned_projects %}
   * {% t pinned_project.name %}
 {% endfor %}
 
-{% t string.other-projects %}
+{% t string.all-projects %}
+
+{% for project in all_projects %}
+  * {% t project.name %}
+{% endfor %}

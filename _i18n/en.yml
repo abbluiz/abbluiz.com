@@ -29,6 +29,7 @@ string:
   lang: Language
   pinned-projects: Pinned Projects
   other-projects: Other Projects
+  all-projects: All Projects
 
 project:
   labb-personal-website:
