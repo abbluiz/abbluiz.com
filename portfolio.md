@@ -12,18 +12,26 @@ permalink_pt: /portfolio/
 
 {% translate_file portfolio/portfolio.md %}
 
-{% t string.pinned-projects %}
+<h3>{% t string.pinned-projects %}</h3>
 
 {% assign all_projects = site.projects %}
 
 {% assign pinned_projects = site.projects | where: "pinned", true %}
 
+<div class="pinned-area">
 {% for pinned_project in pinned_projects %}
-  * {% t pinned_project.name %}
+  <div class="project-card-pinned">
+    <div class="project-card-pinned-content">
+      {% t pinned_project.name %}
+    </div>
+  </div>
 {% endfor %}
+</div>
 
-{% t string.all-projects %}
+<h3>{% t string.all-projects %}</h3>
 
 {% for project in all_projects %}
-  * {% t project.name %}
+  <div class="project-card">
+    <div class="project-card-content">{% t project.name %}</div>
+  </div>
 {% endfor %}

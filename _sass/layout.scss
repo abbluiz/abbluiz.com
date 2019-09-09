@@ -348,3 +348,42 @@
     }
   }
 }
+
+.project-card-pinned {
+
+  @include media-query($on-card) {
+    
+    margin-right: $spacing-unit / 6;
+    margin-bottom: $spacing-unit / 6;
+    width: 47.5%;
+    height: 60px;
+  
+  }
+  
+  position: relative;
+  text-align: center;
+
+  .project-card-pinned-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  display: inline-block;
+  margin-right: $spacing-unit / 6;
+  margin-bottom: $spacing-unit / 6;
+  height: 60px;
+  width: 175px;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  font-size: $small-font-size;
+
+  &:last-child {
+
+    margin-right: 0;
+
+  }
+
+}

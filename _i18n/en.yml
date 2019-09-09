@@ -36,3 +36,9 @@ project:
     name: "LABB: Personal Website"
   privacidade-digital:
     name: Privacidade Digital
+  foedb:
+    name: foe db
+  spatium:
+    name: Spatium
+  labb:
+    name: LABB
