@@ -1,1 +1,0 @@
-Selecione um projeto para mais detalhes.

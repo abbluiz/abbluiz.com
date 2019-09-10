@@ -12,8 +12,6 @@ permalink_pt: /portfolio/
 
 {% translate_file portfolio/portfolio.md %}
 
-<h3>{% t string.pinned-projects %}</h3>
-
 {% assign all_projects = site.projects %}
 
 {% assign pinned_projects = site.projects | where: "pinned", true %}
