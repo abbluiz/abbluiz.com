@@ -10,8 +10,6 @@ permalink: /portfolio/
 permalink_pt: /portfolio/
 ---
 
-{% translate_file portfolio/portfolio.md %}
-
 {% assign all_projects = site.projects %}
 
 {% assign pinned_projects = site.projects | where: "pinned", true %}
