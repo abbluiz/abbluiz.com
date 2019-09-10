@@ -1,8 +1,12 @@
 ---
 unique-name: labb
-type: multiple
+type: identity
 name: project.labb.name
-year: 2019
+launch-date: 2015
 website: https://www.abbluiz.com/
+git-url:
+license-url:
+founders: ["labb"]
 pinned: true
+hidden: false
 ---

@@ -1,8 +1,12 @@
 ---
 unique-name: privacidade-digital
-type: multiple
+type: initiative
 name: project.privacidade-digital.name
-year: 2019
+launch-date: 2019
 website: https://www.privacidade.digital/
+git-url:
+license-url:
+founders: ["labb", "vinnie", "reginildo"]
 pinned: true
+hidden: false
 ---

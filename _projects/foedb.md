@@ -2,7 +2,11 @@
 unique-name: foedb
 type: database
 name: project.foedb.name
-year: 2019
-website: https://www.foedb.org/
+launch-date:
+website:
+git-url:
+license-url:
+founders: ["labb"]
 pinned: true
+hidden: false
 ---
