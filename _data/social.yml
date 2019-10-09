@@ -1,23 +1,19 @@
 github:
   username: abbluiz
 
-telegram:
-  username: abbluiz
-
 linkedin:
   username: abbluiz
 
 keybase:
   username: abbluiz
 
-twitter:
-  username: abbluiz
-  defaultcard: summary_large_image
+mastodon:
+  - abbluiz@mastodon.social:
+    username: abbluiz
+    instance: mastodon.social
 
 social:
   links:
-    - https://twitter.com/abbluiz
     - https://www.linkedin.com/in/abbluiz
     - https://github.com/abbluiz
     - https://keybase.io/abbluiz
-    - https://t.me/abbluiz
