@@ -2,6 +2,7 @@
 unique-name: spatium
 type: social-network
 title: project.spatium.name
+description: project.spatium.desc
 launch-date:
 website: https://www.spatium.club/
 git-url:

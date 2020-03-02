@@ -35,11 +35,16 @@ string:
 project:
   labb-personal-website:
     name: "LABB: Site Pessoal"
+    desc: " "
   privacidade-digital:
     name: Privacidade Digital
+    desc: " "
   foedb:
     name: foe db
+    desc: " "
   spatium:
     name: Spatium
+    desc: " "
   labb:
     name: LABB
+    desc: " "

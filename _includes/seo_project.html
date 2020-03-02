@@ -1,0 +1,39 @@
+  
+  <!-- Start project SEO -->
+  <title>{% t page.title %} | {{ site.title }}</title>
+  <meta name="description" content="{% t page.description %}" />
+  <meta name="author" content="{{ site.author }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url|remove:'index.html' }}">
+
+  <meta property="og:title" content="{% t page.title %}" />
+  <meta property="og:description" content="{% t page.description %}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url|remove:'index.html' }}" />
+  <meta property="og:locale" content="{{ site.lang }}_{%- t site.territory -%}" />
+  <meta property="og:image" content="{% if page.img %}{{ site.url }}/assets/img/pages/{% t page.img %}{% else %}{{ site.url }}/assets/img/pages/default.jpg{% endif %}" />
+  <meta property="og:site_name" content="{% t home.title %}" />
+  
+  <meta property="twitter:title" content="{% t page.title %}" />
+  <meta name="twitter:card" content="{% if page.twitter_card %}{{ page.twitter_card }}{% else %}{{ site.data.social.twitter.defaultcard }}{% endif %}" />
+  <meta name="twitter:site" content="{{ site.data.social.twitter.username }}" />
+  <meta name="twitter:creator" content="{{ site.data.social.twitter.username }}" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "WebPage",
+      "name": "{% t page.title %}",
+      "image": "{% if page.img %}{{ site.url }}/assets/img/pages/{% t page.img %}{% else %}{{ site.url }}/assets/img/pages/default.jpg{% endif %}",
+      "description": "{% t page.description %}",
+      "url": "{{ site.url }}{{ page.url|remove:'index.html' }}",
+      "author": "{{ site.author }}",
+      "license": "{% t site.license %}",
+      "inLanguage": {
+        "@type": "Language",
+        "name": "{% t site.language.name %}"
+        "alternateName": "{% t site.language.alternateName %}"
+      }
+    }
+  </script>
+
+  <!-- Finish project SEO -->

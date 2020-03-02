@@ -2,6 +2,7 @@
 unique-name: foedb
 type: database
 title: project.foedb.name
+description: project.foedb.desc
 launch-date:
 website:
 git-url:
