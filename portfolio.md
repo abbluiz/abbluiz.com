@@ -14,11 +14,13 @@ permalink_pt: /portfolio/
 
 {% assign pinned_projects = site.projects | where: "pinned", true %}
 
+<h3>{% t string.pinned-projects %}</h3>
+
 <div class="pinned-area">
 {% for pinned_project in pinned_projects %}
   <div class="project-card-pinned">
     <div class="project-card-pinned-content">
-      {% t pinned_project.name %}
+      {% t pinned_project.title %}
     </div>
   </div>
 {% endfor %}
@@ -28,6 +30,6 @@ permalink_pt: /portfolio/
 
 {% for project in all_projects %}
   <div class="project-card">
-    <div class="project-card-content">{% t project.name %}</div>
+    <div class="project-card-content">{% t project.title %}</div>
   </div>
 {% endfor %}

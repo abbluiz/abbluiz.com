@@ -30,6 +30,7 @@ string:
   pinned-projects: Projetos Fixados
   other-projects: Outros Projetos
   all-projects: Todos os Projetos
+  pinned: Fixados
 
 project:
   labb-personal-website:

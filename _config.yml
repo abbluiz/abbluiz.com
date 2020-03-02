@@ -21,7 +21,9 @@ plugins:
 # My Collections
 
 collections:
-  - projects
+  projects:
+    output: true
+    permalink: /:collection/:name
 
 # Supported Languages
 

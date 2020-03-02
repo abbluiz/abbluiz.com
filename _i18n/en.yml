@@ -30,6 +30,7 @@ string:
   pinned-projects: Pinned Projects
   other-projects: Other Projects
   all-projects: All Projects
+  pinned: Pinned
 
 project:
   labb-personal-website:

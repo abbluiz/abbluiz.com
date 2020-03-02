@@ -1,7 +1,7 @@
 ---
 unique-name: spatium
 type: social-network
-name: project.spatium.name
+title: project.spatium.name
 launch-date:
 website: https://www.spatium.club/
 git-url:
@@ -9,4 +9,5 @@ license-url:
 founders: ["labb", "galyna"]
 pinned: true
 hidden: false
+layout: project
 ---
