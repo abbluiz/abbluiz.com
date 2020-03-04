@@ -10,24 +10,21 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ site.url }}{{ page.url|remove:'index.html' }}" />
   <meta property="og:locale" content="{{ site.lang }}_{%- t site.territory -%}" />
-  <meta property="og:image" content="{% if page.img %}{{ site.url }}/assets/img/pages/{% t page.img %}{% else %}{{ site.url }}/assets/img/pages/default.jpg{% endif %}" />
+  <meta property="og:image" content="{% if page.img %}{{ site.url }}/assets/img/projects/{% t page.img %}{% else %}{{ site.url }}/assets/img/projects/default.jpg{% endif %}" />
   <meta property="og:site_name" content="{% t home.title %}" />
   
   <meta property="twitter:title" content="{% t page.title %}" />
   <meta name="twitter:card" content="{% if page.twitter_card %}{{ page.twitter_card }}{% else %}{{ site.data.social.twitter.defaultcard }}{% endif %}" />
-  <meta name="twitter:site" content="{{ site.data.social.twitter.username }}" />
-  <meta name="twitter:creator" content="{{ site.data.social.twitter.username }}" />
 
   <script type="application/ld+json">
     {
       "@context": "http://schema.org/",
-      "@type": "WebPage",
+      "@type": "CreativeWork",
       "name": "{% t page.title %}",
-      "image": "{% if page.img %}{{ site.url }}/assets/img/pages/{% t page.img %}{% else %}{{ site.url }}/assets/img/pages/default.jpg{% endif %}",
+      "image": "{% if page.img %}{{ site.url }}/assets/img/projects/{% t page.img %}{% else %}{{ site.url }}/assets/img/projects/default.jpg{% endif %}",
       "description": "{% t page.description %}",
       "url": "{{ site.url }}{{ page.url|remove:'index.html' }}",
       "author": "{{ site.author }}",
-      "license": "{% t site.license %}",
       "inLanguage": {
         "@type": "Language",
         "name": "{% t site.language.name %}"
