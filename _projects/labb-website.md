@@ -11,8 +11,8 @@ founders: ["labb"]
 pinned: false
 hidden: true
 layout: project
-color1: "#a14040"
-color2: white
+color1: white
+color2: "#a14040"
 ---
 
 Insert meta joke here.

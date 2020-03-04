@@ -12,5 +12,5 @@ pinned: true
 hidden: false
 layout: project
 color1: pink
-color2: red
+color2: purple
 ---

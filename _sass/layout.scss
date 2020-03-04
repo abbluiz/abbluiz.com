@@ -372,9 +372,19 @@
     height: 60px;
   
   }
-  
+
   position: relative;
   text-align: center;
+
+  font-weight: bold;
+  
+  a {
+    color: black;
+  }
+
+  a:hover {
+    color: lighten(black, 30%);
+  }
 
   .project-card-pinned-content {
       position: absolute;
@@ -413,6 +423,17 @@
   
   position: relative;
   text-align: center;
+
+  font-weight: bold;
+
+  a {
+    color: black;
+  }
+
+  a:hover {
+    color: lighten(black, 30%);
+    background-image: linear-gradient(to right, red, green);
+  }
 
   .project-card-content {
       position: absolute;
