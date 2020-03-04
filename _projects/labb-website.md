@@ -1,5 +1,5 @@
 ---
-unique-name: labb-personal-website
+unique-name: labb-website
 type: website
 title: project.labb-personal-website.name
 description: project.labb-personal-website.desc
