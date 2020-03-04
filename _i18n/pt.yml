@@ -18,11 +18,11 @@ site:
 pages:
   about:
     title: Sobre
-    desc: Descrição de Sobre
+    desc: Sobre mim e meu site pessoal.
     img: about-pt.jpg
   portfolio:
     title: Portfólio
-    desc: Descrição de Portfólio
+    desc: Todos os projetos em que estou trabalhando e em que já trabalhei.
     img: portfolio-pt.jpg
 
 string:
