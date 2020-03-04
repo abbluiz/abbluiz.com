@@ -6,7 +6,7 @@
     {%- assign availableLanguages = site.languages -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
                       
-    {%- if availableLanguages.size > 1 and (page.layout == "home" or page.layout == "page") -%} 
+    {%- if availableLanguages.size > 1 and (page.layout == "home" or page.layout == "page" or page.layout="project") -%} 
       <nav class="lang-nav">
         <input type="checkbox" id="lang-nav-trigger" class="lang-nav-trigger" />
         <label for="lang-nav-trigger">
@@ -14,10 +14,14 @@
         </label>
         <div class="trigger-lang">
           {%- for language in availableLanguages -%}
-            {%- if language == "en" -%}
-              <a href="{{ site.baseurl_root }}{% tl {{ page.namespace }} {{ language }} %}" class="lang-link">{%- t global.{{ language }} -%}</a>
+            {%- if site.lang == "en" and language == "en" -%}
+              <a href="{{ site.baseurl }}..{% tl {{ page.namespace }} {{ language }} %}" class="lang-link">{%- t global.{{ language }} -%}</a>
+            {%- elsif site.lang == "en" -%}
+              <a href="{{ site.baseurl }}{% tl {{ page.namespace }} {{ language }} %}" class="lang-link">{%- t global.{{ language }} -%}</a>
+            {%- elsif site.lang != "en" and language == "en" -%}
+              <a href="{{ site.baseurl }}/..{% tl {{ page.namespace }} {{ language }} %}" class="lang-link">{%- t global.{{ language }} -%}</a>
             {%- else -%}
-              <a href="{{ site.baseurl_root }}{% tl {{ page.namespace }} {{ language }} %}" class="lang-link">{%- t global.{{ language }} -%}</a>
+              <a href="{{ site.baseurl }}/..{% tl {{ page.namespace }} {{ language }} %}" class="lang-link">{%- t global.{{ language }} -%}</a>
             {%- endif -%}
           {%- endfor -%}
         </div>

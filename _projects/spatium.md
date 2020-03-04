@@ -11,4 +11,6 @@ founders: ["labb", "galyna"]
 pinned: true
 hidden: false
 layout: project
+color1: pink
+color2: red
 ---

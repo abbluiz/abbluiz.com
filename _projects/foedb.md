@@ -11,4 +11,6 @@ founders: ["labb"]
 pinned: true
 hidden: false
 layout: project
+color1: blue
+color2: white
 ---

@@ -18,10 +18,13 @@ permalink_pt: /portfolio/
 
 <div class="pinned-area">
 {% for pinned_project in pinned_projects %}
-  <div class="project-card-pinned">
-    <div class="project-card-pinned-content">
-      {% t pinned_project.title %}
-    </div>
+  <div class="project-card-pinned" style="background-image: linear-gradient(to bottom right, {{ pinned_project.color1 }}, {{ pinned_project.color2 }});">
+    <a href="{{ site.baseurl }}/{{ language }}projects/{{ pinned_project.unique-name }}">
+      <span class="clickable-div"></span>
+      <div class="project-card-pinned-content">
+        {% t pinned_project.title %}
+      </div>
+    </a>
   </div>
 {% endfor %}
 </div>
@@ -29,7 +32,10 @@ permalink_pt: /portfolio/
 <h3>{% t string.all-projects %}</h3>
 
 {% for project in all_projects %}
-  <div class="project-card">
-    <div class="project-card-content">{% t project.title %}</div>
+  <div class="project-card" style="background-image: linear-gradient(to bottom right, {{ project.color1 }}, {{ project.color2 }});">
+    <a href="{{ site.baseurl }}/{{ language }}projects/{{ project.unique-name }}">
+      <span class="clickable-div"></span>
+      <div class="project-card-content">{% t project.title %}</div>
+    </a>
   </div>
 {% endfor %}

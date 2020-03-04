@@ -11,4 +11,6 @@ founders: ["labb", "vinnie", "reginildo"]
 pinned: true
 hidden: false
 layout: project
+color1: green
+color2: yellow
 ---
