@@ -4,21 +4,18 @@
   
   <meta name="description" content="{% t site.description %}" />
   <meta name="author" content="{{ site.author }}" />
-  
-  <link rel="canonical" href="{{ site.url }}{{ page.url|remove:'index.html' }}">
+  <link rel="canonical" href="{{ site.url }}{%- tl page.namespace -%}">
 
   <meta property="og:title" content="{% t home.title %}" />
   <meta property="og:description" content="{% t site.description %}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ site.url }}{{ page.url|remove:'index.html' }}" />
+  <meta property="og:url" content="{{ site.url }}{%- tl page.namespace -%}" />
   <meta property="og:locale" content="{{ site.lang }}_{%- t site.territory -%}" />
   <meta property="og:image" content="{{ site.url }}/assets/img/pages/default.jpg" />
   <meta property="og:site_name" content="{% t home.title %}" />
   
   <meta property="twitter:title" content="{% t home.title %}" />
   <meta name="twitter:card" content="{% if page.twitter_card %}{{ page.twitter_card }}{% else %}{{ site.data.social.twitter.defaultcard }}{% endif %}" />
-  <meta name="twitter:site" content="{{ site.data.social.twitter.username }}" />
-  <meta name="twitter:creator" content="{{ site.data.social.twitter.username }}" />
   
   <script type="application/ld+json">
     {
@@ -27,7 +24,7 @@
       "name": "{% t home.title %}",
       "image": "{{ site.url }}/assets/img/pages/default.jpg",
       "description": "{% t site.description %}",
-      "url": "{{ site.url }}{{ page.url|remove:'index.html' }}",
+      "url": "{{ site.url }}{%- tl page.namespace -%}",
       "author": "{{ site.author }}",
       "license": "{% t site.license %}",
       "inLanguage": {

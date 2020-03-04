@@ -22,7 +22,7 @@ pages:
     img: about-en.jpg
   portfolio:
     title: Portfolio
-    desc: All the projects I'm working on and have worked in the past.
+    desc: All the projects I'm working on and have worked on in the past.
     img: portfolio-en.jpg
 
 string:

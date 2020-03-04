@@ -3,7 +3,7 @@
   <title>404: Not Found / 404: Não Encontrado</title>
   <meta name="description" content="404 Error: Page Not Found / Erro 404: Página Não Encontrada" />
   <meta name="author" content="{{ site.author }}" />
-  <link rel="canonical" href="{{ site.url }}{{ page.url|remove:'index.html' }}">
+  <link rel="canonical" href="{{ site.url }}{%- tl page.namespace -%}">
 
   <meta property="og:title" content="404: Not Found" />
   <meta property="og:description" content="404 Error: Page Not Found / Erro 404: Página Não Encontrada" />
@@ -12,7 +12,5 @@
   <meta property="og:image" content="{{ site.url }}/assets/img/pages/default.jpg" />
   <meta property="og:site_name" content="{{ site.title }}" />
   
-  <meta name="twitter:site" content="{{ site.data.social.twitter.username }}" />
-  <meta name="twitter:creator" content="{{ site.data.social.twitter.username }}" />
   <!-- application/jd+json -->
   <!-- Finish default SEO -->
