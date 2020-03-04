@@ -31,6 +31,8 @@ string:
   other-projects: Other Projects
   all-projects: All Projects
   pinned: Pinned
+  subscribe: subscribe
+  subscribe-rss: via RSS 
 
 project:
   labb-personal-website:

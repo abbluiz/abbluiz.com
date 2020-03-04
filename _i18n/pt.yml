@@ -31,6 +31,8 @@ string:
   other-projects: Outros Projetos
   all-projects: Todos os Projetos
   pinned: Fixados
+  subscribe: inscreva-se
+  subscribe-rss: por RSS 
 
 project:
   labb-personal-website:
