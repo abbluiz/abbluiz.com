@@ -9,6 +9,64 @@ layout: default
   </header>
 
   <div class="post-content">
+    {%- if page.status == "active" -%}
+    <p>{%- translate string.active-development-notice -%}</p>
+    {%- endif -%}
+    <table>
+      <tr>
+        <td><strong>{%- translate string.started-in -%}</strong></td>
+        <td>
+          {%- if site.lang == "en" -%}
+            {%- assign date_format = "%B %-d, %Y" -%}
+          {%- elsif site.lang != "pt" -%}
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {%- endif -%}
+          {%- if site.lang == "pt" -%}
+            {%- assign m = page.start-date | date: "%-m" -%}
+            {{ page.start-date | date: "%-d de " }}{% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Mar&ccedil;o{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %}{{ page.start-date | date: " de %Y" }}
+          {%- else -%}
+            {{ page.start-date | date: date_format }}
+          {%- endif -%}
+        </td>
+      </tr>
+      {%- if page.launch-date -%}
+      <tr>
+        <td><strong>{%- translate string.launched-in -%}</strong></td>
+        <td>
+          {%- if site.lang == "en" -%}
+            {%- assign date_format = "%B %-d, %Y" -%}
+          {%- elsif site.lang != "pt" -%}
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {%- endif -%}
+          {%- if site.lang == "pt" -%}
+            {%- assign m = page.launch-date | date: "%-m" -%}
+            {{ page.launch-date | date: "%-d de " }}{% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Mar&ccedil;o{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %}{{ page.launch-date | date: " de %Y" }}
+          {%- else -%}
+            {{ page.launch-date | date: date_format }}
+          {%- endif -%}
+        </td>
+      </tr>
+      {%- endif -%}
+      {%- if page.founders -%}
+      <tr>
+        <td><strong>{%- translate string.founded-by -%}</strong></td>
+        <td>LABB</td>
+      </tr>
+      {%- endif -%}
+      {%- if page.license-name -%}
+      <tr>
+        <td><strong>{%- translate string.license -%}</strong></td>
+        <td>
+          {%- if page.license-url -%}
+            <a href="{{ page.license-url }}">{%- translate page.license-name -%}</a>
+          {%- else -%}
+            {%- translate page.license-name -%}
+          {%- endif -%}
+        </td>
+      </tr>
+      {%- endif -%}
+    </table> 
+
     {{ content }}
   </div>
 

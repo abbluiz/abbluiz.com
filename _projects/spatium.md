@@ -3,11 +3,17 @@ unique-name: spatium
 type: social-network
 title: project.spatium.name
 description: project.spatium.desc
+start-date: 2019-09-25 14:16:00
 launch-date:
-website: https://www.spatium.club/
+status: active
+website: 
+needs-help: true
 git-url:
 license-url:
-founders: ["labb", "galyna"]
+license-opensource: false
+license-freesoftware: false
+license-name: string.proprietary
+founders: ["LABB", "Galyna", "Oleksandr"]
 pinned: true
 hidden: false
 layout: project

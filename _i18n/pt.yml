@@ -33,6 +33,15 @@ string:
   pinned: Fixados
   subscribe: inscreva-se
   subscribe-rss: por RSS 
+  proprietary: Proprietária
+  mixed: Mista*
+  mit: MIT
+  cc0: CC0
+  license: Licença
+  started-in: Iniciado em
+  launched-in: Lançado em
+  active-development-notice: Este projeto está em desenvolvimento ativo.
+  founded-by: Criado por
 
 project:
   labb-personal-website:
