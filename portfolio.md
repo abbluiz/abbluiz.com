@@ -19,7 +19,7 @@ permalink_pt: /portfolio/
 <div class="pinned-area">
 {% for pinned_project in pinned_projects %}
   <div class="project-card-pinned" style="background-image: linear-gradient(to bottom right, {{ pinned_project.color1 }}, {{ pinned_project.color2 }});">
-    <a href='{{ pinned_project.url | relative_url | append: ".html" }}'>
+    <a href='{{ pinned_project.url | relative_url }}'>
       <span class="clickable-div"></span>
       <div class="project-card-pinned-content">
         {% t pinned_project.title %}
@@ -33,7 +33,7 @@ permalink_pt: /portfolio/
 
 {% for project in all_projects %}
   <div class="project-card" style="background-image: linear-gradient(to bottom right, {{ project.color1 }}, {{ project.color2 }});">
-    <a href='{{ project.url | relative_url | append: ".html" }}'>
+    <a href='{{ project.url | relative_url }}'>
       <span class="clickable-div"></span>
       <div class="project-card-content">{% t project.title %}</div>
     </a>

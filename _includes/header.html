@@ -16,7 +16,7 @@
           {%- for language in availableLanguages -%}
             {%- if page.layout == "project" -%}
               {%- assign url = page.url -%}
-              <a href='{%- if language != "en" -%}{{ "/" | append: language | append: url | append: ".html" }}{%- else -%}{{ relative_url | append: url | append: ".html" }}{%- endif -%}' class="lang-link">{%- t global.{{ language }} -%}</a>
+              <a href='{%- if language != "en" -%}{{ "/" | append: language | append: url }}{%- else -%}{{ relative_url | append: url }}{%- endif -%}' class="lang-link">{%- t global.{{ language }} -%}</a>
             {%- else -%}
               <a href="{% tl {{ page.namespace }} {{ language }} %}" class="lang-link">{%- t global.{{ language }} -%}</a>
             {%- endif -%}
