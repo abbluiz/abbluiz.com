@@ -42,6 +42,8 @@ string:
   launched-in: Launched in
   active-development-notice: This project is in active development.
   founded-by: Created by
+  empty-notice-title: Nothing here
+  empty-notice-content: "Hey, you! Come back when I have something to show, please."
 
 project:
   labb-personal-website:

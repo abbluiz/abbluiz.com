@@ -40,6 +40,12 @@ layout: default
     </ul>
 
     <p class="rss-subscribe">{% translate string.subscribe %} <a href="{{ "/feed.xml" | relative_url }}">{% translate string.subscribe-rss %}</a></p>
+  {%- else -%}
+    <center>
+      <h1>{%- translate string.empty-notice-title -%}</h1>
+      <h2>🍃</h2>
+      <p>{%- translate string.empty-notice-content -%}</p>
+    </center>
   {%- endif -%}
 
 </div>
