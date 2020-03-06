@@ -1,8 +1,0 @@
----
-layout: home
-
-namespace: home
-
-permalink: /
-permalink_pt: /
----
