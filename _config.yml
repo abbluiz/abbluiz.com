@@ -24,7 +24,7 @@ plugins:
 collections:
   projects:
     output: true
-    permalink: /:collection/:name
+    permalink: /portfolio/:name
 
 # Supported Languages
 
