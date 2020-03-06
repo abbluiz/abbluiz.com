@@ -9,6 +9,7 @@ url: "https://www.abbluiz.com"
 rss: rss
 license: site.license
 show_excerpts: true
+include: [".well-known"]
 
 # Build Settings
 
