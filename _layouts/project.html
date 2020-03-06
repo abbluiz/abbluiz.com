@@ -50,7 +50,19 @@ layout: default
       {%- if page.founders -%}
       <tr>
         <td><strong>{%- translate string.founded-by -%}</strong></td>
-        <td>LABB</td>
+        <td>
+          {%- if page.founders.size == 1 -%}
+            {{ page.founders[0] }}
+          {%- else -%}
+            {%- for founder in page.founders -%}
+              {%- if forloop.last == true -%}
+                {{ founder | prepend: "and " }}
+              {%- else -%}
+                {{ founder | append: ", " }}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+        </td>
       </tr>
       {%- endif -%}
       {%- if page.license-name -%}
