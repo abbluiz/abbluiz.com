@@ -20,7 +20,7 @@
   <script type="application/ld+json">
     {
       "@context": "http://schema.org/",
-      "@type": "Article",
+      "@type": "BlogPosting",
       "name": "{{ page.title }}",
       "image": "{% if page.img %}{{ site.url }}/assets/img/posts/{{ page.img }}{% else %}{{ site.url }}/assets/img/posts/default.jpg{% endif %}",
       "description": "{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip }}{% endif %}",
