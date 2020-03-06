@@ -5,7 +5,7 @@ author: LABB
 email: contact@labb.email
 description: site.description
 baseurl: ""
-url: "https://www.abbluiz.com/"
+url: "https://www.abbluiz.com"
 rss: rss
 license: site.license
 show_excerpts: true
