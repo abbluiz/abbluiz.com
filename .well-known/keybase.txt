@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/abbluiz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://abbluiz.com
+  * I am abbluiz (https://keybase.io/abbluiz) on keybase.
+  * I have a public key ASB4Zp26hrUbTHb6EojkyehwHMzwARKq19m-CDRxYT82PAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012078669dba86b51b4c76fa1288e4c9e8701cccf00112aad7d9be083471613f363c0a",
+      "host": "keybase.io",
+      "kid": "012078669dba86b51b4c76fa1288e4c9e8701cccf00112aad7d9be083471613f363c0a",
+      "uid": "05336ae81b63880f93077016426aef19",
+      "username": "abbluiz"
+    },
+    "merkle_root": {
+      "ctime": 1583535808,
+      "hash": "c422b5117d1d39fcfd511370cf6d8a844ab4828d46d4985f22dc9a6d6de33a2595e7d6e1d1860c4f8ed6304b67284fc2aab75bcd115cb7e02c2d1bac6fcb78e9",
+      "hash_meta": "4773bec32eb6d7e424e4fc0fd8c5de482ca81ac58d2f226d5e2bc1fb8ac6fb37",
+      "seqno": 15120272
+    },
+    "service": {
+      "entropy": "U+sjJdhItBkoJBbxMsWnlLGB",
+      "hostname": "abbluiz.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.2.1"
+  },
+  "ctime": 1583535827,
+  "expire_in": 504576000,
+  "prev": "c951002bf10957c4b4623a8a417431a7cfac25456727c5dee21c8ab93f512c6a",
+  "seqno": 34,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgeGaduoa1G0x2+hKI5MnocBzM8AESqtfZvgg0cWE/NjwKp3BheWxvYWTESpcCIsQgyVEAK/EJV8S0YjqKQXQxp8+sJUVnJ8Xe4hyKuT9RLGrEICduMziQ8mQPdUUN1McctFlV8hDCkQavkeyEB6WIzOiVAgHCo3NpZ8RAGKWAAiKo+QvDG2ze8G7RK0sHm5hvYSCXoCkVQhon04k+tIuPcX4pFsfBWnLjq5sIZIm3iBxQPIpSUm0ucsnkCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINvxDqQ3b8SOarHPl9kH3dsHlfEH7yFNbgO0Xc6JKHqTo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/abbluiz
+
+==================================================================
