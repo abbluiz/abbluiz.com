@@ -2,15 +2,15 @@
   <!-- Start home SEO -->
   <title>{% t home.title %}</title>
   
-  <meta name="description" content="{% t site.description %}" />
+  <meta name="description" content="{% t website.description %}" />
   <meta name="author" content="{{ site.author }}" />
   <link rel="canonical" href="{{ site.url }}{%- tl page.namespace -%}">
 
   <meta property="og:title" content="{% t home.title %}" />
-  <meta property="og:description" content="{% t site.description %}" />
+  <meta property="og:description" content="{% t website.description %}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ site.url }}{%- tl page.namespace -%}" />
-  <meta property="og:locale" content="{{ site.lang }}_{%- t site.territory -%}" />
+  <meta property="og:locale" content="{{ site.lang }}_{%- t website.territory -%}" />
   <meta property="og:image" content="{{ site.url }}/assets/img/pages/default.jpg" />
   <meta property="og:site_name" content="{% t home.title %}" />
   
@@ -23,14 +23,14 @@
       "@type": "WebSite",
       "name": "{% t home.title %}",
       "image": "{{ site.url }}/assets/img/pages/default.jpg",
-      "description": "{% t site.description %}",
+      "description": "{% t website.description %}",
       "url": "{{ site.url }}{%- tl page.namespace -%}",
       "author": "{{ site.author }}",
-      "license": "{% t site.license %}",
+      "license": "{% t website.license %}",
       "inLanguage": {
         "@type": "Language",
-        "name": "{% t site.language.name %}"
-        "alternateName": "{% t site.language.alternateName %}"
+        "name": "{% t website.language.name %}"
+        "alternateName": "{% t website.language.alternateName %}"
       }
     }
   </script>

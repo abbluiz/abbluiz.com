@@ -9,7 +9,7 @@
   <meta property="og:description" content="{% t page.description %}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ site.url }}{%- tl page.namespace -%}" />
-  <meta property="og:locale" content="{{ site.lang }}_{%- t site.territory -%}" />
+  <meta property="og:locale" content="{{ site.lang }}_{%- t website.territory -%}" />
   <meta property="og:image" content="{% if page.img %}{{ site.url }}/assets/img/pages/{% t page.img %}{% else %}{{ site.url }}/assets/img/pages/default.jpg{% endif %}" />
   <meta property="og:site_name" content="{% t home.title %}" />
   
@@ -25,11 +25,11 @@
       "description": "{% t page.description %}",
       "url": "{{ site.url }}{%- tl page.namespace -%}",
       "author": "{{ site.author }}",
-      "license": "{% t site.license %}",
+      "license": "{% t website.license %}",
       "inLanguage": {
         "@type": "Language",
-        "name": "{% t site.language.name %}"
-        "alternateName": "{% t site.language.alternateName %}"
+        "name": "{% t website.language.name %}"
+        "alternateName": "{% t website.language.alternateName %}"
       }
     }
   </script>

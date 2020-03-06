@@ -7,7 +7,7 @@ global:
 home: 
   title: "LABB: Site Pessoal"
 
-site:
+website:
   description: Blog & portfólio de um desenvolvedor.
   language:
     name: Portuguese

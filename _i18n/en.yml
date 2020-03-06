@@ -7,7 +7,7 @@ global:
 home: 
   title: "LABB: Personal Website"
 
-site:
+website:
   description: A developer's blog & portfolio.
   language:
     name: English

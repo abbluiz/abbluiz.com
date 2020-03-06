@@ -9,7 +9,7 @@
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip }}{% endif %}" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ site.baseurl }}{{ page.url|remove:'index.html' }}" />
-  <meta property="og:locale" content="{{ site.lang }}_{%- t site.territory -%}" />
+  <meta property="og:locale" content="{{ site.lang }}_{%- t website.territory -%}" />
   <meta property="og:image" content="{% if page.img %}{{ site.url }}/assets/img/posts/{{ page.img }}{% else %}{{ site.url }}/assets/img/posts/default.jpg{% endif %}" />
   <meta property="og:site_name" content="{% t home.title %}" />
 
@@ -26,11 +26,11 @@
       "description": "{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip }}{% endif %}",
       "url": "{{ site.baseurl }}{{ page.url|remove:'index.html' }}",
       "author": "{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}",
-      "license": "{% t site.license %}",
+      "license": "{% t website.license %}",
       "inLanguage": {
         "@type": "Language",
-        "name": "{% t site.language.name %}"
-        "alternateName": "{% t site.language.alternateName %}"
+        "name": "{% t website.language.name %}"
+        "alternateName": "{% t website.language.alternateName %}"
       }
     }
   </script>
