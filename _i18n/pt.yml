@@ -44,6 +44,7 @@ string:
   founded-by: Criado por
   empty-notice-title: Nada por aqui
   empty-notice-content: "Ei! Volte quando eu tiver algo pra mostrar, por favor."
+  and: "e "
 
 project:
   labb-personal-website:

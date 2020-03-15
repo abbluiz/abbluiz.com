@@ -44,6 +44,7 @@ string:
   founded-by: Created by
   empty-notice-title: Nothing here
   empty-notice-content: "Hey, you! Come back when I have something to show, please."
+  and: "and "
 
 project:
   labb-personal-website:
