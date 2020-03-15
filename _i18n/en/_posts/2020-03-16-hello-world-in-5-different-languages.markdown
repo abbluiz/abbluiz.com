@@ -13,9 +13,15 @@ Programming languages are the best way humans can communicate with computers, be
 
 When programmers start learning a new language, their first "words" are generally used to accomplish something very simple: to tell the computer to display "Hello, World!" to the screen. Let us see how we can do that in 5 different programming languages, and as a bonus, display "Hello, World!" in 5 different human spoken languages as well.
 
+* ["Hello, World!" in C](#c)
+* ["Hello, World!" in Bash](#bash)
+* ["Hello, World!" in Java](#java)
+* ["Hello, World!" in Python](#python)
+* ["Hello, World!" in C++](#cpp)
+
 I want to start with the first programming language I have ever learned and the first spoken language I have ever learned: C and Portuguese, respectively. If you are running Linux, you will also be able to see how to compile/run the code.
 
-"Hello, World!" in C
+"Hello, World!" in C<a name="c"></a>
 ===
 
 C is a very simple, yet very powerful language, because it is what some developers call "low-level" language. That means it is closer of what a computer can understand and run by itself.
@@ -42,7 +48,7 @@ $ ./a.out
 Olá, Mundo!
 {% endhighlight %}
 
-"Hello, World!" in Bash
+"Hello, World!" in Bash<a name="bash"></a>
 ===
 
 Bash is an interpreted language. It means it does not need to be compiled. An interpreter translates the instructions one by one so the computer can understand it. In this case, we can also create a script file that the interpreter will read line by line and interpret it.
@@ -62,7 +68,7 @@ $ ./script.sh
 Hello, World!
 {% endhighlight %}
 
-"Hello, World!" in Java
+"Hello, World!" in Java<a name="java"></a>
 ===
 
 Java is a different kind of language. It is actually compiled to bytecode, which computers do not understand. Once compiled, this bytecode needs to be interpreted by a JVM (Java Virtual Machine), a special kind of program that will tell the computer what it should do based on the bytecode. Because the way it works, bytecode can be runned everywhere! Or at least everywhere as long as there's a JVM running on that computer.
@@ -87,7 +93,7 @@ $ java HelloWorld
 Bonjour monde!
 {% endhighlight %}
 
-"Hello, World!" in Python3
+"Hello, World!" in Python3<a name="python"></a>
 ===
 
 Python is another interpreted language. There's an old version of this language, Python2, that will be deprecated soon, even though it's still being used. We'll use the latest one, which is Python3. It's very popular with common task scripts, but also in machine learning and data science.
@@ -109,7 +115,7 @@ $ python3 script.py
 ¡Hola Mundo!
 {% endhighlight %}
 
-"Hello, World!" in C++
+"Hello, World!" in C++<a name="cpp"></a>
 ===
 
 Finally, let's use C++. It is backwards compatible with C, so the C code we have used before will work here. But instead of doing that, we can use C++ specific code.
