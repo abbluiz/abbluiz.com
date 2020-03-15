@@ -27,6 +27,8 @@ collections:
     output: true
     permalink: /portfolio/:name/
 
+permalink: /posts/:categories/:title/
+
 # Supported Languages
 
 languages: ["en", "pt"]
