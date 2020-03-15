@@ -16,14 +16,17 @@ website:
   license: https://creativecommons.org/licenses/by/4.0/deed.pt_BR
 
 pages:
+  default-img: default-pt.png
+  home:
+    img: default-pt.png
   about:
     title: Sobre
     desc: Sobre mim e meu site pessoal.
-    img: about-pt.jpg
+    img: about-pt.png
   portfolio:
     title: Portfólio
     desc: Todos os projetos em que estou trabalhando e em que já trabalhei.
-    img: portfolio-pt.jpg
+    img: portfolio-pt.png
 
 string:
   lang: Língua

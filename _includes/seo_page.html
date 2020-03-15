@@ -10,7 +10,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ site.url }}{%- tl page.namespace -%}" />
   <meta property="og:locale" content="{{ site.lang }}_{%- t website.territory -%}" />
-  <meta property="og:image" content="{% if page.img %}{{ site.url }}/assets/img/pages/{% t page.img %}{% else %}{{ site.url }}/assets/img/pages/default.jpg{% endif %}" />
+  <meta property="og:image" content="{% if page.img %}{{ site.url }}/assets/img/pages/{% t page.img %}{% else %}{{ site.url }}/assets/img/pages/{%- translate pages.default-img -%}{% endif %}" />
   <meta property="og:site_name" content="{% t home.title %}" />
   
   <meta property="twitter:title" content="{% t page.title %}" />
@@ -21,7 +21,7 @@
       "@context": "http://schema.org/",
       "@type": "WebPage",
       "name": "{% t page.title %}",
-      "image": "{% if page.img %}{{ site.url }}/assets/img/pages/{% t page.img %}{% else %}{{ site.url }}/assets/img/pages/default.jpg{% endif %}",
+      "image": "{% if page.img %}{{ site.url }}/assets/img/pages/{% t page.img %}{% else %}{{ site.url }}/assets/img/pages/{%- translate pages.default-img -%}{% endif %}",
       "description": "{% t page.description %}",
       "url": "{{ site.url }}{%- tl page.namespace -%}",
       "author": "{{ site.author }}",

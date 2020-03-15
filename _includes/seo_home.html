@@ -11,7 +11,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ site.url }}{%- tl page.namespace -%}" />
   <meta property="og:locale" content="{{ site.lang }}_{%- t website.territory -%}" />
-  <meta property="og:image" content="{{ site.url }}/assets/img/pages/default.jpg" />
+  <meta property="og:image" content="{{ site.url }}/assets/img/{%- translate pages.home.img -%}" />
   <meta property="og:site_name" content="{% t home.title %}" />
   
   <meta property="twitter:title" content="{% t home.title %}" />
@@ -22,7 +22,7 @@
       "@context": "http://schema.org/",
       "@type": "WebSite",
       "name": "{% t home.title %}",
-      "image": "{{ site.url }}/assets/img/pages/default.jpg",
+      "image": "{{ site.url }}/assets/img/{%- translate pages.home.img -%}",
       "description": "{% t website.description %}",
       "url": "{{ site.url }}{%- tl page.namespace -%}",
       "author": "{{ site.author }}",

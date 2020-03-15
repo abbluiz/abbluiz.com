@@ -16,14 +16,17 @@ website:
   license: https://creativecommons.org/licenses/by/4.0/
 
 pages:
+  default-img: default-en.png
+  home:
+    img: default-en.png
   about:
     title: About
     desc: About me and my personal website.
-    img: about-en.jpg
+    img: about-en.png
   portfolio:
     title: Portfolio
     desc: All the projects I'm working on and have worked on in the past.
-    img: portfolio-en.jpg
+    img: portfolio-en.png
 
 string:
   lang: Language
