@@ -70,8 +70,6 @@ Java is a different kind of language. It is actually compiled to bytecode, which
 It also uses the Object-Oriented paradigm of dealing with code, so it is quite different to use as well. Here's how we can display "Hello, World!" in French, using Java:
 
 {% highlight java %}
-package com.abbluiz.helloworld;
-
 public class HelloWorld {
 
   public static void main() {
@@ -79,11 +77,12 @@ public class HelloWorld {
   }
 
 }
-
 {% endhighlight %}
 
 And here's the output after compiling it to bytecode and running the bytecode:
 
 {% highlight console %}
-
+$ javac HelloWorld.java
+$ java HelloWorld
+Bonjour monde!
 {% endhighlight %}
