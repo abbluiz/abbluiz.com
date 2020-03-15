@@ -72,17 +72,70 @@ It also uses the Object-Oriented paradigm of dealing with code, so it is quite d
 {% highlight java %}
 public class HelloWorld {
 
-  public static void main() {
+  public static void main(String[] args) {
     System.out.println("Bonjour monde!");
   }
 
 }
 {% endhighlight %}
 
-And here's the output after compiling it to bytecode and running the bytecode:
+Here's the output after compiling it to bytecode and running the bytecode:
 
 {% highlight console %}
 $ javac HelloWorld.java
 $ java HelloWorld
 Bonjour monde!
 {% endhighlight %}
+
+"Hello, World!" in Python3
+===
+
+Python is another interpreted language. There's an old version of this language, Python2, that will be deprecated soon, even though it's still being used. We'll use the latest one, which is Python3. It's very popular with common task scripts, but also in machine learning and data science.
+
+A tip about Python that might help you if you are starting: always double-check your indentation and try to use an IDE that helps you with that. It is absolutely necessary with Python.
+
+Here's how we can display "Hello, World!" in Spanish, using Python:
+
+{% highlight python %}
+#!/usr/bin/env python3
+
+print("¡Hola Mundo!")
+{% endhighlight %}
+
+And here's the output after running the script:
+
+{% highlight console %}
+$ python3 script.py
+¡Hola Mundo!
+{% endhighlight %}
+
+"Hello, World!" in C++
+===
+
+Finally, let's use C++. It is backwards compatible with C, so the C code we have used before will work here. But instead of doing that, we can use C++ specific code.
+
+Here's how to display "Hello, World!" in Italian, using C++:
+
+{% highlight cpp %}
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+  cout << "Ciao mondo!" << endl;
+
+  return 0;
+
+}
+{% endhighlight %}
+
+Here's the output after compiling and running the code:
+
+{% highlight console %}
+$ g++ code.cpp
+$ ./a.out
+Ciao mondo!
+{% endhighlight %}
+
+That's it! I hope you have learned something, specially if you are new to programming, and I hope you liked my first post!
