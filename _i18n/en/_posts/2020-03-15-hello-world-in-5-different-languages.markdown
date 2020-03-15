@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "“Hello, World!” in 5 different languages"
-date:   2020-03-15 19:19:00 -0400
+date:   2020-03-15 19:20:00 -0400
 last-update:
 categories: programming
 author: LABB
-fedi-post-url: https://mastodon.social/interact/103829017198441920?type=reply
+fedi-post-url: https://mastodon.social/interact/103829639626749774?type=reply
 ---
 
 Humans and computers use language to communicate with the world. You can use spoken languages to communicate with other humans, such as Portuguese, or English. Computers also talk with each other using various types of languages. These languages can take the form of protocols, binary signals, among other things. But when humans want to communicate with machines? That's when a programming language comes to place.
