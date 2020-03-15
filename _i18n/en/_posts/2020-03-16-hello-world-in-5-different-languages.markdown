@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "\"Hello, World!\" in 5 different languages"
+title:  "“Hello, World!” in 5 different languages"
 date:   2020-03-14 12:00:00 -0400
-last-update: 2020-03-14 12:00:00 -0400
+last-update:
 categories: programming
 author: LABB
 ---

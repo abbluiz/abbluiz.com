@@ -20,8 +20,24 @@ layout: default
           {{ page.date | date: date_format }}
         {%- endif -%}
       </time>
+      {%- if page.last-update -%}
+      &nbsp;• Last Updated:  
+      <time class="dt-modified" datetime="{{ page.last-update | date_to_xmlschema }}" itemprop="dateModified">
+        {%- if site.lang == "en" -%}
+          {%- assign date_format = "%B %-d, %Y" -%}
+        {%- elsif site.lang != "pt" -%}
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- endif -%}
+        {%- if site.lang == "pt" -%}
+          {%- assign m = page.last-update | date: "%-m" -%}
+          {{ page.last-update | date: "%-d de " }}{% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Mar&ccedil;o{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %}{{ page.last-update | date: " de %Y" }}
+        {%- else -%}
+          {{ page.last-update | date: date_format }}
+        {%- endif -%}
+      </time>
+      {%- endif -%}
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+        &nbsp;• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
   </header>
 
