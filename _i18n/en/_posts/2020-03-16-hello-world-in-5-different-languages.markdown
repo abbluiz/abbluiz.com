@@ -36,7 +36,7 @@ int main() {
 
 Here's the output after compiling and running it:
 
-{% highlight terminal %}
+{% highlight console %}
 $ gcc code.c
 $ ./a.out
 Olá, Mundo!
