@@ -45,6 +45,10 @@ string:
   empty-notice-title: Nothing here
   empty-notice-content: "Hey, you! Come back when I have something to show, please."
   and: "and "
+  last-updated: "Last Updated"
+  comment-notice: "Comment this post by replying to "
+  comment-notice-link: this toot
+  join-the-discussion-notice: Join the discussion!
 
 project:
   labb-personal-website:

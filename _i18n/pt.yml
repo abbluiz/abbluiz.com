@@ -45,6 +45,10 @@ string:
   empty-notice-title: Nada por aqui
   empty-notice-content: "Ei! Volte quando eu tiver algo pra mostrar, por favor."
   and: "e "
+  last-updated: Atualizado Em
+  comment-notice: "Comente este post dando reply "
+  comment-notice-link: nesse toot
+  join-the-discussion-notice: Participe da discussão!
 
 project:
   labb-personal-website:
