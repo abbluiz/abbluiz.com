@@ -5,7 +5,7 @@ date:   2020-04-01 20:00:00 -0400
 last-update:
 categories: security
 author: LABB
-fedi-post-url: 
+fedi-post-url: https://mastodon.social/interact/103926134025179047?type=reply
 ---
 
 All data stored on your digital storage device are stored as bytes. It would be difficult for humans to work with bytes directly. Hell, it would be difficult even for computer programs running on operating systems to work with bytes all the time. That's why there are also file systems. When you delete a file, you're not really deleting them, you're just telling the file system to ignore it so you can reuse that space on the hard drive later. But what if you want to make sure a file, or an entire device, is really erased?
