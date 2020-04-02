@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Shreding your storage device (not an April Fools' joke)"
-date:   2020-04-01 20:15:00 -0400
+date:   2020-04-01 20:00:00 -0400
 last-update:
 categories: security
 author: LABB
