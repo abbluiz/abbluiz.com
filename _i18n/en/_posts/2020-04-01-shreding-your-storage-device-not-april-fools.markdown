@@ -46,9 +46,9 @@ For detailed instructions, you can enter `man shred` to know more.
 sudo shred -vfz /dev/xxx
 {% endhighlight %}
 
-2. Now sit back and relax, because it will take a lot of time to complete. You can watch the progress as the command does its job.
+* Now sit back and relax, because it will take a lot of time to complete. You can watch the progress as the command does its job.
 
-3. Done! After it completes, your device will be ready to be sold, lent, or used again for whatever brand new purpose you have for it. You'll need to format it again, though.
+* After it completes, your device will be ready to be sold, lent, or used again for whatever brand new purpose you have for it. You may need to format it again, though.
 
 Shreding your device using *dd*<a name="dd"></a>
 ===
@@ -61,8 +61,8 @@ For detailed instructions, you can enter `man dd` to know more.
 sudo dd if=/dev/urandom of=/dev/xxx bs=10M status=progress
 {% endhighlight %}
 
-2. Now sit back and relax, because it will take a lot of time to complete. You can watch the progress as the command does its job.
+* Time to relax, because this will also take awhile. You can watch the progress as the command does its job.
 
-3. Done! After it completes, your device will be ready to be sold, lent, or used again for whatever brand new purpose you have for it. You'll need to format it again, though.
+* After it completes, your device will be ready to be used again.
 
 I hope you learned something useful today!
