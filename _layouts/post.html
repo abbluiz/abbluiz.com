@@ -21,7 +21,7 @@ layout: default
         {%- endif -%}
       </time>
       {%- if page.last-update -%}
-      &nbsp;• {%- translate string.last-updated -%}:  
+      &nbsp;• {% translate string.last-updated %}:  
       <time class="dt-modified" datetime="{{ page.last-update | date_to_xmlschema }}" itemprop="dateModified">
         {%- if site.lang == "en" -%}
           {%- assign date_format = "%B %-d, %Y" -%}

@@ -2,15 +2,15 @@
 layout: post
 title:  "Shreding your storage device (not an April Fools' joke)"
 date:   2020-04-01 20:00:00 -0400
-last-update:
+last-update: 2020-04-05 19:30:00 -0400
 categories: security
 author: LABB
 fedi-post-url: https://mastodon.social/interact/103926134025179047?type=reply
 ---
 
-All data stored on your digital storage device are stored as bytes. It would be difficult for humans to work with bytes directly. Hell, it would be difficult even for computer programs running on operating systems to work with bytes all the time. That's why there are also file systems. When you delete a file, you're not really deleting them, you're just telling the file system to ignore it so you can reuse that space on the hard drive later. But what if you want to make sure a file, or an entire device, is really erased?
+All data stored on your digital storage device is stored as bytes. It would be difficult for humans to work with bytes directly. Hell, it would be difficult even for computer programs running on operating systems to work with bytes directly all the time. That's why there are also file systems. When you delete a file, you're not really deleting them, you're just telling the file system to ignore it so you can reuse that space on the hard drive later. But what if you want to make sure a file, or an entire device, is really erased?
 
-To do that you would you would also need to replace every byte to zero, or perhaps random data, including the file system. It's not enough to delete all the files in a pendrive that you want to lend or sell, for example. Someone with the proper knowledge could recreate the file system and recover the files you supposedly deleted.
+To do that you would also need to replace every byte with zero, or perhaps random data, including the file system itself. It's not enough to delete all the files in a pendrive that you want to lend or sell, for example. Someone with the proper knowledge could recreate the file system and recover the files you supposedly deleted.
 
 Using most Linux distributions, and a terminal emulator, we will see how we can properly erase an entire storage device with 2 tools: `shred` and `dd`.
 
@@ -46,9 +46,9 @@ For detailed instructions, you can enter `man shred` to know more.
 sudo shred -vfz /dev/xxx
 {% endhighlight %}
 
-* Now sit back and relax, because it will take a lot of time to complete. You can watch the progress as the command does its job.
+* Now sit back and relax, because this will take a lot of time to complete. You can watch the progress as the command does its job.
 
-* After it completes, your device will be ready to be sold, lent, or used again for whatever brand new purpose you have for it. You may need to format it again, though.
+* After it completes, your device will be ready to be sold, lent, or used again for whatever purpose you have. You may need to recreate the file system and format the device again, though.
 
 Shreding your device using *dd*<a name="dd"></a>
 ===
@@ -63,6 +63,6 @@ sudo dd if=/dev/urandom of=/dev/xxx bs=10M status=progress
 
 * Time to relax, because this will also take awhile. You can watch the progress as the command does its job.
 
-* After it completes, your device will be ready to be used again.
+* After it completes, your device will be ready to be used again (but without any file system).
 
 I hope you learned something useful today!
