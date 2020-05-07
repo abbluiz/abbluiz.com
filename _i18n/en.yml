@@ -52,6 +52,7 @@ string:
   comment-notice: "Comment this post by replying to "
   comment-notice-link: this toot
   join-the-discussion-notice: Join the discussion!
+  post-licensed-under-notice: "This post is licensed under a "
 
 project:
   labb-personal-website:

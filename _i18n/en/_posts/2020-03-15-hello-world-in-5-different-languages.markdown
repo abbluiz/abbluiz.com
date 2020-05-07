@@ -6,6 +6,8 @@ last-update:
 categories: programming
 author: LABB
 fedi-post-url: https://mastodon.social/interact/103829639626749774?type=reply
+license-link: http://creativecommons.org/licenses/by/4.0/
+license-name: Creative Commons Attribution 4.0 International License
 ---
 
 Humans and computers use language to communicate with the world. You can use spoken languages to communicate with other humans, such as Portuguese, or English. Computers also talk with each other using various types of languages. These languages can take the form of protocols, binary signals, among other things. But when humans want to communicate with machines? That's when a programming language comes to place.
