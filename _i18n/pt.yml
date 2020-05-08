@@ -53,7 +53,7 @@ string:
   comment-notice-link: nesse toot
   join-the-discussion-notice: Participe da discussão!
   post-licensed-under-notice: "Este post está licenciado com uma Licença "
-  needs-help-notice: "Ele <strong>precisa de ajuda</strong>."
+  needs-help-notice: "Este projeto <strong>precisa de ajuda</strong>."
 
 project:
   labb-personal-website:
