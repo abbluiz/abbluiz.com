@@ -7,8 +7,8 @@ launch-date: 2020-03-06 18:00:00
 start-date: 2019-06-10 08:53:00
 status: active
 needs-help: false
-website: https://www.abbluiz.com/
-git-url:
+website: https://www.abbluiz.com
+github: https://github.com/abbluiz/abbluiz.com
 license-url:
 license-opensource: true
 license-freesoftware: false

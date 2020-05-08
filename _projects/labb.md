@@ -6,9 +6,9 @@ description: project.labb.desc
 launch-date:
 start-date: 2015-03-03 00:00:00
 status:
-website: https://www.abbluiz.com/
+website: https://www.abbluiz.com
 needs-help: false
-git-url:
+github:
 license-url:
 license-opensource: 
 license-freesoftware:

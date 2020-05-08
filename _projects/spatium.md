@@ -8,7 +8,7 @@ launch-date:
 status: active
 website: 
 needs-help: true
-git-url:
+github:
 license-url:
 license-opensource: false
 license-freesoftware: false

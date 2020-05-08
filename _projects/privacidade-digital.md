@@ -8,7 +8,7 @@ launch-date:
 status: active
 needs-help: true
 website: https://www.privacidade.digital/
-git-url: https://github.com/PrivacidadeDigital/privacidade.digital
+github: https://github.com/PrivacidadeDigital/privacidade.digital
 license-url: https://github.com/PrivacidadeDigital/privacidade.digital/blob/master/LICENSE.txt
 license-opensource: true
 license-freesoftware: false

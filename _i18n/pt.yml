@@ -43,7 +43,7 @@ string:
   license: Licença
   started-in: Iniciado em
   launched-in: Lançado em
-  active-development-notice: Este projeto está em desenvolvimento ativo.
+  active-development-notice: "Este projeto está em desenvolvimento <strong>ativo</strong>."
   founded-by: Criado por
   empty-notice-title: Nada por aqui
   empty-notice-content: "Ei! Volte quando eu tiver algo pra mostrar, por favor."
@@ -53,6 +53,7 @@ string:
   comment-notice-link: nesse toot
   join-the-discussion-notice: Participe da discussão!
   post-licensed-under-notice: "Este post está licenciado com uma Licença "
+  needs-help-notice: "Ele <strong>precisa de ajuda</strong>."
 
 project:
   labb-personal-website:

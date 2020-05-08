@@ -3,6 +3,11 @@
 @import "layout";
 @import "syntax-highlighting";
 
+$fa-font-path: "../fa-webfonts";
+@import "./fontawesome/fontawesome.scss";
+@import "./fontawesome/solid.scss";
+@import "./fontawesome/brands.scss";
+
 /* body,
 .site-title {
     color: white;
