@@ -9,13 +9,15 @@ status:
 website: https://www.abbluiz.com
 needs-help: false
 github:
+mastodon:
 license-url:
 license-opensource: 
 license-freesoftware:
+license-hybrid:
 license-name: 
 founders:
 pinned: false
-hidden: false
+hidden: true
 layout: project
 color1: white
 color2: "#a14040"

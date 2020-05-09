@@ -9,13 +9,15 @@ status: active
 needs-help: false
 website: https://www.abbluiz.com
 github: https://github.com/abbluiz/abbluiz.com
-license-url:
+mastodon:
+license-url: https://www.abbluiz.com/LICENSE.txt
 license-opensource: true
 license-freesoftware: false
-license-name: string.mixed
+license-hybrid: true
+license-name: string.mit
 founders: ["LABB"]
 pinned: false
-hidden: true
+hidden: false
 layout: project
 color1: white
 color2: "#a14040"

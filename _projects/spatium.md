@@ -9,9 +9,11 @@ status: active
 website: 
 needs-help: true
 github:
+mastodon:
 license-url:
 license-opensource: false
 license-freesoftware: false
+license-hybrid: false
 license-name: string.proprietary
 founders: ["LABB", "Galyna", "Oleksandr"]
 pinned: true

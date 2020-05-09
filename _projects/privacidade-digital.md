@@ -7,11 +7,13 @@ start-date: 2019-04-15 11:11:00
 launch-date:
 status: active
 needs-help: true
-website: https://www.privacidade.digital/
+website: https://www.privacidade.digital
+mastodon: https://mastodon.social/@PrivacidadeJa
 github: https://github.com/PrivacidadeDigital/privacidade.digital
 license-url: https://github.com/PrivacidadeDigital/privacidade.digital/blob/master/LICENSE.txt
 license-opensource: true
 license-freesoftware: false
+license-hybrid: true
 license-name: string.cc0
 founders: ["LABB", "Vinicius", "Reginildo"]
 pinned: true
