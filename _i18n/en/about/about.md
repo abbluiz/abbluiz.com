@@ -14,7 +14,7 @@ This website <a name="this-website"></a>
 
 The idea of this website is to provide a simple, responsive, and effective way of showcasing my posts and projects. I've made it using Jekyll and some other tools ([details here]({{ site.baseurl_root }}/portfolio/labb-website/)). 
 
-You can switch the website's language by selecting the `文A` icon (located on the top-right corner), then selecting the desired language.
+You can switch the website's language by selecting the `文A` icon (located on the top-right corner), then selecting the desired language, when available.
 
 Most of the coding part is licensed under the [MIT license]({{ site.baseurl_root }}/LICENSE.txt). However, the content of most posts and some images will be licensed under something else (CC-BY-4.0 by default), so you should look out for that if you want to copy or modify my content (which is totally fine if you follow the license terms).
 
