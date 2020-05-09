@@ -10,7 +10,7 @@ needs-help: true
 website: https://www.privacidade.digital
 mastodon: https://mastodon.social/@PrivacidadeJa
 github: https://github.com/PrivacidadeDigital/privacidade.digital
-license-url: https://github.com/PrivacidadeDigital/privacidade.digital/blob/master/LICENSE.txt
+license-url: https://www.privacidade.digital/LICENSE.txt
 license-opensource: true
 license-freesoftware: false
 license-hybrid: true
