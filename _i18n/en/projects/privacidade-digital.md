@@ -1,0 +1,1 @@
+Details about this project are available only in Portuguese for now.
