@@ -1,1 +1,1 @@
-Details about this project are available only in Portuguese for now.
+Details about this project are available only in Portuguese for now. Please, switch languages using the icon located on the top-right corner.
