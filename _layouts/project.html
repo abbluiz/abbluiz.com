@@ -19,10 +19,10 @@ layout: default
   <div class="post-content">
     
     {%- if page.status == "active" or page.needs-help -%}
-    <p>
-      {% if page.status == "active" %}{%- translate string.active-development-notice -%}{% endif %}
-      {% if page.needs-help %}{%- translate string.needs-help-notice -%}{% endif %}
-    </p>
+    <ul>
+      {% if page.status == "active" %}<li>{%- translate string.active-development-notice -%}</li>{% endif %}
+      {% if page.needs-help %}<li>{%- translate string.needs-help-notice -%}</li>{% endif %}
+    </ul>
     {%- endif -%}
     <table>
       <tr>

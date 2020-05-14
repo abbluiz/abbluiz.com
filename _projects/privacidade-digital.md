@@ -22,3 +22,5 @@ layout: project
 color1: yellow
 color2: green
 ---
+
+{%- translate_file projects/privacidade-digital.md -%}
