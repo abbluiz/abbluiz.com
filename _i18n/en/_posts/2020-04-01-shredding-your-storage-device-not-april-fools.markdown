@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Shreding your storage device (not an April Fools' joke)"
+title:  "Shredding your storage device (not an April Fools' joke)"
 date:   2020-04-01 20:00:00 -0400
 last-update: 2020-07-15 18:00:00 -0400
 categories: security
@@ -17,8 +17,8 @@ To do that you will also need to replace every stored byte with zero, or perhaps
 Using most Linux distributions, and a terminal emulator, we will see how we can properly erase an entire storage device with 2 different tools: `shred` (modern) and `dd` (older, but still reliable). You should choose one of these tools, don't need to use both.
 
 * [Preparing a device to be erased](#preparation)
-* [Shreding a device using the *shred* tool](#shred)
-* [Shreding a device using the *dd* tool](#dd)
+* [Erasing a device using the *shred* tool](#shred)
+* [Erasing a device using the *dd* tool](#dd)
 
 Preparing a device to be erased<a name="preparation"></a>
 ===
@@ -37,12 +37,12 @@ Preparing a device to be erased<a name="preparation"></a>
 
 7. Once again, make sure you have your data backed up AND you have properly determined which device node your device was mapped to on Linux. If you get this wrong, you can delete the wrong data. If you're not sure, send a question replying this post on the Fediverse (link in the end) and do some research.
 
-Shreding a device using the *shred* tool<a name="shred"></a>
+Erasing a device using the *shred* tool<a name="shred"></a>
 ===
 
 For detailed instructions and information about this tool, you can enter `man shred` to know more.
 
-To start shreding, you can use the following command (don't forget to replace `/dev/xxx` with the device node of the disk you want to erase):
+To start shredding, you can use the following command (don't forget to replace `/dev/xxx` with the device node of the disk you want to erase):
 
 {% highlight terminal %}
 sudo shred -vfz /dev/xxx
@@ -52,12 +52,12 @@ Now sit back and relax, because this will take a lot of time to complete. You ca
 
 After it completes, your device will be free from all the data you have used before. You may need to recreate the file system and format the device again, so you or other person can use it.
 
-Shreding a device using the *dd* tool<a name="dd"></a>
+Erasing a device using the *dd* tool<a name="dd"></a>
 ===
 
 For detailed instructions, you can enter `man dd` to know more.
 
-To start shreding, you can use the following command (don't forget to replace `/dev/xxx` with the device node of the disk you want to erase):
+To start shredding, you can use the following command (don't forget to replace `/dev/xxx` with the device node of the disk you want to erase):
 
 {% highlight terminal %}
 sudo dd if=/dev/urandom of=/dev/xxx bs=10M status=progress
