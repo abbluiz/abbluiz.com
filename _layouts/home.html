@@ -63,7 +63,7 @@ layout: default
             {%- assign posts_per_page_float = posts_per_page_integer | times: 1.0 -%}
 
             {%- capture faultyPart -%}
-                page/{{ total_posts | divided_by: posts_per_page_float | ceil }}/index.html
+                p/{{ total_posts | divided_by: posts_per_page_float | ceil }}/index.html
             {%- endcapture -%}
 
             {%- assign correctUrl = correctUrl | remove: faultyPart -%}
@@ -71,7 +71,7 @@ layout: default
         {%- endif -%}
 
         {%- if total_posts > posts_per_page_integer -%}
-                {%- assign correctUrl = correctUrl | append: 'page/2/'-%}
+                {%- assign correctUrl = correctUrl | append: 'p/2/'-%}
         {%- endif -%}
 
         <a href="{{ correctUrl | remove: 'index.html' }}">{%- t string.see-older-posts -%}</a>
