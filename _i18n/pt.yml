@@ -29,7 +29,7 @@ pages:
         desc: Todos os projetos em que estou trabalhando ou já trabalhei.
         img: portfolio-pt.png
     posts:
-        title: Todos os Posts
+        title: Posts
         desc: Todos os posts e artigos que escrevi.
         img: default-pt.png
 
