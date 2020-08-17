@@ -37,8 +37,6 @@ permalink_pt: /portfolio/
     {% endfor %}
 </div> -->
 
-<h3>{% t string.all-projects %}</h3>
-
 {% for project in all_projects %}
     <div class="project-card" style="background-image: linear-gradient(to bottom right, {{ project.color1 }}, {{ project.color2 }});">
         <a href='{{ project.url | relative_url }}'>
