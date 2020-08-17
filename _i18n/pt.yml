@@ -11,10 +11,13 @@ website:
     description: Blog & portfólio de um desenvolvedor.
     language:
         name: Portuguese
-    alternateName: pt
+        alternateName: pt
     territory: BR
     timezone: America/Sao_Paulo
     license: https://creativecommons.org/licenses/by/4.0/deed.pt_BR
+    pagination:
+        posts:
+            title: ':title (página :num)'
 
 pages:
     default-img: default-pt.png
@@ -53,6 +56,7 @@ string:
     founded-by: Criado por
     empty-notice-title: Nada por aqui
     empty-notice-content: "Ei! Volte quando eu tiver algo pra mostrar, por favor."
+    empty-recent-posts-notice: "Não há posts publicados."
     and: "e "
     last-updated: Atualizado Em
     comment-notice: "Comente este post dando reply "
@@ -60,6 +64,12 @@ string:
     join-the-discussion-notice: Participe da discussão!
     post-licensed-under-notice: "Este post está licenciado com uma Licença "
     needs-help-notice: "Este projeto <strong>precisa de ajuda</strong>."
+    older-posts: "Posts mais antigos"
+    newer-posts: "Posts mais novos"
+    page: "página"
+    of: "de"
+    recent-posts: "Posts Recentes"
+    see-older-posts: "Ver posts mais antigos"
 
 project:
     labb-personal-website:

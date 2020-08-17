@@ -7,27 +7,38 @@ description: A developer's blog & portfolio / Blog & portfólio de um desenvolve
 baseurl: ""
 url: "https://www.abbluiz.com"
 rss: rss
-license: site.license
 show_excerpts: true
 include: [".well-known"]
 exclude: ["_config.yml", "Gemfile", "Gemfile.lock", "README.md"]
-timezone: website.timezone
 
 # Build Settings
 
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-feed
-  - jekyll-multiple-languages-plugin
-  - jekyll-sitemap
+    - jekyll-feed
+    - jekyll-multiple-languages-plugin
+    - jekyll-sitemap
+    - jekyll-paginate-v2
 
 # My Collections
 
 collections:
-  projects:
-    output: true
-    permalink: /portfolio/:name/
+    projects:
+        output: true
+        permalink: /portfolio/:name/
+
+# Posts Settings
+
+pagination:
+    enabled: true
+    per_page: 3
+    permalink: '/page/:num/'
+    sort_field: 'date'
+    sort_reverse: true
+    trail:
+        before: 3
+        after: 3
 
 permalink: /posts/:categories/:title/
 
