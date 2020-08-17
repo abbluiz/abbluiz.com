@@ -5,10 +5,11 @@
         {%- assign default_paths = site.pages | map: "path" -%}
         {%- assign page_paths = site.header_pages | default: default_paths -%}
         {%- assign availableLanguages = site.languages -%}
+        {%- assign multiLanguageLayouts = "home, page, project, posts" | split: ", " -%}
 
         <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
-        {%- if availableLanguages.size > 1 and (page.layout == "home" or page.layout == "page" or page.layout == "project") -%}
+        {%- if availableLanguages.size > 1 and multiLanguageLayouts contains page.layout -%}
 
             <nav class="lang-nav">
 
