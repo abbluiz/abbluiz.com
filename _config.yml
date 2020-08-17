@@ -30,6 +30,10 @@ collections:
 
 # Posts Settings
 
+permalink: /posts/:categories/:title/
+
+# Pagination Settings
+
 pagination:
     enabled: true
     per_page: 3
@@ -39,8 +43,6 @@ pagination:
     trail:
         before: 3
         after: 3
-
-permalink: /posts/:categories/:title/
 
 # Supported Languages
 

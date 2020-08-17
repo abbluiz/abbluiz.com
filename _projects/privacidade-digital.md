@@ -5,6 +5,7 @@ title: project.privacidade-digital.name
 description: project.privacidade-digital.desc
 start-date: 2019-04-15 11:11:00
 launch-date:
+last-update: 2020-05-03 00:00:00
 status: active
 needs-help: true
 website: https://www.privacidade.digital
