@@ -20,6 +20,7 @@ plugins:
     - jekyll-multiple-languages-plugin
     - jekyll-sitemap
     - jekyll-paginate-v2
+    - jekyll-minifier
 
 # My Collections
 
