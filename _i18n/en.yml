@@ -32,7 +32,7 @@ pages:
         desc: All the projects I'm working on and have worked on in the past.
         img: portfolio-en.png
     posts:
-        title: All Posts
+        title: Posts
         desc: All posts and articles I've written.
         img: default-en.png
 
