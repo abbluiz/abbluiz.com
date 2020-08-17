@@ -10,6 +10,7 @@ rss: rss
 license: site.license
 show_excerpts: true
 include: [".well-known"]
+exclude: ["_config.yml", "Gemfile", "Gemfile.lock", "README.md"]
 
 # Build Settings
 
