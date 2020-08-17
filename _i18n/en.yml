@@ -1,73 +1,77 @@
 global:
-  english: English
-  portuguese: Português
-  pt: Português
-  en: English
+    english: English
+    portuguese: Português
+    pt: Português
+    en: English
 
-home: 
-  title: "LABB: Personal Website"
+home:
+    title: "LABB: Personal Website"
 
 website:
-  description: A developer's blog & portfolio.
-  language:
-    name: English
+    description: A developer's blog & portfolio.
+    language:
+        name: English
     alternateName: en
-  territory: CA
-  license: https://creativecommons.org/licenses/by/4.0/
+    territory: CA
+    license: https://creativecommons.org/licenses/by/4.0/
 
 pages:
-  default-img: default-en.png
-  home:
-    img: default-en.png
-  about:
-    title: About
-    desc: About me and my personal website.
-    img: about-en.png
-  portfolio:
-    title: Portfolio
-    desc: All the projects I'm working on and have worked on in the past.
-    img: portfolio-en.png
+    default-img: default-en.png
+    home:
+        img: default-en.png
+    about:
+        title: About
+        desc: About me and my personal website.
+        img: about-en.png
+    portfolio:
+        title: Portfolio
+        desc: All the projects I'm working on and have worked on in the past.
+        img: portfolio-en.png
+    posts:
+        title: All Posts
+        desc: All posts and articles I've written.
+        img: default-en.png
 
 string:
-  lang: Language
-  pinned-projects: Pinned Projects
-  other-projects: Other Projects
-  all-projects: All Projects
-  pinned: Pinned
-  subscribe: subscribe
-  subscribe-rss: via RSS 
-  proprietary: Proprietary
-  mixed: Mixed*
-  mit: MIT
-  cc0: CC0
-  license: License
-  started-in: Started in
-  launched-in: Launched in
-  active-development-notice: "This project is in <strong>active</strong> development."
-  founded-by: Created by
-  empty-notice-title: Nothing here
-  empty-notice-content: "Hey, you! Come back when I have something to show, please."
-  and: "and "
-  last-updated: "Last Updated"
-  comment-notice: "Comment this post by replying to "
-  comment-notice-link: this toot
-  join-the-discussion-notice: Join the discussion!
-  post-licensed-under-notice: "This post is licensed under a "
-  needs-help-notice: "This project <strong>needs help</strong>."
+    lang: Language
+    pinned-projects: Pinned Projects
+    other-projects: Other Projects
+    all-projects: All Projects
+    pinned: Pinned
+    subscribe: subscribe
+    subscribe-rss: via RSS
+    proprietary: Proprietary
+    mixed: Mixed*
+    mit: MIT
+    cc0: CC0
+    license: License
+    started-in: Started in
+    launched-in: Launched in
+    active-development-notice: "This project is in <strong>active</strong> development."
+    founded-by: Created by
+    empty-notice-title: Nothing here
+    empty-notice-content: "Hey, you! Come back when I have something to show, please."
+    and: "and "
+    last-updated: "Last Updated"
+    comment-notice: "Comment this post by replying to "
+    comment-notice-link: this toot
+    join-the-discussion-notice: Join the discussion!
+    post-licensed-under-notice: "This post is licensed under a "
+    needs-help-notice: "This project <strong>needs help</strong>."
 
 project:
-  labb-personal-website:
-    name: "LABB: Personal Website"
-    desc: " "
-  privacidade-digital:
-    name: Privacidade Digital
-    desc: " "
-  foedb:
-    name: foe db
-    desc: " "
-  spatium:
-    name: Spatium
-    desc: " "
-  labb:
-    name: LABB
-    desc: " "
+    labb-personal-website:
+        name: "LABB: Personal Website"
+        desc: " "
+    privacidade-digital:
+        name: Privacidade Digital
+        desc: " "
+    foedb:
+        name: foe db
+        desc: " "
+    spatium:
+        name: Spatium
+        desc: " "
+    labb:
+        name: LABB
+        desc: " "

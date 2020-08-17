@@ -1,73 +1,78 @@
 global:
-  english: English
-  portuguese: Português
-  pt: Português
-  en: English
+    english: English
+    portuguese: Português
+    pt: Português
+    en: English
 
 home: 
-  title: "LABB: Site Pessoal"
+    title: "LABB: Site Pessoal"
 
 website:
-  description: Blog & portfólio de um desenvolvedor.
-  language:
-    name: Portuguese
+    description: Blog & portfólio de um desenvolvedor.
+    language:
+        name: Portuguese
     alternateName: pt
-  territory: BR
-  license: https://creativecommons.org/licenses/by/4.0/deed.pt_BR
+    territory: BR
+    license: https://creativecommons.org/licenses/by/4.0/deed.pt_BR
 
 pages:
-  default-img: default-pt.png
-  home:
-    img: default-pt.png
-  about:
-    title: Sobre
-    desc: Sobre mim e meu site pessoal.
-    img: about-pt.png
-  portfolio:
-    title: Portfólio
-    desc: Todos os projetos em que estou trabalhando e em que já trabalhei.
-    img: portfolio-pt.png
+    default-img: default-pt.png
+    home:
+        img: default-pt.png
+    about:
+        title: Sobre
+        desc: Sobre mim e meu site pessoal.
+        img: about-pt.png
+    portfolio:
+        title: Portfólio
+        desc: Todos os projetos em que estou trabalhando ou já trabalhei.
+        img: portfolio-pt.png
+    posts:
+        title: Todos os Posts
+        desc: Todos os posts e artigos que escrevi.
+        img: default-pt.png
+    
 
 string:
-  lang: Língua
-  pinned-projects: Projetos Fixados
-  other-projects: Outros Projetos
-  all-projects: Todos os Projetos
-  pinned: Fixados
-  subscribe: inscreva-se
-  subscribe-rss: por RSS 
-  proprietary: Proprietária
-  mixed: Mista*
-  mit: MIT
-  cc0: CC0
-  license: Licença
-  started-in: Iniciado em
-  launched-in: Lançado em
-  active-development-notice: "Este projeto está em desenvolvimento <strong>ativo</strong>."
-  founded-by: Criado por
-  empty-notice-title: Nada por aqui
-  empty-notice-content: "Ei! Volte quando eu tiver algo pra mostrar, por favor."
-  and: "e "
-  last-updated: Atualizado Em
-  comment-notice: "Comente este post dando reply "
-  comment-notice-link: nesse toot
-  join-the-discussion-notice: Participe da discussão!
-  post-licensed-under-notice: "Este post está licenciado com uma Licença "
-  needs-help-notice: "Este projeto <strong>precisa de ajuda</strong>."
+    lang: Língua
+    pinned-projects: Projetos Fixados
+    other-projects: Outros Projetos
+    all-projects: Todos os Projetos
+    pinned: Fixados
+    subscribe: inscreva-se
+    subscribe-rss: por RSS 
+    proprietary: Proprietária
+    mixed: Mista*
+    mit: MIT
+    cc0: CC0
+    license: Licença
+    started-in: Iniciado em
+    launched-in: Lançado em
+    active-development-notice: "Este projeto está em desenvolvimento <strong>ativo</strong>."
+    founded-by: Criado por
+    empty-notice-title: Nada por aqui
+    empty-notice-content: "Ei! Volte quando eu tiver algo pra mostrar, por favor."
+    and: "e "
+    last-updated: Atualizado Em
+    comment-notice: "Comente este post dando reply "
+    comment-notice-link: nesse toot
+    join-the-discussion-notice: Participe da discussão!
+    post-licensed-under-notice: "Este post está licenciado com uma Licença "
+    needs-help-notice: "Este projeto <strong>precisa de ajuda</strong>."
 
 project:
-  labb-personal-website:
-    name: "LABB: Site Pessoal"
-    desc: " "
-  privacidade-digital:
-    name: Privacidade Digital
-    desc: " "
-  foedb:
-    name: foe db
-    desc: " "
-  spatium:
-    name: Spatium
-    desc: " "
-  labb:
-    name: LABB
-    desc: " "
+    labb-personal-website:
+        name: "LABB: Site Pessoal"
+        desc: " "
+    privacidade-digital:
+        name: Privacidade Digital
+        desc: " "
+    foedb:
+        name: foe db
+        desc: " "
+    spatium:
+        name: Spatium
+        desc: " "
+    labb:
+        name: LABB
+        desc: " "
