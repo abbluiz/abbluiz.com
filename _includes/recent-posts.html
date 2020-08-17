@@ -1,0 +1,71 @@
+{%- if site.posts.size > 0 -%}
+
+    <h2 class="post-list-heading">{%- t string.recent-posts -%}</h2>
+
+    <ul class="post-list">
+
+        {%- for post in site.posts limit:3 -%}
+
+            <li>
+
+                {%- if site.lang == "en" -%}
+                    {%- assign date_format = "%B %-d, %Y" -%}
+                {%- elsif site.lang != "pt" -%}
+                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                {%- endif -%}
+
+                <span class="post-meta">
+
+                    {%- if site.lang == "pt" -%}
+
+                        {%- assign m = post.date | date: "%-m" -%}
+                        {{ post.date | date: "%-d de " }}{% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Mar&ccedil;o{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %}{{ post.date | date: " de %Y" }}
+
+                    {%- else -%}
+                        {{ post.date | date: date_format }}
+                    {%- endif -%}
+
+                </span>
+
+                <h3>
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                        {{ post.title | escape }}
+                    </a>
+                </h3>
+
+            </li>
+
+        {%- endfor -%}
+
+    </ul>
+
+    {%- assign total_posts = site.posts.size -%}
+    {%- assign posts_per_page_integer = site.pagination.per_page -%}
+
+    {%- capture correctUrl -%}
+        {%- tl posts {{ site.lang }} -%}
+    {%- endcapture -%}
+
+    {%- if site.lang == "en" -%}
+
+        {%- assign posts_per_page_float = posts_per_page_integer | times: 1.0 -%}
+
+        {%- capture faultyPart -%}
+            p/{{ total_posts | divided_by: posts_per_page_float | ceil }}/index.html
+        {%- endcapture -%}
+
+        {%- assign correctUrl = correctUrl | remove: faultyPart -%}
+
+    {%- endif -%}
+
+    {%- if total_posts > posts_per_page_integer -%}
+            {%- assign correctUrl = correctUrl | append: 'p/2/'-%}
+    {%- endif -%}
+
+    <a href="{{ correctUrl | remove: 'index.html' }}">{%- t string.see-older-posts -%}</a>
+
+{%- else -%}
+
+    <p>{%- t string.empty-recent-posts-notice -%}</p>
+
+{%- endif -%}
