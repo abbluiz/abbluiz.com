@@ -4,7 +4,7 @@ global:
     pt: Português
     en: English
 
-home: 
+home:
     title: "LABB: Site Pessoal"
 
 website:
@@ -13,6 +13,7 @@ website:
         name: Portuguese
     alternateName: pt
     territory: BR
+    timezone: America/Sao_Paulo
     license: https://creativecommons.org/licenses/by/4.0/deed.pt_BR
 
 pages:
@@ -31,7 +32,7 @@ pages:
         title: Todos os Posts
         desc: Todos os posts e artigos que escrevi.
         img: default-pt.png
-    
+
 
 string:
     lang: Língua
@@ -40,7 +41,7 @@ string:
     all-projects: Todos os Projetos
     pinned: Fixados
     subscribe: inscreva-se
-    subscribe-rss: por RSS 
+    subscribe-rss: por RSS
     proprietary: Proprietária
     mixed: Mista*
     mit: MIT

@@ -13,6 +13,7 @@ website:
         name: English
     alternateName: en
     territory: CA
+    timezone: America/Toronto
     license: https://creativecommons.org/licenses/by/4.0/
 
 pages:
