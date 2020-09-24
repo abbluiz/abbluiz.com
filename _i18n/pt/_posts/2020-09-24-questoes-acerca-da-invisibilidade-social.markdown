@@ -10,7 +10,7 @@ license-link: http://creativecommons.org/licenses/by/4.0/
 license-name: Creative Commons Attribution 4.0 International License
 ---
 
-Originalmente escrito no dia 23 de Fevereiro de 2014.
+(Artigo argumentativo sobre moradores de rua, originalmente escrito no dia 23 de Fevereiro de 2014.)
 
 Parece existir um forte sentimento da sociedade referente à pobreza exposta nas ruas. Um incômodo, um constrangimento, no qual têm seu ápice em momentos como a entrega de uns trocados às pessoas que rondam pelas ruas, que fazem o que podem para sobreviver.
 
