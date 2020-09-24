@@ -59,10 +59,9 @@
     {%- endif -%}
 
     {%- if total_posts > posts_per_page_integer -%}
-            {%- assign correctUrl = correctUrl | append: 'p/2/'-%}
+        {%- assign correctUrl = correctUrl | append: 'p/2/'-%}
+        <a href="{{ correctUrl | remove: 'index.html' }}">{%- t string.see-older-posts -%}</a>
     {%- endif -%}
-
-    <a href="{{ correctUrl | remove: 'index.html' }}">{%- t string.see-older-posts -%}</a>
 
 {%- else -%}
 
