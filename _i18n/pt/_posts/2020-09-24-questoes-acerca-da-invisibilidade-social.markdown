@@ -16,6 +16,6 @@ Parece existir um forte sentimento da sociedade referente à pobreza exposta nas
 
 Essas pessoas estão por aí desse jeito por uma soma de diversos fatores, dos quais muitos se relacionam diretamente à desigualdade social, proveniente de uma tentativa frustrada do ser humano em construir uma sociedade justa.
 
-Agora, os resultados dessa tentativa somados com o desejo irracional do poder ao longo da História orginaram um sistema deficiente de sociedade. Aqueles que são favorecidos desviam os desfavorecidos de sua atenção, afinal eles representam a dificiência das nações.
+Agora, os resultados dessa tentativa somados com o desejo irracional do poder ao longo da História orginaram um sistema deficiente de sociedade. Aqueles que são favorecidos desviam os desfavorecidos de sua atenção, afinal eles representam a deficiência das nações.
 
 Quando eles ganham atenção? No momento em que rompem de um estado socialmente aceito e passam para outro não aceito: o de criminosos. A partir desse ponto são definidos estereótipos de marginais e bandidos. O que aconteceria se, ao invés de definir tais estereótipos agora, as pessoas tentassem ajudá-los quando ignorados pela maioria? Acredito que a realidade seria bem diferente da atual.
