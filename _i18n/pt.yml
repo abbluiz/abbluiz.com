@@ -69,7 +69,7 @@ string:
     page: "página"
     of: "de"
     recent-posts: "Posts Recentes"
-    see-older-posts: "Ver posts mais antigos"
+    see-older-posts: "Ver mais posts"
 
 project:
     labb-personal-website:
