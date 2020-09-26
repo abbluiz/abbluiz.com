@@ -58,6 +58,30 @@
                                 <a href='{{ finalProjectUrl }}' class="lang-link">{%- t global.{{ language }} -%}</a>
                             {%- endif -%}
 
+                        {%- elsif page.namespace == "posts" -%}
+
+                            {%- if language != "en" -%}
+                                {%- assign finalUrl = "/" | append: language | append: "/posts" -%}
+                            {%- else -%}
+                                {%- assign finalUrl = "/" | append: "posts" -%}
+                            {%- endif -%}
+
+                            {%- capture fullUrl -%}
+
+                                {%- if site.lang != "en" -%}
+                                    {{ "/" | append: site.lang | append: "/posts" }}
+                                {%- else -%}
+                                    {{ "/posts" }}
+                                {%- endif -%}
+
+                            {%- endcapture -%}
+
+                            {%- if fullUrl == finalUrl -%}
+                                <a class="lang-link lang-link-selected">{%- t global.{{ language }} -%}</a>
+                            {%- else -%}
+                                <a href="{{ finalUrl }}" class="lang-link">{%- t global.{{ language }} -%}</a>
+                            {%- endif -%}
+
                         {%- else -%}
 
                             {%- capture translatedUrl -%}
