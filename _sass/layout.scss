@@ -101,10 +101,11 @@
 
     .lang-link {
 
-        color: $text-color;
+        color: lighten($labb-color, 15%);
         line-height: $base-line-height;
         display: block;
         padding: 5px 10px;
+        font-weight: bold;
 
         &:not(:last-child) {
             margin-right: 0;
@@ -118,6 +119,19 @@
         }
 
         margin-left: 20px;
+
+    }
+
+    .lang-link-selected {
+
+        color: $text-color;
+
+        &:hover {
+
+            color: $text-color;
+            text-decoration: none;
+
+        }
 
     }
 
