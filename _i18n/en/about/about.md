@@ -16,7 +16,7 @@ Hope to see you soon!
 This website <a name="this-website"></a>
 ===
 
-I wanted to have this website to display my posts and projects in a simple, responsive, and content-focused way. I've made it using static website generator Jekyll with some other tools, including the Minima theme, Font Awesome icons, Liquid template language, HTML, CSS/SCSS, ([and more]({{ site.baseurl_root }}/portfolio/labb-website/)). 
+I wanted to have this website to display my posts and projects in a simple, responsive, and content-focused way. I've made it using static website generator Jekyll with some other tools, including the Minima theme, Font Awesome icons, Liquid template language, HTML, CSS/SCSS, [and more]({{ site.baseurl_root }}/portfolio/labb-website/). 
 
 You can switch the website's language by selecting the `文A` icon (located on the top-right corner), then selecting the desired language, when available. I love to learn new languages, so when I feel comfortable enough with a new one I'll be adding more of them to the website!
 

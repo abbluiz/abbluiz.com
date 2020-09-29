@@ -16,7 +16,7 @@ Espero te ver em breve!
 Este site <a name="este-site"></a>
 ===
 
-Eu queria ter este site pra mostrar meus posts e projetos de uma forma simples, responsiva, e focada em conteúdo. Eu o fiz utilizando o gerador de sites estáticos Jekyll com algumas outras ferramentas, incluindo o tema Minima, ícones da Font Awesome, Liquid, HTML, CSS/SCSS, ([e mais]({{ site.baseurl_root }}/pt/portfolio/labb-website/)).
+Eu queria ter este site pra mostrar meus posts e projetos de uma forma simples, responsiva, e focada em conteúdo. Eu o fiz utilizando o gerador de sites estáticos Jekyll com algumas outras ferramentas, incluindo o tema Minima, ícones da Font Awesome, Liquid, HTML, CSS/SCSS, [e mais]({{ site.baseurl_root }}/pt/portfolio/labb-website/).
 
 Sempre que disponível você pode trocar a língua do site, clicando no ícone `文A` (localizado no canto superior direito), e selecionando a língua que deseja. Eu amo aprender novas línguas, então quando ficar mais confortável com alguma que estiver aprendendo, irei incluí-la aqui no site!
 
