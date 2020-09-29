@@ -14,7 +14,7 @@ My own personal blog & portfolio. It's in continuous development!
 
 ### About the website
 
-I wanted to have this website to display my posts and projects in a simple, responsive, and content-focused way. I've made it using static website generator Jekyll with some other tools, including the Minima theme, Font Awesome icons, Liquid template language, HTML, CSS/Sass, [and more](https://www.abbluiz.com/portfolio/labb-website). 
+I wanted to have this website to display my posts and projects in a simple, responsive, and content-focused way. I've made it using static website generator Jekyll with some other tools, including the Minima theme, Font Awesome icons, Liquid template language, HTML, CSS/SCSS, [and more](https://www.abbluiz.com/portfolio/labb-website). 
 
 You can switch the website's language by selecting the `文A` icon (located on the top-right corner), then selecting the desired language, when available. I love to learn new languages, so when I feel comfortable enough with a new one I'll be adding more of them to the website!
 
@@ -32,7 +32,7 @@ Meu próprio blog & portfólio. Está em desenvolvimento contínuo!
 
 ### Sobre o site
 
-Eu queria ter este site pra mostrar meus posts e projetos de uma forma simples, responsiva, e focada em conteúdo. Eu o fiz utilizando o gerador de sites estáticos Jekyll com algumas outras ferramentas, incluindo o tema Minima, ícones da Font Awesome, linguagem de template Liquid, HTML, CSS/Sass, [e mais](https://www.abbluiz.com/portfolio/labb-website). 
+Eu queria ter este site pra mostrar meus posts e projetos de uma forma simples, responsiva, e focada em conteúdo. Eu o fiz utilizando o gerador de sites estáticos Jekyll com algumas outras ferramentas, incluindo o tema Minima, ícones da Font Awesome, linguagem de template Liquid, HTML, CSS/SCSS, [e mais](https://www.abbluiz.com/portfolio/labb-website). 
 
 Sempre que disponível você pode trocar a língua do site, clicando no ícone `文A` (localizado no canto superior direito), e selecionando a língua que deseja. Eu amo aprender novas línguas, então quando ficar mais confortável com alguma que estiver aprendendo, irei incluí-la aqui no site!
 
