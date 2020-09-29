@@ -96,12 +96,12 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
 
-    color: $brand-color;
+    color: lighten($brand-color, 7.5%);
     text-decoration: none;
     outline: none;
 
     &:visited {
-        color: darken($brand-color, 5%);
+        color: lighten($brand-color, 7.5%);
     }
 
     &:hover {
