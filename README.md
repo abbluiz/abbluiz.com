@@ -2,7 +2,7 @@
 
 ### Description
 
-My own personal blog & portfolio. It's in continuous development!
+My personal blog & portfolio. The project is in continuous development!
 
 [Click to see more details about the project](https://www.abbluiz.com/portfolio/labb-website).
 
@@ -20,7 +20,7 @@ In certain situations, there might be other licenses being used in place of the 
 
 ### Descrição
 
-Meu próprio blog & portfólio. Está em desenvolvimento contínuo!
+Meu blog & portfólio pessoais. O projeto está em desenvolvimento contínuo!
 
 [Clique para ver mais detalhes sobre o projeto](https://www.abbluiz.com/pt/portfolio/labb-website).
 
