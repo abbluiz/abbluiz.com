@@ -67,8 +67,8 @@ string:
     newer-posts: "Newer posts"
     page: "page"
     of: "of"
-    recent-posts: "Recent Posts"
-    see-older-posts: "See more posts"
+    recent-posts: "Recent Posts in English"
+    see-older-posts: "See more"
 
 project:
     labb-personal-website:

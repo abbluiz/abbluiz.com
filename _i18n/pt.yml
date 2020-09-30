@@ -68,8 +68,8 @@ string:
     newer-posts: "Posts mais novos"
     page: "página"
     of: "de"
-    recent-posts: "Posts Recentes"
-    see-older-posts: "Ver mais posts"
+    recent-posts: "Posts Recentes em Português"
+    see-older-posts: "Ver mais"
 
 project:
     labb-personal-website:
