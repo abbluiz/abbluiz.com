@@ -28,6 +28,9 @@ collections:
     projects:
         output: true
         permalink: /portfolio/:name/
+    skills:
+        output: true
+        permalink: /skills/:name/
 
 # Posts Settings
 
