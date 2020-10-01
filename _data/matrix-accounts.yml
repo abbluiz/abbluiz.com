@@ -1,2 +1,3 @@
 - username: labb
   homeserver: matrix.org
+  display: true

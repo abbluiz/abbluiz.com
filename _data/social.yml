@@ -1,17 +1,22 @@
 telegram:
     username: abbluiz
+    display: false
 
 github:
     username: abbluiz
+    display: true
 
 gitlab:
     username: abbluiz
+    display: true
 
 linkedin:
     username: abbluiz
+    display: false
 
 keybase:
     username: abbluiz
+    display: true
 
 social:
     links:

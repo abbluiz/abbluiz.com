@@ -1,5 +1,7 @@
 - username: abbluiz
   instance: mastodon.social
+  display: true
 
 - username: abbluiz
   instance: social.privacytools.io
+  display: false
