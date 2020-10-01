@@ -131,9 +131,9 @@
                         {%- if my_page.title and my_page.autogen == nil -%}
 
                             {%- if page.namespace == my_page.namespace -%}
-                                <a class="page-link page-link-selected">{%- t my_page.title -%}</a>
+                                <a class="page-link page-link-selected">{%- if my_page.namespace == "posts" -%}Posts{%- else -%}{%- t my_page.title -%}{%- endif -%}</a>
                             {%- else -%}
-                                <a class="page-link" href="{{ my_page.url | relative_url | remove: 'index.html' }}">{%- t my_page.title -%}</a>
+                                <a class="page-link" href="{{ my_page.url | relative_url | remove: 'index.html' }}">{%- if my_page.namespace == "posts" -%}Posts{%- else -%}{%- t my_page.title -%}{%- endif -%}</a>
                             {%- endif -%}
 
                         {%- endif -%}
