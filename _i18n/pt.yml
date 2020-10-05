@@ -87,3 +87,17 @@ project:
     labb:
         name: LABB
         desc: " "
+
+skills:
+    c-lang:
+        short-name: "C"
+        name: "C"
+        desc: "A linguagem de programção C é uma linguagem procedural e muito utilizada para projetos com níveis de abstração baixos ou médios."
+    java-lang:
+        short-name: "Java"
+        name: "Java"
+        desc: "A linguagem de programção Java é uma linguagem orientada à objetos usada para vários tipos de projetos e plataformas."
+    javascript-lang:
+        short-name: "JavaScript"
+        name: "JavaScript"
+        desc: "A linguagem de programação JavaScript é muito popular, e comumente utilizada com projetos web cujos níveis de abstração são altos."

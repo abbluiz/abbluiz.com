@@ -86,3 +86,17 @@ project:
     labb:
         name: LABB
         desc: " "
+
+skills:
+    c-lang:
+        short-name: "C"
+        name: "C"
+        desc: "The C programming language is a procedural language and mostly used for projects with low or middle abstraction levels."
+    java-lang:
+        short-name: "Java"
+        name: "Java"
+        desc: "The Java programming language is an object-oriented language used for several different purposes and platforms."
+    javascript-lang:
+        short-name: "JavaScript"
+        name: "JavaScript"
+        desc: "The JavaScript programming language is very popular, and commonly used with web projects with high abstraction levels."
