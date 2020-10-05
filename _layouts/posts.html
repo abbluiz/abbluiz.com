@@ -6,6 +6,8 @@ layout: default
 
     <h1 class="post-list-heading">{% t pages.posts.title %} ({% t string.page %} {{ paginator.page }} {% t string.of %} {{ paginator.total_pages }})</h1>
 
+    <p>{%- t pages.posts.desc -%}</p>
+
     <ul class="post-list">
 
         {%- for post in paginator.posts -%}

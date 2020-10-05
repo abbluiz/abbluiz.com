@@ -33,7 +33,7 @@ pages:
         img: portfolio-en.png
     posts:
         title: Posts
-        desc: All posts and articles I've written.
+        desc: All posts and articles I've written in English.
         img: default-en.png
 
 string:
