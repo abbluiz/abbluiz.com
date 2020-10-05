@@ -32,7 +32,7 @@ pages:
         desc: All the projects I'm working on and have worked on in the past.
         img: portfolio-en.png
     posts:
-        title: Posts in English
+        title: Posts
         desc: All posts and articles I've written.
         img: default-en.png
 
@@ -67,7 +67,7 @@ string:
     newer-posts: "Newer posts"
     page: "page"
     of: "of"
-    recent-posts: "Recent Posts in English"
+    recent-posts: "Recent Posts"
     see-older-posts: "See more"
 
 project:
