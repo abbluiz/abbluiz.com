@@ -38,6 +38,16 @@ $fa-font-path: "../fa-webfonts";
 
     border-radius: 32px;
 
+    &:hover {
+
+        color: white;
+
+        .chip-icon {
+            fill: white;
+        }
+
+    }
+
 }
 
 .chip-icon {

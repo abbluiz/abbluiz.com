@@ -1,4 +1,5 @@
 ---
+layout: skill
 unique-name: javascript-lang
 type: programming-language
 title: skills.javascript-lang.name

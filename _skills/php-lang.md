@@ -1,4 +1,5 @@
 ---
+layout: skill
 unique-name: php-lang
 type: programming-language
 title: skills.php-lang.name

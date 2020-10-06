@@ -1,4 +1,5 @@
 ---
+layout: skill
 unique-name: c-lang
 type: programming-language
 title: skills.c-lang.name
