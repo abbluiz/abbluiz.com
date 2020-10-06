@@ -35,6 +35,10 @@ pages:
         title: Posts
         desc: Todos os posts e artigos que eu escrevi em Português.
         img: default-pt.png
+    skills:
+        title: Habilidades
+        desc: Todas as habilidades que eu estou aprendendo e utilizando.
+        img: default-pt.png
 
 
 string:
@@ -91,13 +95,17 @@ project:
 skills:
     c-lang:
         short-name: "C"
-        name: "C"
+        name: "Linguagem de Programação C"
         desc: "A linguagem de programção C é uma linguagem procedural e muito utilizada para projetos com níveis de abstração baixos ou médios."
     java-lang:
         short-name: "Java"
-        name: "Java"
+        name: "Linguagem de Programação Java"
         desc: "A linguagem de programção Java é uma linguagem orientada à objetos usada para vários tipos de projetos e plataformas."
     javascript-lang:
         short-name: "JavaScript"
-        name: "JavaScript"
+        name: "Linguagem de Programação JavaScript"
         desc: "A linguagem de programação JavaScript é muito popular, e comumente utilizada com projetos web cujos níveis de abstração são altos."
+    php-lang:
+        short-name: "PHP"
+        name: "Linguagem de Programação PHP"
+        desc: "A linguagem de programção PHP é uma linguage comum em backends web, muito utilizada em stacks LAMP (Linux, Apache, MySQL e PHP), e com frameworks como Laravel."

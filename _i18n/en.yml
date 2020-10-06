@@ -35,6 +35,10 @@ pages:
         title: Posts
         desc: All posts and articles I've written in English.
         img: default-en.png
+    skills:
+        title: Skills
+        desc: All skills I have been learning and using.
+        img: default-en.png
 
 string:
     lang: "Language"
@@ -90,13 +94,17 @@ project:
 skills:
     c-lang:
         short-name: "C"
-        name: "C"
+        name: "C Programming Language"
         desc: "The C programming language is a procedural language and mostly used for projects with low or middle abstraction levels."
     java-lang:
         short-name: "Java"
-        name: "Java"
+        name: "Java Programming Language"
         desc: "The Java programming language is an object-oriented language used for several different purposes and platforms."
     javascript-lang:
         short-name: "JavaScript"
-        name: "JavaScript"
+        name: "JavaScript Programming Language"
         desc: "The JavaScript programming language is very popular, and commonly used with web projects with high abstraction levels."
+    php-lang:
+        short-name: "PHP"
+        name: "PHP Programming Language"
+        desc: "The PHP programming language is a common web backend language, most commonly used in a LAMP stack (Linux, Apache, MySQL and PHP), and with frameworks like Laravel."

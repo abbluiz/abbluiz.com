@@ -1,7 +1,7 @@
 ---
 unique-name: php-lang
 type: programming-language
-title: skill.php-lang.name
-description: skill.php-lang.desc
+title: skills.php-lang.name
+description: skills.php-lang.desc
 proficiency-level: 3
 ---

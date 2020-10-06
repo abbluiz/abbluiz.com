@@ -1,7 +1,7 @@
 ---
 unique-name: javascript-lang
 type: programming-language
-title: skill.javascript-lang.name
-description: skill.javascript-lang.desc
+title: skills.javascript-lang.name
+description: skills.javascript-lang.desc
 proficiency-level: 3
 ---
