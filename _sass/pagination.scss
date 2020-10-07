@@ -1,0 +1,30 @@
+/* Pagination */
+
+.selected-page {
+
+    color: $text-color;
+
+    &:hover {
+
+        color: $text-color;
+        text-decoration: none;
+
+    }
+
+}
+
+.pagination-list {
+
+    list-style: none;
+
+    li {
+        display: inline;
+        margin-right: 15px;
+    }
+
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+
+}

@@ -1,66 +1,24 @@
+/**
+ * Modified Minima Theme
+ */
 @import "_vars";
 @import "base";
-@import "layout";
+@import "header";
+@import "footer";
+@import "content";
+@import "pagination";
 @import "syntax-highlighting";
 
+/**
+ * Custom Styles
+ */
+@import "icons";
+@import "skills";
+
+/**
+ * Font Awesome
+ */
 $fa-font-path: "../fa-webfonts";
 @import "./fontawesome/fontawesome.scss";
 @import "./fontawesome/solid.scss";
 @import "./fontawesome/brands.scss";
-
-*::-moz-selection,
-*::selection {
-
-    color: $labb-color;
-    background: white;
-
-}
-
-.chip {
-
-    display: inline-block;
-
-    height: 48px;
-    line-height: 52px;
-
-    color: black;
-    background-color: $labb-color;
-    font-size: 16px;
-
-    padding: 0 12px;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-
-    cursor: pointer;
-
-    font-size: 13px;
-    font-weight: bold;
-
-    border-radius: 32px;
-
-    &:hover {
-
-        color: white;
-
-        .chip-icon {
-            fill: white;
-        }
-
-    }
-
-}
-
-.chip-icon {
-
-    fill: black;
-
-    float: left;
-    width: 40px;
-    height: 40px;
-
-    margin: 0 8px 0 -12px;
-    border-radius: 50%;
-
-    padding: 4px;
-
-}

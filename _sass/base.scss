@@ -123,7 +123,6 @@ a {
 
 }
 
-
 /**
  * Blockquotes
  */
@@ -209,49 +208,6 @@ pre {
 }
 
 /**
- * Icons
- */
-
-.svg-icon {
-
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    fill: #{$grey-color};
-    padding-right: 5px;
-    vertical-align: text-top;
-
-}
-
-.social-icon {
-
-    & {
-
-        width: 32px;
-        height: 32px;
-        display: inline-block;
-        fill: #{$grey-color};
-        padding-left: 5px;
-        padding-right: 5px;
-        vertical-align: text-top;
-
-    }
-
-    &:hover {
-        fill: #{$grey-color-light}
-    }
-
-}
-
-.social-media-list {
-
-  li + li {
-    padding-top: 5px;
-  }
-
-}
-
-/**
  * Tables
  */
 table {
@@ -282,5 +238,16 @@ table {
     td {
         border: 0;
     }
+
+}
+
+/**
+ * Text Selection
+ */
+*::-moz-selection,
+*::selection {
+
+    color: $labb-color;
+    background: white;
 
 }
