@@ -4,9 +4,9 @@ layout: default
 
 {%- if site.posts.size > 0 -%}
 
-    <h1 class="post-list-heading">{% t pages.posts.title %} ({% t string.page %} {{ paginator.page }} {% t string.of %} {{ paginator.total_pages }})</h1>
+    <h1 class="post-header post-title">{% t pages.posts.title %} ({% t string.page %} {{ paginator.page }} {% t string.of %} {{ paginator.total_pages }})</h1>
 
-    <p>{%- t pages.posts.desc -%}</p>
+    <p class="page-desc">{%- t pages.posts.desc -%}</p>
 
     <ul class="post-list">
 

@@ -26,4 +26,4 @@ Em algumas situações, pode ser que outras licenças sejam utilizadas no lugar 
 
 {% assign m = site.time | date: "%-m" %}
 
-Este site foi modificado pela última vez em: {{ site.time | date: "%-d de " }}{% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Mar&ccedil;o{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %}{{ site.time | date: " de %Y" }}.
+Site modificado pela última vez em: {{ site.time | date: "%-d de " }}{% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Mar&ccedil;o{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %}{{ site.time | date: " de %Y" }}.

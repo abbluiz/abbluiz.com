@@ -33,11 +33,11 @@ pages:
         img: portfolio-en.png
     posts:
         title: Posts
-        desc: All posts and articles I've written in English.
+        desc: All posts and articles I've written in English. More recently published posts appear first.
         img: default-en.png
     skills:
         title: Skills
-        desc: All skills I have been learning and using.
+        desc: "All the skills I've been acquiring and/or using in projects. More recently updated skills appear first."
         img: default-en.png
 
 string:

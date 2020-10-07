@@ -33,11 +33,11 @@ pages:
         img: portfolio-pt.png
     posts:
         title: Posts
-        desc: Todos os posts e artigos que eu escrevi em Português.
+        desc: Todos os posts e artigos que eu escrevi em Português. Posts publicados mais recentemente aparecem primeiro.
         img: default-pt.png
     skills:
         title: Habilidades
-        desc: Todas as habilidades que eu estou aprendendo e utilizando.
+        desc: "Todas as habilidades que venho adquirindo e/ou utilizando em projetos. Habilidates atualizadas mais recentemente aparecem primeiro."
         img: default-pt.png
 
 

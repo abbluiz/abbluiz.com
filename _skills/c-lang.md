@@ -5,4 +5,5 @@ type: programming-language
 title: skills.c-lang.name
 description: skills.c-lang.desc
 proficiency-level: 3
+last-update: 2020-10-09 9:00:00 -0400
 ---

@@ -10,7 +10,9 @@ permalink: /skills/
 permalink_pt: /skills/
 ---
 
-{% assign all_skills = site.skills %}
+<p class="page-desc">{%- t pages.skills.desc -%}</p>
+
+{% assign all_skills = site.skills | sort: "last-update" | reverse %}
 
 {%- for skill in all_skills -%}
     <a href="{{ skill.url | relative_url }}">
