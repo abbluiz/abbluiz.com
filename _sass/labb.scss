@@ -1,5 +1,5 @@
 /**
- * Modified Minima Theme
+ * Main Theme (Based on Minima)
  */
 @import "_vars";
 @import "base";
@@ -7,12 +7,16 @@
 @import "footer";
 @import "content";
 @import "pagination";
+@import "icons";
+
+/**
+ * Syntax Highlighting
+ */
 @import "syntax-highlighting";
 
 /**
- * Custom Styles
+ * Custom Pages
  */
-@import "icons";
 @import "skills";
 
 /**
