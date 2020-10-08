@@ -92,38 +92,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
- * Links
- */
-a {
-
-    color: lighten($brand-color, 7.5%);
-    text-decoration: none;
-    outline: none;
-
-    &:visited {
-        color: lighten($brand-color, 7.5%);
-    }
-
-    &:hover {
-
-        color: $text-color;
-        text-decoration: none;
-
-    }
-
-    .social-media-list &:hover {
-
-        text-decoration: none;
-
-        .username {
-            text-decoration: underline;
-        }
-
-    }
-
-}
-
-/**
  * Blockquotes
  */
 blockquote {
@@ -148,7 +116,7 @@ pre,
 code {
 
     @include relative-font-size(0.9375);
-    color: #f8f8f2;;
+    color: #f8f8f2;
     border: 1px solid #272822;
     border-radius: 3px;
     background-color: #272822;
@@ -208,46 +176,12 @@ pre {
 }
 
 /**
- * Tables
- */
-table {
-
-    margin-bottom: $spacing-unit;
-    width: 100%;
-    text-align: $table-text-align;
-    color: lighten($text-color, 18%);
-    border-collapse: collapse;
-    border: 0;
-
-    /*tr {
-        &:nth-child(even) {
-        background-color: lighten($grey-color-dark, 6%);
-        }
-    }*/
-
-    th, td {
-        padding: ($spacing-unit / 3) ($spacing-unit / 2);
-    }
-
-    th {
-        /*background-color: lighten($grey-color-dark, 3%);*/
-        border: 0;
-        /*border-bottom-color: darken($grey-color-dark, 12%);*/
-    }
-
-    td {
-        border: 0;
-    }
-
-}
-
-/**
  * Text Selection
  */
 *::-moz-selection,
 *::selection {
 
-    color: $labb-color;
+    color: $brand-color;
     background: white;
 
 }

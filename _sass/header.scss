@@ -3,7 +3,7 @@
  */
  .site-header {
 
-    border-top: 5px solid $labb-color;
+    border-top: 5px solid $brand-color;
     border-bottom: 1px solid $grey-color-dark;
     min-height: $spacing-unit * 1.865;
 
@@ -23,12 +23,12 @@
 
     &,
     &:visited {
-        color: lighten($labb-color, 15%);
+        color: lighten($brand-color, 15%);
     }
 
     &:hover {
 
-        color: $labb-color-light;
+        color: lighten($brand-color, 30%);
         text-decoration: none;
 
     }
@@ -64,7 +64,7 @@
 
     .lang-icon {
 
-        color: lighten($labb-color, 15%);
+        color: lighten($brand-color, 15%);
         font-weight: bold;
 
         &:hover {
@@ -101,7 +101,7 @@
 
     .lang-link {
 
-        color: lighten($labb-color, 15%);
+        color: lighten($brand-color, 15%);
         line-height: $base-line-height;
         display: block;
         padding: 5px 10px;
@@ -113,7 +113,7 @@
 
         &:hover {
 
-            color: $labb-color-light;
+            color: lighten($brand-color, 30%);
             text-decoration: none;
 
         }
@@ -164,7 +164,7 @@
 
     .page-link {
 
-        color: lighten($labb-color, 15%);
+        color: lighten($brand-color, 15%);
         line-height: $base-line-height;
         font-weight: bold;
 
@@ -175,7 +175,7 @@
 
         &:hover {
 
-            color: $labb-color-light;
+            color: lighten($brand-color, 30%);
             text-decoration: none;
 
         }

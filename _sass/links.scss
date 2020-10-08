@@ -1,0 +1,31 @@
+/**
+ * Links
+ */
+ a {
+
+    color: lighten($brand-color, 7.5%);
+    text-decoration: none;
+    outline: none;
+
+    &:visited {
+        color: lighten($brand-color, 7.5%);
+    }
+
+    &:hover {
+
+        color: $text-color;
+        text-decoration: none;
+
+    }
+
+    .social-media-list &:hover {
+
+        text-decoration: none;
+
+        .username {
+            text-decoration: underline;
+        }
+
+    }
+
+}

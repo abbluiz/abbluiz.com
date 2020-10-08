@@ -10,12 +10,12 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       rgb(255, 255, 255) !default;
-$background-color: #000000 !default;
+$text-color:       white !default;
+$background-color: black !default;
 $brand-color:      #a14040 !default;
 
-$grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color:       #727272 !default;
+$grey-color-light: lighten($grey-color, 50%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 $table-text-align: left !default;
@@ -52,6 +52,3 @@ $on-large: $on-laptop !default;
 @mixin relative-font-size($ratio) {
     font-size: $base-font-size * $ratio;
 }
-
-$labb-color:    #a14040 !default;
-$labb-color-light:  lighten($labb-color, 30%) !default;
