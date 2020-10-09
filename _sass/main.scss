@@ -1,30 +1,36 @@
-/**
- * Main Theme (Based on Minima)
- */
- @import "_vars";
- @import "base";
- @import "links";
- @import "tables";
- @import "header";
- @import "footer";
- @import "content";
- @import "pagination";
- @import "icons";
+/*
+** Main Theme
+*/
 
- /**
-  * Syntax Highlighting
-  */
- @import "syntax-highlighting";
+@import "_vars";
+@import "base";
+@import "icons";
+@import "links";
+@import "tables";
+@import "header";
+@import "footer";
+@import "pages";
+@import "posts";
+@import "pagination";
 
- /**
-  * Custom Pages
-  */
- @import "skills";
+/*
+** Custom Pages
+*/
 
- /**
-  * Font Awesome
-  */
- $fa-font-path: "../fa-webfonts";
- @import "./fontawesome/fontawesome.scss";
- @import "./fontawesome/solid.scss";
- @import "./fontawesome/brands.scss";
+@import "portfolio";
+@import "skills";
+
+/*
+** Syntax Highlighting
+*/
+
+@import "syntax-highlighting";
+
+/*
+** Font Awesome
+*/
+
+$fa-font-path: "../fa-webfonts";
+@import "./fontawesome/fontawesome.scss";
+@import "./fontawesome/solid.scss";
+@import "./fontawesome/brands.scss";
