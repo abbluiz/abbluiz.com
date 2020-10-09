@@ -1,12 +1,17 @@
 /*
-** Main Theme
+** Base Theme
 */
 
 @import "_vars";
 @import "base";
-@import "icons";
 @import "links";
 @import "tables";
+@import "icons";
+
+/*
+** Site Areas
+*/
+
 @import "header";
 @import "footer";
 @import "pages";
