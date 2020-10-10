@@ -4,39 +4,47 @@ layout: default
 
 {%- if site.posts.size > 0 -%}
 
-  <h1 class="post-header post-title">
-    {% t pages.posts.title %} ({% t string.page %} {{ paginator.page }} {% t string.of %} {{ paginator.total_pages }})
-  </h1>
+  <div class="page-header">
+    <h1 class="page-title">
+      {% t pages.posts.title %} ({% t string.page %} {{ paginator.page }} {% t string.of %} {{ paginator.total_pages }})
+    </h1>
+  </div>
 
-  <p class="page-desc">{%- t pages.posts.desc -%}</p>
+  <div class="page-content">
 
-  <ul class="post-list">
+    {%- if page.description and page.output-desc -%}
+      <p class="page-desc">{% t page.description %}</p>
+    {%- endif -%}
 
-    {%- for post in paginator.posts -%}
+    <ul class="post-list">
 
-      <li>
+      {%- for post in paginator.posts -%}
 
-        <span class="post-meta">
-          {%- include date.html date=post.date -%}
-        </span>
+        <li>
 
-        <h3>
+          <span class="post-meta">
+            {%- include date.html date=post.date -%}
+          </span>
 
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
+          <h3>
 
-        </h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
 
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+          </h3>
 
-      </li>
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
 
-    {%- endfor -%}
+        </li>
 
-  </ul>
+      {%- endfor -%}
+
+    </ul>
+
+  </div>
 
   {%- include pagination-nav.html paginator=paginator -%}
 

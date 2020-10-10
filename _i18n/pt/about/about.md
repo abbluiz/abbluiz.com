@@ -24,6 +24,4 @@ Você pode copiar o meu site, caso respeite os termos das licenças que eu utili
 
 Em algumas situações, pode ser que outras licenças sejam utilizadas no lugar das descritas acima. Quando isso ocorrer, será claramente indicado junto ao código-fonte ou conteúdo a licença utilizada. Um exemplo é a utilização da biblioteca Font Awesome, cujos ícones estão disponíveis sob a licença CC-BY-4.0, e código-fonte sob a MIT, mas suas fontes sob a [SIL OFL 1.1](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
 
-{% assign m = site.time | date: "%-m" %}
-
-Site modificado pela última vez em: {{ site.time | date: "%-d de " }}{% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Mar&ccedil;o{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %}{{ site.time | date: " de %Y" }}.
+Site modificado pela última vez em:  {% include date.html date=site.time %}.

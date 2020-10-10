@@ -24,4 +24,4 @@ You can copy my website, if you respect the open-source licenses I'm using. All 
 
 In certain situations, there might be other licenses being used in place of the ones I've described above. When this occurs, the different license will be clearly indicated in the source code, or linked in the post/page. An example of this is the utilization of the Font Awesome library. Although their icons are released under CC-BY-4.0 and their code under MIT, their fonts are released under [SIL OFL 1.1](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
 
-Website last modified at: {{ site.time | date: '%B %-d, %Y' }}.
+Website last modified at: {% include date.html date=site.time %}.
