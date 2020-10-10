@@ -25,7 +25,7 @@ pages:
         img: default-en.png
     about:
         title: About
-        desc: About me and my personal website.
+        desc: About myself and my personal website.
         img: about-en.png
     portfolio:
         title: Portfolio

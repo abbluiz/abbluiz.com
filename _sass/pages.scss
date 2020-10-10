@@ -2,11 +2,24 @@
 ** Pages
 */
 
+.page-header {
+    @extend %generic-header;
+}
+
+.page-title {
+
+    @include relative-font-size(2.625);
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        @include relative-font-size(2.25);
+    }
+
+}
+
 .page-content {
-
-    padding: $spacing-unit 0;
-    flex: 1;
-
+    @extend %generic-content;
 }
 
 .page-heading {

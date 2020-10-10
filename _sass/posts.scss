@@ -2,19 +2,24 @@
 ** Posts
 */
 
-.post-list-heading {
-    @include relative-font-size(1.75);
+.post-header {
+    @extend %generic-header;
 }
 
-.post-list {
+.post-title {
 
-    margin-left: 0;
-    list-style: none;
+    @include relative-font-size(2.625);
+    letter-spacing: -1px;
+    line-height: 1;
 
-    > li {
-        margin-bottom: $spacing-unit;
+    @include media-query($on-laptop) {
+        @include relative-font-size(2.25);
     }
 
+}
+
+.post-content {
+    @extend %generic-content;
 }
 
 .post-meta {
@@ -31,54 +36,21 @@
 
 }
 
- .post-header {
-    margin-bottom: $spacing-unit;
+/*
+** Post Lists
+*/
+
+.post-list-heading {
+    @include relative-font-size(1.75);
 }
 
-.post-title {
+.post-list {
 
-    @include relative-font-size(2.625);
-    letter-spacing: -1px;
-    line-height: 1;
+    margin-left: 0;
+    list-style: none;
 
-    @include media-query($on-laptop) {
-        @include relative-font-size(2.25);
-    }
-
-}
-
-.post-content {
-
-    margin-bottom: $spacing-unit;
-
-    h2 {
-
-        @include relative-font-size(2);
-
-        @include media-query($on-laptop) {
-            @include relative-font-size(1.75);
-        }
-
-    }
-
-    h3 {
-
-        @include relative-font-size(1.625);
-
-        @include media-query($on-laptop) {
-            @include relative-font-size(1.375);
-        }
-
-    }
-
-    h4 {
-
-        @include relative-font-size(1.25);
-
-        @include media-query($on-laptop) {
-            @include relative-font-size(1.125);
-        }
-
+    > li {
+        margin-bottom: $spacing-unit;
     }
 
 }

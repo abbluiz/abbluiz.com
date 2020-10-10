@@ -3,6 +3,7 @@ layout: page
 
 title: pages.about.title
 description: pages.about.desc
+output-desc: false
 img: pages.about.img
 namespace: about
 

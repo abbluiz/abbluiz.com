@@ -1,8 +1,9 @@
 ---
+layout: project
 unique-name: spatium
-type: social-network
 title: project.spatium.name
 description: project.spatium.desc
+type: social-network
 start-date: 2019-09-25 14:16:00
 launch-date:
 last-update: 2019-12-14 00:00:00
@@ -19,7 +20,6 @@ license-name: string.proprietary
 founders: ["LABB", "Galyna", "Oleksandr"]
 pinned: true
 hidden: false
-layout: project
 color1: pink
 color2: purple
 ---

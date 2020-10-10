@@ -3,6 +3,7 @@ layout: page
 
 title: pages.portfolio.title
 description: pages.portfolio.desc
+output-desc: true
 img: pages.portfolio.img
 namespace: portfolio
 
