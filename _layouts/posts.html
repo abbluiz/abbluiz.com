@@ -4,95 +4,51 @@ layout: default
 
 {%- if site.posts.size > 0 -%}
 
-    <h1 class="post-header post-title">{% t pages.posts.title %} ({% t string.page %} {{ paginator.page }} {% t string.of %} {{ paginator.total_pages }})</h1>
+  <h1 class="post-header post-title">
+    {% t pages.posts.title %} ({% t string.page %} {{ paginator.page }} {% t string.of %} {{ paginator.total_pages }})
+  </h1>
 
-    <p class="page-desc">{%- t pages.posts.desc -%}</p>
+  <p class="page-desc">{%- t pages.posts.desc -%}</p>
 
-    <ul class="post-list">
+  <ul class="post-list">
 
-        {%- for post in paginator.posts -%}
+    {%- for post in paginator.posts -%}
 
-            <li>
+      <li>
 
-                {%- if site.lang == "en" -%}
-                    {%- assign date_format = "%B %-d, %Y" -%}
-                {%- elsif site.lang != "pt" -%}
-                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                {%- endif -%}
+        <span class="post-meta">
+          {%- include date.html date=post.date -%}
+        </span>
 
-                <span class="post-meta">
+        <h3>
 
-                    {%- if site.lang == "pt" -%}
-                        {%- assign m = post.date | date: "%-m" -%}
-                        {{ post.date | date: "%-d de " }}{% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Mar&ccedil;o{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %}{{ post.date | date: " de %Y" }}
-                    {%- else -%}
-                        {{ post.date | date: date_format }}
-                    {%- endif -%}
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
 
-                </span>
+        </h3>
 
-                <h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
 
-                    <a class="post-link" href="{{ post.url | relative_url }}">
-                        {{ post.title | escape }}
-                    </a>
+      </li>
 
-                </h3>
+    {%- endfor -%}
 
-                {%- if site.show_excerpts -%}
-                    {{ post.excerpt }}
-                {%- endif -%}
+  </ul>
 
-            </li>
-
-        {%- endfor -%}
-
-    </ul>
-
-    {% if paginator.total_pages > 1 %}
-
-        <ul class="pagination-list">
-
-        {% if paginator.previous_page %}
-
-            <li>
-                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | remove: 'index.html'}}"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-            </li>
-
-        {% endif %}
-
-        {% if paginator.page_trail %}
-
-            {% for trail in paginator.page_trail %}
-
-                <li>
-                    <a {% if page.url == trail.path %}class="selected-page"{% else %}href="{{ trail.path | prepend: site.baseurl | remove: 'index.html'}}" title="{{trail.title}}"{% endif %}>{{ trail.num }}</a>
-                </li>
-
-            {% endfor %}
-
-        {% endif %}
-
-        {% if paginator.next_page %}
-
-            <li>
-                <a href="{{ paginator.next_page_path | prepend: site.baseurl | remove: 'index.html'}}"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-            </li>
-
-        {% endif %}
-
-        </ul>
-
-    {% endif %}
+  {%- include pagination-nav.html paginator=paginator -%}
 
 {%- else -%}
 
-    <center>
+  <center>
 
-        <h1>{%- translate string.empty-notice-title -%}</h1>
-        <h2>🍃</h2>
-        <p>{%- translate string.empty-notice-content -%}</p>
+    <h1>{%- t string.empty-notice-title -%}</h1>
+    <h2>🍃</h2>
 
-    </center>
+    <p>{%- t string.empty-notice-content -%}</p>
+
+  </center>
 
 {%- endif -%}

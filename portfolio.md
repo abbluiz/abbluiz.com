@@ -13,30 +13,13 @@ pagination:
     permalink: 'p/:num/'
     sort_field: 'unique-name'
     sort_reverse: true
-    per_page: 4
+    per_page: 8
 
 permalink: /portfolio/
 permalink_pt: /portfolio/
 ---
 
 {% assign all_projects = paginator.posts %}
-
-<!-- {% assign pinned_projects = site.projects | where: "pinned", true %}
-
-<h3>{% t string.pinned-projects %}</h3>
-
-<div class="pinned-area">
-    {% for pinned_project in pinned_projects %}
-        <div class="project-card-pinned" style="background-image: linear-gradient(to bottom right, {{ pinned_project.color1 }}, {{ pinned_project.color2 }});">
-            <a href='{{ pinned_project.url | relative_url }}'>
-                <span class="clickable-div"></span>
-                    <div class="project-card-pinned-content">
-                        {% t pinned_project.title %}
-                    </div>
-            </a>
-        </div>
-    {% endfor %}
-</div> -->
 
 {% for project in all_projects %}
     <div class="project-card" style="background-image: linear-gradient(to bottom right, {{ project.color1 }}, {{ project.color2 }});">
