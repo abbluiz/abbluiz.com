@@ -3,14 +3,13 @@ layout: page
 
 title: pages.skills.title
 description: pages.skills.desc
+output-desc: true
 img: pages.skills.img
 namespace: skills
 
 permalink: /skills/
 permalink_pt: /skills/
 ---
-
-<p class="page-desc">{%- t pages.skills.desc -%}</p>
 
 {% assign all_skills = site.skills | sort: "last-update" | reverse %}
 
