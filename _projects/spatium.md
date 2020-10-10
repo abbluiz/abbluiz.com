@@ -8,10 +8,7 @@ start-date: 2019-09-25 14:16:00
 launch-date:
 last-update: 2019-12-14 00:00:00
 status: active
-website: 
 needs-help: true
-github:
-mastodon:
 license-url:
 license-opensource: false
 license-freesoftware: false
@@ -22,4 +19,7 @@ pinned: true
 hidden: false
 color1: pink
 color2: purple
+website: 
+github:
+mastodon:
 ---
