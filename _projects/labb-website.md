@@ -1,8 +1,9 @@
 ---
+layout: project
 unique-name: labb-website
-type: website
 title: project.labb-personal-website.name
 description: project.labb-personal-website.desc
+type: website
 launch-date: 2020-03-06 18:00:00
 start-date: 2019-06-10 08:53:00
 last-update: site.time
@@ -19,7 +20,6 @@ license-name: string.mit
 founders: ["LABB"]
 pinned: false
 hidden: false
-layout: project
 color1: white
 color2: "#a14040"
 ---
