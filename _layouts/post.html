@@ -8,32 +8,12 @@ layout: default
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- if site.lang == "en" -%}
-          {%- assign date_format = "%B %-d, %Y" -%}
-        {%- elsif site.lang != "pt" -%}
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {%- endif -%}
-        {%- if site.lang == "pt" -%}
-          {%- assign m = page.date | date: "%-m" -%}
-          {{ page.date | date: "%-d de " }}{% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Mar&ccedil;o{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %}{{ page.date | date: " de %Y" }}
-        {%- else -%}
-          {{ page.date | date: date_format }}
-        {%- endif -%}
+        {%- include date.html date=page.date -%}
       </time>
       {%- if page.last-update -%}
-      &nbsp;• {% translate string.last-updated %}:  
+      &nbsp;• {% translate string.last-updated %}:
       <time class="dt-modified" datetime="{{ page.last-update | date_to_xmlschema }}" itemprop="dateModified">
-        {%- if site.lang == "en" -%}
-          {%- assign date_format = "%B %-d, %Y" -%}
-        {%- elsif site.lang != "pt" -%}
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {%- endif -%}
-        {%- if site.lang == "pt" -%}
-          {%- assign m = page.last-update | date: "%-m" -%}
-          {{ page.last-update | date: "%-d de " }}{% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Mar&ccedil;o{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %}{{ page.last-update | date: " de %Y" }}
-        {%- else -%}
-          {{ page.last-update | date: date_format }}
-        {%- endif -%}
+        {%- include date.html date=page.last-update -%}
       </time>
       {%- endif -%}
       {%- if page.author -%}
@@ -49,7 +29,7 @@ layout: default
 
   {%- if page.fedi-post-url -%}
     <h1>{%- translate string.join-the-discussion-notice -%}&nbsp;{%- translate string.comment-notice -%} <a href="{{ page.fedi-post-url }}">{%- translate string.comment-notice-link -%}</a>.</h1>
-  {%- endif -%} 
+  {%- endif -%}
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
   {%- endif -%}
