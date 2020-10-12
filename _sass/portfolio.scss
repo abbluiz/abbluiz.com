@@ -7,7 +7,11 @@
 }
 
 .project-badges {
+
+    display: flex;
+    flex-direction: row;
     margin-bottom: $spacing-unit / 2;
+
 }
 
 .clickable-div {
@@ -122,17 +126,22 @@
 
 .badge {
 
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     height: 30px;
-    line-height: 2;
     border-radius: 5px;
-
-    font-family: monospace;
-    font-size: 15px;
 
     padding: 0 8px;
     margin-right: 8px;
+
+    .badge-text {
+
+        font-family: monospace;
+        font-size: 15px;
+
+    }
 
 }
 

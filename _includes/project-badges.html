@@ -1,11 +1,17 @@
 {%- assign project = include.project -%}
 
 {%- if project.status == "active" -%}
-  <div title="{%- t string.project-in-active-dev -%}" class="badge badge-green">{%- t string.active -%}</div>
+  <div title="{%- t string.project-in-active-dev -%}" class="badge badge-green">
+    <span class="badge-text">{%- t string.active -%}</span>
+  </div>
 {%- elsif project.status == "paused" -%}
-  <div title="{%- t string.project-paused-dev -%}" class="badge badge-orange">{%- t string.paused -%}</div>
+  <div title="{%- t string.project-paused-dev -%}" class="badge badge-orange">
+    <span class="badge-text">{%- t string.paused -%}</span>
+  </div>
 {%- endif -%}
 
 {%- if project.needs-help -%}
-  <div title="{%- t string.project-needs-help -%}" class="badge badge-blue">{%- t string.needs-help -%}</div>
+  <div title="{%- t string.project-needs-help -%}" class="badge badge-blue">
+    <span class="badge-text">{%- t string.needs-help -%}</span>
+  </div>
 {%- endif -%}
