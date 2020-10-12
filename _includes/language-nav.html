@@ -1,0 +1,102 @@
+{%- assign availableLanguages = site.languages -%}
+{%- assign multiLanguageLayouts = "home, page, project, posts, portfolio, skills" | split: ", " -%}
+
+{%- if availableLanguages.size > 1 and multiLanguageLayouts contains page.layout -%}
+
+  <nav class="lang-nav">
+
+    <input type="checkbox" id="lang-nav-trigger" class="lang-nav-trigger" />
+
+    <label for="lang-nav-trigger">
+      <span class="lang-icon"> 文A</span>
+    </label>
+
+    <div class="trigger-lang">
+
+      {%- for language in availableLanguages -%}
+
+        {%- if page.layout == "project" -%}
+
+          {%- assign url = page.url -%}
+
+          {%- if language != "en" -%}
+
+            {%- capture finalProjectUrl -%}
+              {{ "/" | append: language | append: url | remove: "index.html" }}
+            {%- endcapture -%}
+
+          {%- else -%}
+
+            {%- capture finalProjectUrl -%}
+              {{ relative_url | append: url | remove: "index.html" }}
+            {%- endcapture -%}
+
+          {%- endif -%}
+
+          {%- if fullUrl == finalProjectUrl -%}
+            <a class="lang-link lang-link-selected">{%- t global.{{ language }} -%}</a>
+          {%- else -%}
+            <a title="{%- t global.switch-to-{{ language }} -%}" href='{{ finalProjectUrl }}' class="lang-link">{%- t global.{{ language }} -%}</a>
+          {%- endif -%}
+
+        {%- elsif page.pagination.enabled -%}
+
+          {%- if language != "en" -%}
+            {%- assign finalUrl = "/" | append: language | append: "/" | append: page.namespace -%}
+          {%- else -%}
+            {%- assign finalUrl = "/" | append: page.namespace -%}
+          {%- endif -%}
+
+          {%- capture fullUrl -%}
+
+            {%- if site.lang != "en" -%}
+              {{ "/" | append: site.lang | append: "/" | append: page.namespace }}
+            {%- else -%}
+              {{ "/" | append: page.namespace }}
+            {%- endif -%}
+
+          {%- endcapture -%}
+
+          {%- if fullUrl == finalUrl -%}
+            <a class="lang-link lang-link-selected">
+              {%- t global.{{ language }} -%}
+            </a>
+          {%- else -%}
+            <a title="{%- t global.switch-to-{{ language }} -%}" href="{{ finalUrl }}" class="lang-link">
+              {%- t global.{{ language }} -%}
+            </a>
+          {%- endif -%}
+
+        {%- else -%}
+
+          {%- if site.lang != "en" -%}
+            {%- assign fullUrl = "/" | append: site.lang | append: page.url | remove: "index.html" -%}
+          {%- else -%}
+            {%- assign fullUrl = page.url | remove: "index.html" -%}
+          {%- endif -%}
+
+          {%- capture translatedUrl -%}
+            {%- tl {{ page.namespace }} {{ language }} -%}
+          {%- endcapture -%}
+
+          {%- assign finalUrl = translatedUrl | remove: "index.html" -%}
+
+          {%- if fullUrl == finalUrl -%}
+            <a class="lang-link lang-link-selected">
+              {%- t global.{{ language }} -%}
+            </a>
+          {%- else -%}
+            <a title="{%- t global.switch-to-{{ language }} -%}" href="{{ finalUrl }}" class="lang-link">
+              {%- t global.{{ language }} -%}
+            </a>
+          {%- endif -%}
+
+        {%- endif -%}
+
+      {%- endfor -%}
+
+    </div>
+
+  </nav>
+
+{%- endif -%}

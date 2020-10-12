@@ -3,6 +3,8 @@ global:
     portuguese: Português
     pt: Português
     en: English
+    switch-to-en: "Switch to English"
+    switch-to-pt: "Mudar para Português"
 
 home:
     title: "LABB: Personal Website"

@@ -3,6 +3,8 @@ global:
     portuguese: Português
     pt: Português
     en: English
+    switch-to-en: "Switch to English"
+    switch-to-pt: "Mudar para Português"
 
 home:
     title: "LABB: Site Pessoal"
@@ -77,6 +79,7 @@ string:
     github-repo: "Repositório GitHub"
     mastodon-profile: "Perfil Mastodon"
     official-website: "Site Oficial"
+    switch-to-language: "Mudar para Português"
 
 project:
     labb-personal-website:
