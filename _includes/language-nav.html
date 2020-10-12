@@ -17,18 +17,22 @@
 
         {%- if page.layout == "project" -%}
 
-          {%- assign url = page.url -%}
+          {%- if site.lang != "en" -%}
+            {%- assign fullUrl = "/" | append: site.lang | append: page.url | remove: "index.html" -%}
+          {%- else -%}
+            {%- assign fullUrl = page.url | remove: "index.html" -%}
+          {%- endif -%}
 
           {%- if language != "en" -%}
 
             {%- capture finalProjectUrl -%}
-              {{ "/" | append: language | append: url | remove: "index.html" }}
+              {{ "/" | append: language | append: page.url | remove: "index.html" }}
             {%- endcapture -%}
 
           {%- else -%}
 
             {%- capture finalProjectUrl -%}
-              {{ relative_url | append: url | remove: "index.html" }}
+              {{ relative_url | append: page.url | remove: "index.html" }}
             {%- endcapture -%}
 
           {%- endif -%}
