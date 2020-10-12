@@ -1,0 +1,50 @@
+/*
+** Badges
+*/
+
+.badge {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 30px;
+    border-radius: 5px;
+
+    padding: 0 8px;
+    margin-right: 8px;
+
+    .badge-text {
+
+        font-family: monospace;
+        font-size: 15px;
+
+    }
+
+}
+
+.badge-green {
+    background-color: green;
+}
+
+.badge-red {
+    background-color: darken(red, 15%);
+}
+
+.badge-blue {
+    background-color: #0066cc;
+}
+
+.badge-orange {
+    background-color: #cc7a00;
+}
+
+.badge-link {
+
+    cursor: pointer;
+
+    &:hover {
+        font-weight: bold;
+    }
+
+}
