@@ -3,6 +3,8 @@ global:
     portuguese: Português
     pt: Português
     en: English
+    switch-to-en: "Switch to English"
+    switch-to-pt: "Mudar para Português"
 
 home:
     title: "LABB: Site Pessoal"
@@ -74,6 +76,16 @@ string:
     of: "de"
     recent-posts: "Posts Recentes"
     see-older-posts: "Ver mais"
+    github-repo: "Repositório GitHub"
+    mastodon-profile: "Perfil Mastodon"
+    official-website: "Site Oficial"
+    switch-to-language: "Mudar para Português"
+    project-in-active-dev: "Desenvolvimento está ativo"
+    active: "Ativo"
+    project-needs-help: "O projeto precisa da sua ajuda"
+    needs-help: "Procura-se Ajuda"
+    project-paused-dev: "Desenvolvimento está em pausa"
+    paused: "Pausado"
 
 project:
     labb-personal-website:

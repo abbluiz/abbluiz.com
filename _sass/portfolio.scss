@@ -2,6 +2,14 @@
 ** Portfolio
 */
 
+.project-title {
+    margin-bottom: 5px;
+}
+
+.project-badges {
+    margin-bottom: $spacing-unit / 2;
+}
+
 .clickable-div {
 
     position: absolute;
@@ -108,6 +116,48 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+}
+
+.badge {
+
+    display: inline-block;
+
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+
+    font-family: monospace;
+    font-size: 15px;
+
+    padding: 0 8px;
+    margin-right: 8px;
+
+}
+
+.badge-green {
+    background-color: green;
+}
+
+.badge-red {
+    background-color: darken(red, 15%);
+}
+
+.badge-blue {
+    background-color: #0066cc;
+}
+
+.badge-orange {
+    background-color: #cc7a00;
+}
+
+.badge-link {
+
+    cursor: pointer;
+
+    &:hover {
+        font-weight: bold;
     }
 
 }
