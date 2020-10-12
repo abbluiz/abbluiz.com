@@ -2,99 +2,82 @@
 layout: default
 ---
 
-<article class="post">
+<div itemscope itemtype="{%- include project-schema.html type=page.type -%}">
 
-  <header class="post-header">
-    <h1 class="post-title">
+  <div class="page-header">
+    <h1 itemprop="name" class="page-title">
       {% t page.title %}
     </h1>
     <p>
-      {% if page.website and page.website != "https://www.abbluiz.com" %}&nbsp;<a href="{{ page.website }}" rel="noopener" target="_blank"><i class="fas fa-external-link-alt fa-2x"></i></a>{% endif %}
-      {% if page.mastodon %}&nbsp;<a href="{{ page.mastodon }}" rel="noopener"><i class="fab fa-mastodon fa-2x"></i></a>{% endif %}
-      {% if page.github %}&nbsp;<a href="{{ page.github }}" rel="noopener"><i class="fab fa-github fa-2x"></i></a>{% endif %}
-      {% if page.license-name == "string.cc0" %}&nbsp;<a href="{{ page.license-url }}" rel="noopener"><i class="fab fa-creative-commons-zero fa-2x"></i></a>{% endif %}
+      {%- include project-icons.html project=page -%}
     </p>
-  </header>
+  </div>
 
-  <div class="post-content">
-    
+  <div class="page-content">
+
     {%- if page.status == "active" or page.needs-help -%}
-    <ul>
-      {% if page.status == "active" %}<li>{%- translate string.active-development-notice -%}</li>{% endif %}
-      {% if page.needs-help %}<li>{%- translate string.needs-help-notice -%}</li>{% endif %}
-    </ul>
+      <ul>
+        {% if page.status == "active" %}<li>{%- translate string.active-development-notice -%}</li>{% endif %}
+        {% if page.needs-help %}<li>{%- translate string.needs-help-notice -%}</li>{% endif %}
+      </ul>
     {%- endif -%}
+
     <table>
+
       <tr>
         <td><strong>{%- translate string.started-in -%}</strong></td>
-        <td>
-          {%- if site.lang == "en" -%}
-            {%- assign date_format = "%B %-d, %Y" -%}
-          {%- elsif site.lang != "pt" -%}
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          {%- endif -%}
-          {%- if site.lang == "pt" -%}
-            {%- assign m = page.start-date | date: "%-m" -%}
-            {{ page.start-date | date: "%-d de " }}{% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Mar&ccedil;o{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %}{{ page.start-date | date: " de %Y" }}
-          {%- else -%}
-            {{ page.start-date | date: date_format }}
-          {%- endif -%}
+        <td itemprop="dateCreated">
+          {%- include date.html date=page.start-date -%}
         </td>
       </tr>
+
       {%- if page.launch-date -%}
-      <tr>
-        <td><strong>{%- translate string.launched-in -%}</strong></td>
-        <td>
-          {%- if site.lang == "en" -%}
-            {%- assign date_format = "%B %-d, %Y" -%}
-          {%- elsif site.lang != "pt" -%}
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          {%- endif -%}
-          {%- if site.lang == "pt" -%}
-            {%- assign m = page.launch-date | date: "%-m" -%}
-            {{ page.launch-date | date: "%-d de " }}{% case m %}{% when '1' %}Janeiro{% when '2' %}Fevereiro{% when '3' %}Mar&ccedil;o{% when '4' %}Abril{% when '5' %}Maio{% when '6' %}Junho{% when '7' %}Julho{% when '8' %}Agosto{% when '9' %}Setembro{% when '10' %}Outubro{% when '11' %}Novembro{% when '12' %}Dezembro{% endcase %}{{ page.launch-date | date: " de %Y" }}
-          {%- else -%}
-            {{ page.launch-date | date: date_format }}
-          {%- endif -%}
-        </td>
-      </tr>
+        <tr>
+          <td><strong>{%- translate string.launched-in -%}</strong></td>
+          <td itemprop="datePublished">
+            {%- include date.html date=page.launch-date -%}
+          </td>
+        </tr>
       {%- endif -%}
+
       {%- if page.founders -%}
-      <tr>
-        <td><strong>{%- translate string.founded-by -%}</strong></td>
-        <td>
-          {%- if page.founders.size == 1 -%}
-            {{ page.founders[0] }}
-          {%- else -%}
-            {%- for founder in page.founders -%}
-              {%- if forloop.last == true -%}
-                {%- translate string.and -%}{{ founder }}
-              {%- else -%}
-                {{ founder | append: ", " }}
-              {%- endif -%}
-            {%- endfor -%}
-          {%- endif -%}
-        </td>
-      </tr>
+        <tr>
+          <td><strong>{%- translate string.founded-by -%}</strong></td>
+          <td>
+            {%- if page.founders.size == 1 -%}
+              {{ page.founders[0] }}
+            {%- else -%}
+              {%- for founder in page.founders -%}
+                {%- if forloop.last == true -%}
+                  {%- translate string.and -%}{{ founder }}
+                {%- else -%}
+                  {{ founder | append: ", " }}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+          </td>
+        </tr>
       {%- endif -%}
+
       {%- if page.license-name -%}
-      <tr>
-        <td><strong>{%- translate string.license -%}</strong></td>
-        <td>
-          {%- if page.license-url -%}
-            <a href="{{ page.license-url }}">{%- translate page.license-name -%}</a>
-          {%- else -%}
-            {%- translate page.license-name -%}
-          {%- endif -%}
-          {%- if page.license-hybrid -%}
-            *
-          {%- endif -%}
-        </td>
-      </tr>
+        <tr>
+          <td><strong>{%- translate string.license -%}</strong></td>
+          <td>
+            {%- if page.license-url -%}
+              <a href="{{ page.license-url }}">{%- translate page.license-name -%}</a>
+            {%- else -%}
+              {%- translate page.license-name -%}
+            {%- endif -%}
+            {%- if page.license-hybrid -%}
+              *
+            {%- endif -%}
+          </td>
+        </tr>
       {%- endif -%}
-    </table> 
+
+    </table>
 
     {{ content }}
   </div>
 
-</article>
+</div>

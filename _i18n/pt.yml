@@ -74,6 +74,9 @@ string:
     of: "de"
     recent-posts: "Posts Recentes"
     see-older-posts: "Ver mais"
+    github-repo: "Repositório GitHub"
+    mastodon-profile: "Perfil Mastodon"
+    official-website: "Site Oficial"
 
 project:
     labb-personal-website:
