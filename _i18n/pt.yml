@@ -29,7 +29,7 @@ pages:
         img: about-pt.png
     portfolio:
         title: Portfólio
-        desc: Todos os projetos em que estou trabalhando ou já trabalhei.
+        desc: Todos os projetos em que estou trabalhando ou já trabalhei. Projetos atualizados mais recentemente aparecem primeiro.
         img: portfolio-pt.png
     posts:
         title: Posts
