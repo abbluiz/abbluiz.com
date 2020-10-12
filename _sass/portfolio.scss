@@ -151,3 +151,13 @@
 .badge-orange {
     background-color: #cc7a00;
 }
+
+.badge-link {
+
+    cursor: pointer;
+
+    &:hover {
+        font-weight: bold;
+    }
+
+}
