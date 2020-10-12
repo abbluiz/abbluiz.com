@@ -5,22 +5,22 @@ layout: default
 <div itemscope itemtype="{%- include project-schema.html type=page.type -%}">
 
   <div class="page-header">
-    <h1 itemprop="name" class="page-title">
+
+    <h1 itemprop="name" class="page-title project-title">
       {% t page.title %}
     </h1>
-    <p>
+
+    <div class="project-badges">
+      {%- include project-badges.html project=page -%}
+    </div>
+
+    <div class="project-icons">
       {%- include project-icons.html project=page -%}
-    </p>
+    </div>
+
   </div>
 
   <div class="page-content">
-
-    {%- if page.status == "active" or page.needs-help -%}
-      <ul>
-        {% if page.status == "active" %}<li>{%- translate string.active-development-notice -%}</li>{% endif %}
-        {% if page.needs-help %}<li>{%- translate string.needs-help-notice -%}</li>{% endif %}
-      </ul>
-    {%- endif -%}
 
     <table>
 

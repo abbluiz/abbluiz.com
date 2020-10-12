@@ -78,6 +78,12 @@ string:
     github-repo: "GitHub Repository"
     mastodon-profile: "Mastodon Profile"
     official-website: "Official Website"
+    project-in-active-dev: "Development is active"
+    active: "Active"
+    project-needs-help: "The project needs your help"
+    needs-help: "Help Wanted"
+    project-paused-dev: "Development is paused"
+    paused: "Paused"
 
 project:
     labb-personal-website:

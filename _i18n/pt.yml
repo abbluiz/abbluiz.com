@@ -80,6 +80,12 @@ string:
     mastodon-profile: "Perfil Mastodon"
     official-website: "Site Oficial"
     switch-to-language: "Mudar para Português"
+    project-in-active-dev: "Desenvolvimento está ativo"
+    active: "Ativo"
+    project-needs-help: "O projeto precisa da sua ajuda"
+    needs-help: "Procura-se Ajuda"
+    project-paused-dev: "Desenvolvimento está em pausa"
+    paused: "Pausado"
 
 project:
     labb-personal-website:

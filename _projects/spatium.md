@@ -7,7 +7,7 @@ type: social-network
 start-date: 2019-09-25 14:16:00
 launch-date:
 last-update: 2019-12-14 00:00:00
-status: active
+status: paused
 needs-help: true
 license-url:
 license-opensource: false
