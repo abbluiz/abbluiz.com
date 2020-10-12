@@ -29,7 +29,7 @@ pages:
         img: about-en.png
     portfolio:
         title: Portfolio
-        desc: All the projects I'm working on and have worked on in the past. More recently updated projects appear first.
+        desc: All projects I'm working on and have worked on in the past. More recently updated projects appear first.
         img: portfolio-en.png
     posts:
         title: Posts
