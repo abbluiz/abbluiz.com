@@ -13,13 +13,33 @@ permalink_pt: /skills/
 
 {% assign all_skills = site.skills | sort: "last-update" | reverse %}
 
-{%- for skill in all_skills -%}
+<div class="skill-chips">
+
+  {%- for skill in all_skills -%}
+
     <a href="{{ skill.url | relative_url }}">
-        <div class="chip">
-            <svg class="chip-icon" viewBox="0 0 24 24">
-                <use href="{{ '/assets/skill-icons/' | append: skill.unique-name | append: '.svg#icon' | relative_url }}"></use>
-            </svg>
-            {%- t skill.title -%}
+
+      <div class="chip">
+
+        <svg role="img" class="chip-icon" viewBox="0 0 24 24">
+          <use href="{{ '/assets/skill-icons/' | append: skill.unique-name | append: '.svg#icon' | relative_url }}"></use>
+        </svg>
+
+        <div class="chip-text-wrapper">
+
+          <div class="chip-text">
+
+            <span class="chip-title">{%- t skill.title -%}</span>
+            <div class="chip-desc">{%- t skill.description -%}</div>
+
+          </div>
+
         </div>
+
+      </div>
+
     </a>
-{%- endfor -%}
+
+  {%- endfor -%}
+
+</div>

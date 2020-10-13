@@ -121,3 +121,23 @@ skills:
         short-name: "PHP"
         name: "Linguagem de Programação PHP"
         desc: "A linguagem de programção PHP é uma linguage comum em backends web, muito utilizada em stacks LAMP (Linux, Apache, MySQL e PHP), e com frameworks como Laravel."
+    bash-shell:
+        short-name: "Bash"
+        name: "Shell Bash"
+        desc: ""
+    bootstrap-lib:
+        short-name: Bootstrap
+        name: "Biblioteca Bootstrap"
+        desc: ""
+    freebsd-os:
+        short-name: FreeBSD
+        name: "Sistema Operacional FreeBSD"
+        desc: ""
+    gnu-linux-os:
+        short-name: GNU/Linux
+        name: "Sistema Operacional GNU/Linux"
+        desc: ""
+    jekyll-ssg:
+        short-name: Jekyll
+        name: "Gerador de Sites Estáticos Jekyll"
+        desc: ""
