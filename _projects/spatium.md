@@ -3,6 +3,8 @@ layout: project
 unique-name: spatium
 title: project.spatium.name
 description: project.spatium.desc
+logo:
+fa-logo: users
 type: social-network
 start-date: 2019-09-25 14:16:00
 launch-date:
