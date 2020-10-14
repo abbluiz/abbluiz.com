@@ -1,6 +1,7 @@
 {
-    "name": "LABB",
+    "name": "LABB: Personal Website",
     "short_name": "LABB",
+    "description": "My personal blog & portfolio",
     "icons": [
         {
             "src": "/assets/img/favicons/android-chrome-192x192.png",
@@ -13,6 +14,9 @@
             "type": "image/png"
         }
     ],
+    "start_url": "/",
+    "scope": "/",
+    "display": "browser",
     "theme_color": "#ba8f8f",
     "background_color": "#ba8f8f"
 }
