@@ -3,6 +3,7 @@ layout: project
 unique-name: labb-website
 title: project.labb-personal-website.name
 description: project.labb-personal-website.desc
+logo: "labb-website.svg"
 type: website
 start-date: 2019-06-10 08:53:00
 launch-date: 2020-03-06 18:00:00

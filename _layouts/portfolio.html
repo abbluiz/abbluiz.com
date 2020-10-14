@@ -22,6 +22,11 @@ layout: default
       <a href='{{ project.url | relative_url }}'>
         <span class="clickable-div"></span>
         <div class="project-card-content">
+          {%- if project.logo -%}
+            <object height="64px" width="64px" type="image/svg+xml" data="/assets/project-icons/{{ project.logo }}">Test</object>
+          {%- else -%}
+            <span style="font-size: 64px;"><i class="fas fa-globe"></i></span>
+          {%- endif -%}
           {% t project.title %}
         </div>
       </a>

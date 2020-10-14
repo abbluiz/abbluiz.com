@@ -3,6 +3,7 @@ layout: project
 unique-name: privacidade-digital
 title: project.privacidade-digital.name
 description: project.privacidade-digital.desc
+logo: "privacidade-digital.svg"
 type: initiative
 start-date: 2019-04-15 11:11:00
 launch-date:
