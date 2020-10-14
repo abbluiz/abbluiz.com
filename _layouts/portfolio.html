@@ -14,5 +14,21 @@ layout: default
     <p class="page-desc">{% t page.description %}</p>
   {%- endif -%}
 
-  {{ content }}
+  {% assign all_projects = paginator.posts %}
+
+  {% for project in all_projects %}
+
+    <div class="project-card" style="background-image: linear-gradient(to bottom right, {{ project.color1 }}, {{ project.color2 }});">
+      <a href='{{ project.url | relative_url }}'>
+        <span class="clickable-div"></span>
+        <div class="project-card-content">
+          {% t project.title %}
+        </div>
+      </a>
+    </div>
+
+  {% endfor %}
+
+  {%- include pagination-nav.html paginator=paginator -%}
+
 </div>
