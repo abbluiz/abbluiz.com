@@ -8,7 +8,7 @@ fa-logo: globe
 type: website
 start-date: 2019-06-10 08:53:00
 launch-date: 2020-03-06 18:00:00
-last-update: site.time
+last-update: 2020-10-24 10:00:00
 status: active
 needs-help: false
 license-url: https://www.abbluiz.com/LICENSE.txt

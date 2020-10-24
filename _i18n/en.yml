@@ -74,6 +74,8 @@ string:
     page: "page"
     of: "of"
     recent-posts: "Recent Posts"
+    recently-updated-skills: "Recently Updated Skills"
+    recently-updated-projects: "Recently Updated Projects"
     see-older-posts: "See more"
     github-repo: "GitHub Repository"
     mastodon-profile: "Mastodon Profile"

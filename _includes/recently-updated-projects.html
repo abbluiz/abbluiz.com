@@ -1,0 +1,21 @@
+{% assign all_projects = site.projects | sort: "last-update" | reverse %}
+
+{%- if all_projects.size > 0 -%}
+
+  <h2 class="post-list-heading">{%- t string.recently-updated-projects -%}</h2>
+
+  <ul class="post-list">
+
+    {%- for project in all_projects limit:9 -%}
+
+      <li>
+
+        {% t project.title %}
+
+      </li>
+
+    {%- endfor -%}
+
+  </ul>
+
+{%- endif -%}
