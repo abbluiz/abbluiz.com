@@ -136,7 +136,7 @@
 
     }
 
-    @include media-query($on-palm) {
+    @include media-query($on-laptop) {
 
         right: $spacing-unit * 2;
 
@@ -196,7 +196,7 @@
 
     }
 
-    @include media-query($on-palm) {
+    @include media-query($on-laptop) {
 
         position: absolute;
         top: 8px;
