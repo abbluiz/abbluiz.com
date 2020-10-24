@@ -15,9 +15,10 @@
 
 #recently-updated-skills {
 
-    width: 400px;
+    max-width: 500px;
     float: right;
     text-align: right;
+    margin-bottom: $spacing-unit;
 
     @include media-query($on-laptop) {
 

@@ -1,3 +1,57 @@
 /*
 ** Skills
 */
+
+.recent-skill-list-heading {
+    @include relative-font-size(1.75);
+}
+
+.skill-small-link {
+    color: white;
+}
+
+.skill-small {
+
+    background-color: lighten(#121212, 25%);
+    border-radius: 5px;
+    display: inline-block;
+
+    margin: 7px;
+
+    &:hover {
+
+        background-color: lighten(#121212, 10%);
+        color: darken(white, 10%);
+
+        .skill-small-icon {
+            color: darken(white, 10%);
+        }
+
+    }
+
+}
+
+.skill-small-icon {
+
+    fill: white;
+
+    width: 48px;
+    height: 48px;
+
+    padding: 7px;
+
+    float: left;
+
+}
+
+.skill-small-level {
+
+    line-height: 62px;
+    padding-right: 7px;
+
+    font-family: monospace;
+    font-weight: 500;
+
+    font-size: 32px;
+
+}

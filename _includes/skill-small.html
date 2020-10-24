@@ -1,0 +1,15 @@
+{% assign skill = include.skill %}
+
+<a class="skill-small-link" href="{{ skill.url | relative_url }}" title="{% t skill.title -%}">
+
+  <div class="skill-small">
+
+    <svg role="img" class="skill-small-icon" viewBox="0 0 24 24">
+      <use href="{{ '/assets/skill-icons/' | append: skill.unique-name | append: '.svg#icon' | relative_url }}"></use>
+    </svg>
+
+    <span class="skill-small-level">{{ skill.proficiency-level }}%</span>
+
+  </div>
+
+</a>

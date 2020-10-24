@@ -2,20 +2,10 @@
 
 {%- if all_skills.size > 0 -%}
 
-  <h2 class="post-list-heading">{%- t string.recently-updated-skills -%}</h2>
+  <h2 class="recent-skill-list-heading">{%- t string.recently-updated-skills -%}</h2>
 
-  <ul class="post-list">
-
-    {%- for skill in all_skills limit:9 -%}
-
-      <li>
-
-        {% t skill.title %}
-
-      </li>
-
-    {%- endfor -%}
-
-  </ul>
+  {%- for skill in all_skills limit:9 -%}
+    {% include skill-small.html skill=skill %}
+  {%- endfor -%}
 
 {%- endif -%}
