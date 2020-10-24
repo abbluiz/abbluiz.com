@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Lorem Ipsum"
+title:  "Expedita consequatur tenetur quod adipisci autem quasi. Repellendus eligendi libero earum et rerum doloribus et impedit."
 date:   2020-08-16 20:00:00 -0400
 last-update:
 categories: test
 author: LABB
-fedi-post-url: 
+fedi-post-url:
 license-link: http://creativecommons.org/licenses/by/4.0/
 license-name: Creative Commons Attribution 4.0 International License
 ---

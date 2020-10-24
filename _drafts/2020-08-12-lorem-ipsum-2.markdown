@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Lorem Ipsum"
+title:  "Velit maiores animi voluptatem tenetur et dolore tempore saepe. Quia cupiditate iste voluptas."
 date:   2020-08-12 20:00:00 -0400
 last-update:
 categories: test
 author: LABB
-fedi-post-url: 
+fedi-post-url:
 license-link: http://creativecommons.org/licenses/by/4.0/
 license-name: Creative Commons Attribution 4.0 International License
 ---

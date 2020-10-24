@@ -69,8 +69,10 @@
         font-weight: bold;
 
         &:hover {
+
             cursor: pointer;
             color: $text-color;
+
         }
 
     }

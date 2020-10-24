@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Lorem Ipsum"
+title:  "Quis eaque quaerat autem iste. Voluptatum quam consectetur minima ex."
 date:   2020-08-13 20:00:00 -0400
 last-update:
 categories: test
 author: LABB
-fedi-post-url: 
+fedi-post-url:
 license-link: http://creativecommons.org/licenses/by/4.0/
 license-name: Creative Commons Attribution 4.0 International License
 ---
