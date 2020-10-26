@@ -14,8 +14,8 @@ $brand-color:      #a14040 !default;
 
 $menu-background:  #121212 !default;
 
-$link-color:       lighten($brand-color, 15%);
-$link-hover-color: lighten($brand-color, 30%);
+$link-color:       lighten($brand-color, 15%) !default;
+$link-hover-color: lighten($brand-color, 30%) !default;
 
 $grey-color:       #727272 !default;
 $grey-color-light: lighten($grey-color, 20%) !default;
