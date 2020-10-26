@@ -1,0 +1,114 @@
+.site-nav {
+
+    float: right;
+    line-height: $base-line-height * $base-font-size * 2.25;
+
+    .nav-trigger {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+
+        color: $link-color;
+        font-weight: bold;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        &:hover {
+
+            color: $link-hover-color;
+            text-decoration: none;
+
+        }
+
+    }
+
+    .page-link-selected {
+
+        color: $text-color;
+
+        &:hover {
+
+            color: $text-color;
+            text-decoration: none;
+
+        }
+
+    }
+
+    @include media-query($on-laptop) {
+
+        position: absolute;
+        right: $spacing-unit / 2;
+        text-align: right;
+
+        line-height: $base-line-height * $base-font-size * 2.25;
+
+        background-color: transparent;
+
+        label[for="nav-trigger"] {
+
+            z-index: 7;
+
+            display: block;
+            float: right;
+
+            cursor: pointer;
+
+        }
+
+        .menu-icon {
+
+            display: block;
+
+            color: $text-color;
+            font-weight: bold;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
+
+        input ~ .trigger {
+
+            clear: both;
+            display: none;
+
+        }
+
+        input:checked ~ .trigger {
+
+            display: block;
+            padding-bottom: 5px;
+            border: 1px solid $grey-color-dark;
+            border-radius: 4px;
+            background-color: $background-color;
+
+        }
+
+        .page-link {
+
+            line-height: $base-line-height;
+
+            display: block;
+            padding: 5px 10px;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+
+            margin-left: 20px;
+
+        }
+
+    }
+
+}

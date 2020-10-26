@@ -12,15 +12,18 @@ $text-color:       white !default;
 $background-color: black !default;
 $brand-color:      #a14040 !default;
 
+$link-color:       lighten($brand-color, 15%);
+$link-hover-color: lighten($brand-color, 30%);
+
 $grey-color:       #727272 !default;
 $grey-color-light: lighten($grey-color, 20%) !default;
 $grey-color-dark:  darken($grey-color, 30%) !default;
 
 $table-text-align: left !default;
 
-$content-width:    1200px !default;
+$content-width:    1000px !default;
 
-$on-card:          765px  !default;
+$on-card:          800px  !default;
 $on-palm:          1000px !default;
 $on-laptop:        1200px !default;
 

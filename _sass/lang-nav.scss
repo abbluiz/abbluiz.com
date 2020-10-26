@@ -1,0 +1,103 @@
+.lang-nav {
+
+    position: absolute;
+    right: $spacing-unit / 2;
+    text-align: right;
+
+    line-height: $base-line-height * $base-font-size * 2.25;
+
+    background-color: transparent;
+
+    .lang-nav-trigger {
+        display: none;
+    }
+
+    .lang-icon {
+
+        color: $link-color;
+        font-weight: bold;
+
+        &:hover {
+
+            cursor: pointer;
+            color: $text-color;
+
+        }
+
+    }
+
+    label[for="lang-nav-trigger"] {
+
+        z-index: 7;
+
+        display: block;
+        float: right;
+
+        cursor: pointer;
+
+    }
+
+    input ~ .trigger-lang {
+
+        clear: both;
+        display: none;
+
+    }
+
+    input:checked ~ .trigger-lang {
+
+        display: block;
+        padding-bottom: 5px;
+        border: 1px solid $grey-color-dark;
+        border-radius: 4px;
+        background-color: $background-color;
+
+    }
+
+    .lang-link {
+
+        color: $link-color;
+        line-height: $base-line-height;
+        display: block;
+        padding: 5px 10px;
+        font-weight: bold;
+
+        &:not(:last-child) {
+            margin-right: 0;
+        }
+
+        &:hover {
+
+            color: $link-hover-color;
+            text-decoration: none;
+
+        }
+
+        margin-left: 20px;
+
+    }
+
+    .lang-link-selected {
+
+        color: $text-color;
+
+        &:hover {
+
+            color: $text-color;
+            text-decoration: none;
+
+        }
+
+    }
+
+    @include media-query($on-laptop) {
+
+        right: $spacing-unit * 1.5;
+
+        .lang-icon {
+            color: $text-color;
+        }
+
+    }
+
+}
