@@ -4,7 +4,7 @@
     line-height: $base-line-height * $base-font-size * 2.25;
 
     .nav-trigger {
-        display: none;
+        @extend %generic-trigger;
     }
 
     .menu-icon {
@@ -45,23 +45,10 @@
 
     @include media-query($on-laptop) {
 
-        position: absolute;
-        right: $spacing-unit / 2;
-        text-align: right;
-
-        line-height: $base-line-height * $base-font-size * 2.25;
-
-        background-color: transparent;
+        @include generic-mobile-nav;
 
         label[for="nav-trigger"] {
-
-            z-index: 7;
-
-            display: block;
-            float: right;
-
-            cursor: pointer;
-
+            @include generic-nav-button;
         }
 
         .menu-icon {
@@ -78,35 +65,15 @@
         }
 
         input ~ .trigger {
-
-            clear: both;
-            display: none;
-
+            @include generic-nav-input;
         }
 
         input:checked ~ .trigger {
-
-            display: block;
-            padding-bottom: 5px;
-            border: 1px solid $grey-color-dark;
-            border-radius: 4px;
-            background-color: $menu-background;
-
+            @include generic-menu-content;
         }
 
         .page-link {
-
-            line-height: $base-line-height;
-
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-
-            margin-left: 20px;
-
+            @include generic-menu-entry-link;
         }
 
     }

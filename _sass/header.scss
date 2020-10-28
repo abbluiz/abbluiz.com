@@ -49,6 +49,8 @@
 
 }
 
-@import "lang-nav";
+@import "nav/common-nav";
 
-@import "main-nav";
+@import "nav/lang-nav";
+
+@import "nav/main-nav";

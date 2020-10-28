@@ -1,21 +1,14 @@
 .lang-nav {
 
-    position: absolute;
-    right: $spacing-unit / 2;
-    text-align: right;
-
-    line-height: $base-line-height * $base-font-size * 2.25;
-
-    background-color: transparent;
+    @extend %generic-mobile-nav;
 
     .lang-nav-trigger {
-        display: none;
+        @extend %generic-trigger;
     }
 
     .lang-icon {
 
         color: $link-color;
-        font-weight: bold;
 
         &:hover {
 
@@ -27,44 +20,23 @@
     }
 
     label[for="lang-nav-trigger"] {
-
-        z-index: 7;
-
-        display: block;
-        float: right;
-
-        cursor: pointer;
-
+        @extend %generic-nav-button;
     }
 
     input ~ .trigger-lang {
-
-        clear: both;
-        display: none;
-
+        @extend %generic-nav-input;
     }
 
     input:checked ~ .trigger-lang {
-
-        display: block;
-        padding-bottom: 5px;
-        border: 1px solid $grey-color-dark;
-        border-radius: 4px;
-        background-color: $menu-background;
-
+        @extend %generic-menu-content;
     }
 
     .lang-link {
 
-        color: $link-color;
-        line-height: $base-line-height;
-        display: block;
-        padding: 5px 10px;
-        font-weight: bold;
+        @extend %generic-menu-entry-link;
 
-        &:not(:last-child) {
-            margin-right: 0;
-        }
+        color: $link-color;
+        font-weight: bold;
 
         &:hover {
 
@@ -72,8 +44,6 @@
             text-decoration: none;
 
         }
-
-        margin-left: 20px;
 
     }
 

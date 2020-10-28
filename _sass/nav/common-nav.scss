@@ -1,0 +1,82 @@
+@mixin generic-trigger {
+    display: none;
+}
+
+@mixin generic-mobile-nav {
+
+    position: absolute;
+    right: $spacing-unit / 2;
+    text-align: right;
+
+    line-height: $base-line-height * $base-font-size * 2.25;
+
+    background-color: transparent;
+
+}
+
+@mixin generic-nav-button {
+
+    z-index: 7;
+
+    display: block;
+    float: right;
+
+    cursor: pointer;
+
+}
+
+@mixin generic-nav-input {
+
+    clear: both;
+    display: none;
+
+}
+
+@mixin generic-menu-content {
+
+    display: block;
+    padding-bottom: 5px;
+    border: 1px solid $grey-color-dark;
+    border-radius: 4px;
+    background-color: $menu-background;
+
+}
+
+@mixin generic-menu-entry-link {
+
+    display: block;
+
+    line-height: $base-line-height;
+
+    padding: 5px 10px;
+    margin-left: 20px;
+
+    &:not(:last-child) {
+        margin-right: 0;
+    }
+
+}
+
+%generic-trigger {
+    @include generic-trigger;
+}
+
+%generic-mobile-nav {
+    @include generic-mobile-nav;
+}
+
+%generic-nav-button {
+    @include generic-nav-button;
+}
+
+%generic-nav-input {
+    @include generic-nav-input;
+}
+
+%generic-menu-content {
+    @include generic-menu-content;
+}
+
+%generic-menu-entry-link {
+    @include generic-menu-entry-link;
+}
