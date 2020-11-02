@@ -5,7 +5,8 @@ date:   2020-09-24 19:35:00 -0400
 last-update:
 categories: sociologia
 author: LABB
-fedi-post-url: https://mastodon.social/@abbluiz/104964477811618338
+fedi-post-serve: https://mastodon.social
+fedi-post-url: "104964477811618338"
 license-link: http://creativecommons.org/licenses/by/4.0/
 license-name: Creative Commons Attribution 4.0 International License
 ---
