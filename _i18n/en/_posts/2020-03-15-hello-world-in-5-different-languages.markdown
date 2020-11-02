@@ -5,7 +5,8 @@ date:   2020-03-15 19:20:00 -0400
 last-update:
 categories: programming
 author: LABB
-fedi-post-url: https://mastodon.social/interact/103829639626749774?type=reply
+fedi-post-server: mastodon.social
+fedi-post-id: "103829639626749774"
 license-link: http://creativecommons.org/licenses/by/4.0/
 license-name: Creative Commons Attribution 4.0 International License
 ---
@@ -29,7 +30,7 @@ I want to start with the first programming language I have ever learned and the 
 
 C is a very simple, yet very powerful language, because it is what some developers call "low-level" language. That means it is closer of what a computer can understand and run by itself.
 
-So here's the code necessary to display "Hello, World!" in Portuguese, using C language: 
+So here's the code necessary to display "Hello, World!" in Portuguese, using C language:
 
 {% highlight c %}
 #include <stdio.h>

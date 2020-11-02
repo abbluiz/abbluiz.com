@@ -55,6 +55,6 @@ languages: ["en", "pt"]
 
 # Comment Data
 
-jekyll_get_json:
-    - data: 2020-03-15-hello-world-in-5-different-languages
-      json: 'https://mastodon.social/api/v1/statuses/103926134025179047/context'
+# jekyll_get_json:
+#     - data: 2020-03-15-hello-world-in-5-different-languages
+#       json: 'https://mastodon.social/api/v1/statuses/104964477811618338/context'

@@ -28,8 +28,8 @@ layout: default
   <hr class="post-hr" />
   <h3>{%- translate string.post-licensed-under-notice -%} <a rel="license" href="{{ page.license-link }}">{{ page.license-name }}</a>.</h3>
 
-  {%- if page.fedi-post-url -%}
-    <h1>{%- translate string.join-the-discussion-notice -%}&nbsp;{%- translate string.comment-notice -%} <a href="{{ page.fedi-post-url }}">{%- translate string.comment-notice-link -%}</a>.</h1>
+  {%- if page.fedi-post-id -%}
+    <h1>{{ page }}</h1>
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
