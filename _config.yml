@@ -21,6 +21,7 @@ plugins:
     - jekyll-sitemap
     - jekyll-paginate-v2
     - jekyll-minifier
+    - jekyll-get-json
 
 # My Collections
 
@@ -51,3 +52,9 @@ pagination:
 # Supported Languages
 
 languages: ["en", "pt"]
+
+# Comment Data
+
+jekyll_get_json:
+    - data: 2020-03-15-hello-world-in-5-different-languages
+      json: 'https://mastodon.social/api/v1/statuses/103926134025179047/context'

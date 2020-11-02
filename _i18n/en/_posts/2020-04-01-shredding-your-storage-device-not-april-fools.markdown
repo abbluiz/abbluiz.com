@@ -5,7 +5,8 @@ date:   2020-04-01 20:00:00 -0400
 last-update: 2020-07-15 18:00:00 -0400
 categories: security
 author: LABB
-fedi-post-url: https://mastodon.social/interact/103926134025179047?type=reply
+fedi-post-server: mastodon.social
+fedi-post-id: 103926134025179047
 license-link: http://creativecommons.org/licenses/by/4.0/
 license-name: Creative Commons Attribution 4.0 International License
 ---
@@ -25,9 +26,9 @@ Preparing a device to be erased<a name="preparation"></a>
 
 1. Needless to say, backup all important data beforehand. You will most likely lose ALL your data after properly erasing your device.
 
-2. After the obvious backup, you should start a computer that runs on Linux, or another Unix-like operating system. If you don't use Linux, make sure your operating system has the tools we will be using, and also be aware that some instructions might not be valid for all operating systems. 
+2. After the obvious backup, you should start a computer that runs on Linux, or another Unix-like operating system. If you don't use Linux, make sure your operating system has the tools we will be using, and also be aware that some instructions might not be valid for all operating systems.
 
-3. Plug in the device you want to erase to the computer. 
+3. Plug in the device you want to erase to the computer.
 
 4. Now you will need to determine which **device node** is mapped to yours on Linux. Try and find your device node by reading the output of the following command: `sudo fdisk -l`. It can be something like `/dev/sda`.
 

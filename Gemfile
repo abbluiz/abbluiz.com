@@ -19,3 +19,5 @@ gem 'jekyll-multiple-languages-plugin'
 gem 'jekyll-sitemap'
 
 gem 'bigdecimal'
+
+gem "jekyll-get-json", "~> 0.0.2"

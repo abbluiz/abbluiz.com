@@ -7,6 +7,7 @@ GEM
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
     cssminify2 (2.0.1)
+    deep_merge (1.2.1)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -33,6 +34,9 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.15.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-get-json (0.0.2)
+      deep_merge (~> 1.2)
+      jekyll (>= 3.0)
     jekyll-minifier (0.1.10)
       cssminify2 (~> 2.0)
       htmlcompressor (~> 0.4)
@@ -87,6 +91,7 @@ DEPENDENCIES
   bigdecimal
   jekyll (~> 3.8.5)
   jekyll-feed (~> 0.6)
+  jekyll-get-json (~> 0.0.2)
   jekyll-minifier
   jekyll-multiple-languages-plugin
   jekyll-paginate-v2
