@@ -54,6 +54,17 @@ pagination:
 
 languages: ["en", "pt"]
 
+# Archives Settings
+
+jekyll-archives:
+    enabled: []
+    permalinks:
+        year: '/posts/archives/:year/'
+        month: '/posts/archives/:year/:month/'
+        day: '/posts/archives/:year/:month/:day/'
+        tag: '/posts/archives/tag/:name/'
+        category: '/posts/archives/category/:name/'
+
 # Comment Data
 
 # jekyll_get_json:

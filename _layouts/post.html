@@ -28,10 +28,6 @@ layout: default
   <hr class="post-hr" />
   <h3>{%- translate string.post-licensed-under-notice -%} <a rel="license" href="{{ page.license-link }}">{{ page.license-name }}</a>.</h3>
 
-  {%- if page.fedi-post-id -%}
-    {{ page.id }}
-  {%- endif -%}
-
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
