@@ -57,7 +57,10 @@ languages: ["en", "pt"]
 # Archives Settings
 
 jekyll-archives:
-    enabled: []
+    enabled:
+        - categories
+        - tags
+    layout: archive
     permalinks:
         year: '/posts/archives/:year/'
         month: '/posts/archives/:year/:month/'
