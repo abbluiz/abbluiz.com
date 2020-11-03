@@ -1,5 +1,6 @@
 ---
 layout: page
+menu-visible: true
 
 title: pages.about.title
 description: pages.about.desc

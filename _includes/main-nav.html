@@ -1,5 +1,10 @@
-{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign menu_pages = site.pages | where: "menu-visible", "true" -%}
+{%- assign default_paths = menu_pages | map: "path" -%}
 {%- assign page_paths = site.header_pages | default: default_paths -%}
+
+{%- capture current_lang_path -%}
+  {%- if site.lang != "en" -%}/{{ site.lang }}{%- endif -%}
+{%- endcapture -%}
 
 {%- if page_paths -%}
 
@@ -17,26 +22,34 @@
 
     <div class="trigger">
 
-      {%- for p in site.pages -%}
+      {%- for p in menu_pages -%}
 
         {%- if p.title and p.autogen == nil -%}
 
           {%- if page.namespace == p.namespace -%}
+
             <a class="page-link page-link-selected">
+
               {%- if p.namespace == "posts" -%}
                 Posts
               {%- else -%}
                 {%- t p.title -%}
               {%- endif -%}
+
             </a>
+
           {%- else -%}
-            <a class="page-link" href="{{ p.url | relative_url | remove: 'index.html' }}">
+
+            <a class="page-link" href="{{ current_lang_path }}{{ p.url | remove: 'index.html' }}">
+
               {%- if p.namespace == "posts" -%}
                 Posts
               {%- else -%}
                 {%- t p.title -%}
               {%- endif -%}
+
             </a>
+
           {%- endif -%}
 
         {%- endif -%}

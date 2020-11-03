@@ -1,5 +1,6 @@
 ---
 layout: posts
+menu-visible: true
 
 title: pages.posts.title
 description: pages.posts.desc
