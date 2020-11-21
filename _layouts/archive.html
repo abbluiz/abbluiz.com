@@ -9,7 +9,7 @@ layout: default
     <h1 class="page-title">
 
       {% if page.type == "tag" %}
-        {%- t string.posts-with-category -%}
+        {%- t string.posts-with-tag -%}
       {% elsif page.type == "category" %}
         {%- t string.posts-with-category -%}
       {% endif %} “{{ page.title }}”
