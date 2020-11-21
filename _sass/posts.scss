@@ -19,10 +19,11 @@
 }
 
 .post-category, .post-tags {
-
     color: $grey-color-light;
-    font-size: $base-font-size * 1.5;
+}
 
+.post-category {
+    font-size: $base-font-size * 1.5;
 }
 
 .post-tags {
@@ -30,7 +31,10 @@
     @extend %generic-badges;
 
     .prefix {
+
+        font-size: $base-font-size * 1.5;
         margin-right: 8px;
+
     }
 
     .badge {
