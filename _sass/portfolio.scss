@@ -8,8 +8,7 @@
 
 .project-badges {
 
-    display: flex;
-    flex-direction: row;
+    @extend %generic-badges;
     margin-bottom: $spacing-unit / 2;
 
 }

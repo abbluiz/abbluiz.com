@@ -2,6 +2,13 @@
 ** Badges
 */
 
+%generic-badges {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
 .badge {
 
     display: flex;
@@ -37,6 +44,10 @@
 
 .badge-orange {
     background-color: #cc7a00;
+}
+
+.badge-grey {
+    background-color: $grey-color-dark;
 }
 
 .badge-link {

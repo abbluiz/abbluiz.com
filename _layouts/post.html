@@ -5,25 +5,68 @@ layout: default
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
+
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+
     <p class="post-meta">
+
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- include date.html date=page.date -%}
       </time>
+
       {%- if page.last-update -%}
-      &nbsp;• {% translate string.last-updated %}:
-      <time class="dt-modified" datetime="{{ page.last-update | date_to_xmlschema }}" itemprop="dateModified">
-        {%- include date.html date=page.last-update -%}
-      </time>
+
+        &nbsp;• {% translate string.last-updated %}:
+        <time class="dt-modified" datetime="{{ page.last-update | date_to_xmlschema }}" itemprop="dateModified">
+          {%- include date.html date=page.last-update -%}
+        </time>
+
       {%- endif -%}
+
       {%- if page.author -%}
-        &nbsp;• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+          &nbsp;• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
+
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+  {% if page.categories %}
+
+    <div class="post-category">
+
+      category:
+      <a title="{% t string.posts-with-category %} “{{ page.categories }}”" href="/posts/categories/{{ page.categories }}">{{ page.categories }}</a>
+
+    </div>
+
+  {% endif %}
+
+  {% if page.tags %}
+
+    <div class="post-tags">
+
+      <span class="prefix">tags:</span>
+      {% for tag in page.tags %}
+
+        <div class="badge badge-grey">
+
+          <a title="{% t string.posts-with-tag %} “{{ tag }}”" href="/posts/tags/{{ tag }}">
+
+            <span class="clickable-div"></span>
+            <span class="badge-text">{{ tag }}</span>
+
+          </a>
+
+        </div>
+
+      {% endfor %}
+
+    </div>
+
+  {% endif %}
 
   <hr class="post-hr" />
   <h3>{%- translate string.post-licensed-under-notice -%} <a rel="license" href="{{ page.license-link }}">{{ page.license-name }}</a>.</h3>

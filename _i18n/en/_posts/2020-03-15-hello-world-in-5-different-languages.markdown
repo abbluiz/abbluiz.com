@@ -4,6 +4,7 @@ title:  "“Hello, World!” in 5 different languages"
 date:   2020-03-15 19:20:00 -0400
 last-update:
 categories: programming
+tags: c-lang bash-shell java-lang python-lang cpp-lang
 author: LABB
 fedi-post-server: mastodon.social
 fedi-post-id: "103829639626749774"
