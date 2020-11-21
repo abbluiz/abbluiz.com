@@ -6,8 +6,17 @@ layout: default
 
   <div class="page-header">
     <h1 class="page-title">
-      {% t pages.posts.title %} ({% t string.page %} {{ paginator.page }} {% t string.of %} {{ paginator.total_pages }})
+      {% t pages.posts.title %}
     </h1>
+    {%- if paginator.total_pages > 1 -%}
+
+      {%- capture page_string -%}
+        {%- t string.page -%}
+      {%- endcapture -%}
+
+      <h2 class="post-list-subtitle">{{ page_string | capitalize }} {{ paginator.page }} {% t string.of %} {{ paginator.total_pages }}</h2>
+
+    {%- endif -%}
   </div>
 
   <div class="page-content">
