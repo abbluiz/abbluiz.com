@@ -5,7 +5,7 @@
     {%- if page.namespace == "home" -%}
       <a class="site-title site-title-selected" rel="author">{{ site.title | escape }}</a>
     {%- else -%}
-      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      <a class="site-title" rel="author" href="/{%- if site.lang != 'en' -%}{{ site.lang }}{%- endif -%}">{{ site.title | escape }}</a>
     {%- endif -%}
 
     {%- include language-nav.html -%}
