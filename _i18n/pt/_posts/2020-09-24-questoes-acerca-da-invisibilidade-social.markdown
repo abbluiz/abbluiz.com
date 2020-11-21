@@ -4,6 +4,7 @@ title:  "Questões acerca da invisibilidade social"
 date:   2020-09-24 19:35:00 -0400
 last-update:
 categories: sociologia
+tags:
 author: LABB
 fedi-post-serve: https://mastodon.social
 fedi-post-url: "104964477811618338"

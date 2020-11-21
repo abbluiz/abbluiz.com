@@ -4,6 +4,7 @@ title:  "Shredding your storage device (not an April Fools' joke)"
 date:   2020-04-01 20:00:00 -0400
 last-update: 2020-07-15 18:00:00 -0400
 categories: security
+tags: dd-cmd shred-cmd
 author: LABB
 fedi-post-server: mastodon.social
 fedi-post-id: "103926134025179047"
