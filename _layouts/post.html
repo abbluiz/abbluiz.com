@@ -33,7 +33,7 @@ layout: default
     {{ content }}
   </div>
 
-  {% if page.categories %}
+  {% if page.categories.size > 0 %}
 
     <div class="post-category">
 
@@ -44,7 +44,7 @@ layout: default
 
   {% endif %}
 
-  {% if page.tags %}
+  {% if page.tags.size > 0 %}
 
     <div class="post-tags">
 

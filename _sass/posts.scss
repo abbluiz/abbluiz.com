@@ -33,7 +33,9 @@
         margin-right: 8px;
     }
 
-    margin-bottom: $spacing-unit / 3;
+    .badge {
+        position: relative;
+    }
 
     a {
         color: $grey-color-light;
@@ -89,6 +91,7 @@
 .post-hr {
 
     color: $grey-color-dark;
+    margin-top: $spacing-unit / 3;
     margin-bottom: $spacing-unit;
 
 }
