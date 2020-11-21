@@ -5,9 +5,11 @@ layout: default
 {%- if site.posts.size > 0 -%}
 
   <div class="page-header">
+
     <h1 class="page-title">
       {% t pages.posts.title %}
     </h1>
+
     {%- if paginator.total_pages > 1 -%}
 
       {%- capture page_string -%}
