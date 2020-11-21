@@ -92,7 +92,8 @@ string:
     go-to-next-page: "Ir para próxima página"
     posts-with-category: "Posts com a categoria"
     posts-with-tag: "Posts com a tag"
-    recently-updated-posts: "Posts publicados mais recentemente aparecem primeiro."
+    recently-published-posts: "Posts publicados mais recentemente aparecem primeiro."
+    category: "categoria"
 
 project:
     labb-personal-website:

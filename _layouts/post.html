@@ -37,8 +37,8 @@ layout: default
 
     <div class="post-category">
 
-      category:
-      <a title="{% t string.posts-with-category %} “{{ page.categories }}”" href="/posts/categories/{{ page.categories }}">{{ page.categories }}</a>
+      {% t string.category %}:
+      <a title="{% t string.posts-with-category %} “{{ page.categories }}”" href="{%- if site.lang != 'en' -%}/{{ site.lang }}{%- endif -%}/posts/categories/{{ page.categories }}">{{ page.categories }}</a>
 
     </div>
 
