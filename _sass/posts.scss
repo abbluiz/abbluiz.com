@@ -18,7 +18,7 @@
 
 }
 
-.post-category, .post-tags {
+.post-category, .post-tags-prefix {
     color: $grey-color-light;
 }
 
@@ -26,16 +26,16 @@
     font-size: $base-font-size * 1.5;
 }
 
+.post-tags-prefix {
+
+    font-size: $base-font-size * 1.5;
+    margin-right: 8px;
+
+}
+
 .post-tags {
 
     @extend %generic-badges;
-
-    .prefix {
-
-        font-size: $base-font-size * 1.5;
-        margin-right: 8px;
-
-    }
 
     .badge {
         position: relative;
