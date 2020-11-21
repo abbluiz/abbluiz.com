@@ -86,6 +86,8 @@ string:
     needs-help: "Help Wanted"
     project-paused-dev: "Development is paused"
     paused: "Paused"
+    go-to-previous-page: "Go to previous page"
+    go-to-next-page: "Go to next page"
 
 project:
     labb-personal-website:

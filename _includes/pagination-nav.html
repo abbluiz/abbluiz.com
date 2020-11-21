@@ -1,5 +1,9 @@
 {% assign paginator=include.paginator %}
 
+{%- capture page_string -%}
+  {%- t string.page -%}
+{%- endcapture -%}
+
 {% if paginator.total_pages > 1 %}
 
   <ul class="pagination-list">
@@ -7,7 +11,7 @@
     {% if paginator.previous_page %}
 
       <li>
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | remove: 'index.html'}}">
+        <a title="{%- t string.go-to-previous-page -%}" href="{{ paginator.previous_page_path | prepend: site.baseurl | remove: 'index.html'}}">
           <i class="fa fa-arrow-left" aria-hidden="true"></i>
         </a>
       </li>
@@ -20,7 +24,7 @@
 
         <li>
           <a {% if page.url == trail.path %}class="selected-page"
-            {% else %}href="{{ trail.path | prepend: site.baseurl | remove: 'index.html'}}" title="{{trail.title}}"
+            {% else %}href="{{ trail.path | prepend: site.baseurl | remove: 'index.html'}}" title="{{ page_string | capitalize | append: ' ' | append: trail.num }}"
             {% endif %}>{{ trail.num }}</a>
         </li>
 
@@ -31,7 +35,7 @@
     {% if paginator.next_page %}
 
       <li>
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | remove: 'index.html'}}"><i class="fa fa-arrow-right"
+        <a title="{%- t string.go-to-next-page -%}" href="{{ paginator.next_page_path | prepend: site.baseurl | remove: 'index.html'}}"><i class="fa fa-arrow-right"
             aria-hidden="true"></i></a>
       </li>
 
