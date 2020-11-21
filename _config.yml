@@ -62,11 +62,11 @@ jekyll-archives:
         - tags
     layout: archive
     permalinks:
-        year: '/posts/archives/:year/'
-        month: '/posts/archives/:year/:month/'
-        day: '/posts/archives/:year/:month/:day/'
-        tag: '/posts/archives/tag/:name/'
-        category: '/posts/archives/category/:name/'
+        year: '/posts/:year/'
+        month: '/posts/:year/:month/'
+        day: '/posts/:year/:month/:day/'
+        tag: '/posts/tags/:name/'
+        category: '/posts/categories/:name/'
 
 # Comment Data
 

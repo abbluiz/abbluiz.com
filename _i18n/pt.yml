@@ -90,6 +90,9 @@ string:
     paused: "Pausado"
     go-to-previous-page: "Ir para página anterior"
     go-to-next-page: "Ir para próxima página"
+    posts-with-category: "Posts com a categoria"
+    posts-with-tag: "Posts com a tag"
+    recently-updated-posts: "Posts publicados mais recentemente aparecem primeiro."
 
 project:
     labb-personal-website:

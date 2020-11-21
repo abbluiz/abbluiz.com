@@ -5,20 +5,22 @@ layout: default
 {%- if site.posts.size > 0 -%}
 
   <div class="page-header">
+
     <h1 class="page-title">
-      {% t pages.posts.title %}
+
+      {% if page.type == "tag" %}
+        {%- t string.posts-with-category -%}
+      {% elsif page.type == "category" %}
+        {%- t string.posts-with-category -%}
+      {% endif %} “{{ page.title }}”
+
     </h1>
+
   </div>
 
   <div class="page-content">
 
-    <p class="page-desc">
-      {% if page.type == "tag" %}
-        <p class="page-desc">Posts with tag '{{ page.title }}'</p>
-      {% elsif page.type == "category" %}
-        <p class="page-desc">Posts with category '{{ page.title }}'</p>
-      {% endif %}
-    </p>
+    <p class="page-desc">{% t string.recently-published-posts %}</p>
 
     <ul class="post-list">
 
