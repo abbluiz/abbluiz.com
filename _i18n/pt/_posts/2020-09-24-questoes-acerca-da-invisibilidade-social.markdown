@@ -8,8 +8,8 @@ tags:
 author: LABB
 fedi-post-serve: https://mastodon.social
 fedi-post-url: "104964477811618338"
-license-link: http://creativecommons.org/licenses/by/4.0/
-license-name: Creative Commons Attribution 4.0 International License
+license-link: https://creativecommons.org/licenses/by/4.0/deed.pt_BR
+license-name: Licença Creative Commons Atribuição 4.0 Internacional
 ---
 
 (Artigo argumentativo sobre moradores de rua, originalmente escrito no dia 23 de Fevereiro de 2014.)
