@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "“Hello, World!” in 5 different languages"
-date:   2020-03-15 19:20:00 -0400
-last-update:
+title: "“Hello, World!” in 5 different languages"
+date: 2020-03-15 19:20:00 -0400
+last-update: 2020-12-28 14:30:00 -0300
 categories: programming
 tags: c-lang bash-shell java-lang python-lang cpp-lang
 author: LABB
@@ -12,11 +12,11 @@ license-link: http://creativecommons.org/licenses/by/4.0/
 license-name: Creative Commons Attribution 4.0 International License
 ---
 
-Humans and computers use language to communicate with the world. You can use spoken languages to communicate with other humans, such as Portuguese, or English. Computers also talk with each other using various types of languages. These languages can take the form of protocols, binary signals, among other things. But when humans want to communicate with machines? That's when a programming language comes to place.
+Humans and computers use language to communicate with the world. Spoken languages such as Portuguese and English are used as a means of communication between humans. Computers also communicate with each other using various types of languages. These languages can take the form of protocols, binary signals, among other things. But when humans want to communicate with machines? That's when a programming language comes to place.
 
 Programming languages are the best way humans can communicate with computers, because it's a middle ground between spoken languages and computer instructions. However, there's a catch: generally speaking, computers do not understand programming languages by themselves. They need an interpreter or compiler that transforms the language into something easier for them to process, such as zeroes and ones: their native tongue, if you will.
 
-When programmers start learning a new language, their first "words" are generally used to accomplish something very simple: to tell the computer to display "Hello, World!" to the screen. Let us see how we can do that in 5 different programming languages, and as a bonus, display "Hello, World!" in 5 different human spoken languages as well.
+Traditionally, when programmers start learning a new language, their first "words" are generally used to accomplish something very simple: to tell the computer to display "Hello, World!" to the screen. Let us see how we can do that in 5 different programming languages, and as a bonus, display "Hello, World!" in 5 different spoken languages as well.
 
 * ["Hello, World!" in C](#c)
 * ["Hello, World!" in Bash](#bash)
@@ -24,14 +24,14 @@ When programmers start learning a new language, their first "words" are generall
 * ["Hello, World!" in Python](#python)
 * ["Hello, World!" in C++](#cpp)
 
-I want to start with the first programming language I have ever learned and the first spoken language I have ever learned: C and Portuguese, respectively. If you are running Linux, you will also be able to see how to compile/run the code.
+I want to start with the first programming language I've learned and the first spoken language I've learned: C and Portuguese, respectively. If you're running a GNU/Linux distribution or another UNIX-like operating system, you may be able to see how to run the code.
 
 "Hello, World!" in C<a name="c"></a>
 ===
 
-C is a very simple, yet very powerful language, because it is what some developers call "low-level" language. That means it is closer of what a computer can understand and run by itself.
+C is a simple, yet extremely powerful language, because it is what some developers call "low-level" language. That means it is closer of what a computer can understand by itself.
 
-So here's the code necessary to display "Hello, World!" in Portuguese, using C language:
+So here's the code necessary to display "Hello, World!" in Portuguese, using the C language:
 
 {% highlight c %}
 #include <stdio.h>
@@ -56,7 +56,7 @@ Olá, Mundo!
 "Hello, World!" in Bash<a name="bash"></a>
 ===
 
-Bash is an interpreted language. It means it does not need to be compiled. An interpreter translates the instructions one by one so the computer can understand it. In this case, we can also create a script file that the interpreter will read line by line and interpret it.
+Bash is an interpreted language. It means it does not need to be compiled. An interpreter translates the instructions one by one so the computer can understand it. In this case, we can create a script file that the interpreter will read line by line and interpret it.
 
 So here's the script to display "Hello, World!" in English, using Bash:
 
@@ -101,9 +101,9 @@ Bonjour monde!
 "Hello, World!" in Python3<a name="python"></a>
 ===
 
-Python is another interpreted language. There's an old version of this language, Python2, that will be deprecated soon, even though it's still being used. We'll use the latest one, which is Python3. It's very popular with common task scripts, but also in machine learning and data science.
+Python is another interpreted language. It's very popular with automation scripts, but also in machine learning and data science.
 
-A tip about Python that might help you if you are starting: always double-check your indentation and try to use an IDE that helps you with that. It is absolutely necessary with Python.
+A tip about Python that might help you if you are starting: always double-check your indentation and try to use an IDE that helps you with that. Consistent indentation is absolutely necessary with Python, otherwise the code will not run.
 
 Here's how we can display "Hello, World!" in Spanish, using Python:
 
@@ -149,4 +149,4 @@ $ ./a.out
 Ciao mondo!
 {% endhighlight %}
 
-That's it! I hope you have learned something, specially if you are new to programming, and I hope you liked my first post!
+That's it! I hope you liked my first post! Goodbye, World!
