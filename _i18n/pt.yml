@@ -99,8 +99,8 @@ project:
     labb-personal-website:
         name: "LABB: Site Pessoal"
         desc: " "
-    privacidade-digital:
-        name: Privacidade Digital
+    ipd:
+        name: Iniciativa Privacidade Digital
         desc: " "
     foedb:
         name: foe db
