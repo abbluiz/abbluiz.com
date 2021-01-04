@@ -26,4 +26,4 @@ mastodon: https://mastodon.social/@PrivacidadeJa
 github: https://github.com/PrivacidadeDigital/Privacidade.Digital
 ---
 
-{%- translate_file projects/privacidade-digital.md -%}
+{%- translate_file projects/ipd.md -%}
