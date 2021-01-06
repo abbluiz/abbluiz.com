@@ -77,6 +77,30 @@ layout: default
 
     </table>
 
+    {%- for tag in site.tags -%}
+
+      {%- if tag[0] == page.unique-name -%}
+
+        <h2>{%- translate string.related-posts-title -%}</h2>
+
+        <ul>
+
+          {%- assign related_posts = tag[1] | sort: "date", "last" -%}
+
+          {%- for post in related_posts limit:page.related-posts-limit -%}
+            <li><a href="post.url">{{ post.title }}</a>, {% translate string.published-in %} {% include date.html date=post.date %}.</li>
+          {%- endfor -%}
+
+        </ul>
+
+        {%- if related_posts.size > page.related-posts-limit -%}
+          <a title="{%- translate string.related-posts-see-more -%}" href="{%- if site.lang != 'en' -%}/{{ site.lang }}{%- endif -%}/posts/tags/{{ page.unique-name }}">{%- translate string.see-older-posts -%}</a>
+        {%- endif -%}
+
+      {%- endif -%}
+
+    {%- endfor -%}
+
     {{ content }}
   </div>
 

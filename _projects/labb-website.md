@@ -17,6 +17,7 @@ license-freesoftware: false
 license-hybrid: true
 license-name: string.mit
 founders: ["LABB"]
+related-posts-limit: 5
 pinned: false
 hidden: false
 color1: white

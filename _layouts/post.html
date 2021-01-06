@@ -71,7 +71,7 @@ layout: default
   {% endif %}
 
   <hr class="post-hr-bottom" />
-  <h3>{%- translate string.post-licensed-under-notice -%} <a rel="license" href="{{ page.license-link }}">{{ page.license-name }}</a>.</h3>
+  <h3>{%- translate string.post-licensed-under-notice -%} <a rel="license" href="{{ page.license-link }}" title="{%- translate string.see-license -%}">{{ page.license-name }}</a>.</h3>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

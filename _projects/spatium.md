@@ -17,6 +17,7 @@ license-freesoftware: false
 license-hybrid: false
 license-name: string.proprietary
 founders: ["LABB", "Galyna", "Oleksandr"]
+related-posts-limit: 5
 pinned: true
 hidden: false
 color1: pink

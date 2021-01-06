@@ -94,6 +94,10 @@ string:
     posts-with-tag: "Posts com a tag"
     recently-published-posts: "Posts publicados mais recentemente aparecem primeiro."
     category: "categoria"
+    related-posts-title: "Posts Relacionados"
+    published-in: "publicado em"
+    related-posts-see-more: "Ver mais posts relacionados"
+    see-license: "Ver licença"
 
 project:
     labb-personal-website:

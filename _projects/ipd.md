@@ -17,6 +17,7 @@ license-freesoftware: false
 license-hybrid: true
 license-name: string.cc0
 founders: ["LABB", "Vinicius", "Reginildo"]
+related-posts-limit: 5
 pinned: true
 hidden: false
 color1: yellow
