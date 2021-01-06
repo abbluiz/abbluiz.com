@@ -1,5 +1,5 @@
 {%- assign availableLanguages = site.languages -%}
-{%- assign multiLanguageLayouts = "home, page, project, posts, portfolio, skills" | split: ", " -%}
+{%- assign multiLanguageLayouts = "home, page, project, posts, portfolio, skills, skill" | split: ", " -%}
 
 {%- if availableLanguages.size > 1 and multiLanguageLayouts contains page.layout -%}
 
@@ -15,7 +15,7 @@
 
       {%- for language in availableLanguages -%}
 
-        {%- if page.layout == "project" -%}
+        {%- if page.layout == "project" or page.layout == "skill" -%}
 
           {%- if site.lang != "en" -%}
             {%- assign fullUrl = "/" | append: site.lang | append: page.url | remove: "index.html" -%}

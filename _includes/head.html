@@ -1,36 +1,36 @@
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicons/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/{{ site.lang }}.webmanifest">
-    <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#a14040">
-    <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ba8f8f">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/{{ site.lang }}.webmanifest">
+  <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#a14040">
+  <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ba8f8f">
 
-    {%- if page.layout == 'post' -%}
-        {%- include seo_post.html -%}
-    {%- elsif page.layout == 'page' -%}
-        {%- include seo_page.html -%}
-    {%- elsif page.layout == 'home' -%}
-        {%- include seo_home.html -%}
-    {%- elsif page.layout == 'project' -%}
-        {%- include seo_project.html -%}
-    {%- elsif page.layout == 'posts' -%}
-        {%- include seo_posts.html -%}
-    {%- else -%}
-        {%- include seo_default.html -%}
-    {%- endif -%}
+  {%- if page.layout == 'post' -%}
+    {%- include seo_post.html -%}
+  {%- elsif page.layout == 'page' -%}
+    {%- include seo_page.html -%}
+  {%- elsif page.layout == 'home' -%}
+    {%- include seo_home.html -%}
+  {%- elsif page.layout == 'project' -%}
+    {%- include seo_project.html -%}
+  {%- elsif page.layout == 'posts' -%}
+    {%- include seo_posts.html -%}
+  {%- else -%}
+    {%- include seo_default.html -%}
+  {%- endif -%}
 
-    {%- feed_meta -%}
+  {%- feed_meta -%}
 
 </head>
