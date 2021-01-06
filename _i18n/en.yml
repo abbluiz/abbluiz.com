@@ -1,8 +1,8 @@
 global:
-    english: English
-    portuguese: Português
-    pt: Português
-    en: English
+    english: "English"
+    portuguese: "Português"
+    pt: "Português"
+    en: "English"
     switch-to-en: "Switch to English"
     switch-to-pt: "Mudar para Português"
 
@@ -10,37 +10,37 @@ home:
     title: "LABB: Personal Website"
 
 website:
-    description: A developer's blog & portfolio.
+    description: "A developer's blog & portfolio."
     language:
-        name: English
-        alternateName: en
-    territory: CA
-    timezone: America/Toronto
-    license: https://creativecommons.org/licenses/by/4.0/
+        name: "English"
+        alternateName: "en"
+    territory: "CA"
+    timezone: "America/Toronto"
+    license: "https://creativecommons.org/licenses/by/4.0/"
     pagination:
         posts:
-            title: ':title (page :num)'
+            title: ":title (page :num)"
 
 pages:
-    default-img: default-en.png
+    default-img: "default-en.png"
     home:
-        img: default-en.png
+        img: "default-en.png"
     about:
-        title: About
-        desc: About myself and my personal website.
-        img: about-en.png
+        title: "About"
+        desc: "About myself and my personal website."
+        img: "about-en.png"
     portfolio:
-        title: Portfolio
-        desc: All projects I'm working on and have worked on in the past. More recently updated projects appear first.
-        img: portfolio-en.png
+        title: "Portfolio"
+        desc: "All projects I'm working on and have worked on in the past. More recently updated projects appear first."
+        img: "portfolio-en.png"
     posts:
-        title: Posts
-        desc: All posts and articles I've written in English. More recently published posts appear first.
-        img: default-en.png
+        title: "Posts"
+        desc: "All posts and articles I've written in English. More recently published posts appear first."
+        img: "default-en.png"
     skills:
-        title: Skills
+        title: "Skills"
         desc: "All the skills I've been acquiring and/or using in projects. More recently updated skills appear first."
-        img: default-en.png
+        img: "default-en.png"
 
 string:
     lang: "Language"
@@ -136,18 +136,18 @@ skills:
         name: "Bash Shell"
         desc: ""
     bootstrap-lib:
-        short-name: Bootstrap
+        short-name: "Bootstrap"
         name: "Bootstrap Library"
         desc: ""
     freebsd-os:
-        short-name: FreeBSD
+        short-name: "FreeBSD"
         name: "FreeBSD Operating System"
         desc: ""
     gnu-linux-os:
-        short-name: GNU/Linux
+        short-name: "GNU/Linux"
         name: "GNU/Linux Operating System"
         desc: ""
     jekyll-ssg:
-        short-name: Jekyll
+        short-name: "Jekyll"
         name: "Jekyll Static Site Generator"
         desc: ""

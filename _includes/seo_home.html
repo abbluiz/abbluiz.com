@@ -1,37 +1,43 @@
-  
-  <!-- Start home SEO -->
-  <title>{% t home.title %}</title>
-  
-  <meta name="description" content="{% t website.description %}" />
-  <meta name="author" content="{{ site.author }}" />
-  <link rel="canonical" href="{{ site.url }}{%- tl page.namespace -%}">
+<!-- Start SEO -->
+<title>{%- translate home.title -%}</title>
 
-  <meta property="og:title" content="{% t home.title %}" />
-  <meta property="og:description" content="{% t website.description %}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ site.url }}{%- tl page.namespace -%}" />
-  <meta property="og:locale" content="{{ site.lang }}_{%- t website.territory -%}" />
-  <meta property="og:image" content="{{ site.url }}/assets/img/{%- translate pages.home.img -%}" />
-  <meta property="og:site_name" content="{% t home.title %}" />
-  
-  <meta property="twitter:title" content="{% t home.title %}" />
-  <meta name="twitter:card" content="{% if page.twitter_card %}{{ page.twitter_card }}{% else %}{{ site.data.social.twitter.defaultcard }}{% endif %}" />
-  
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org/",
-      "@type": "WebSite",
-      "name": "{% t home.title %}",
-      "image": "{{ site.url }}/assets/img/{%- translate pages.home.img -%}",
-      "description": "{% t website.description %}",
-      "url": "{{ site.url }}{%- tl page.namespace -%}",
-      "author": "{{ site.author }}",
-      "license": "{% t website.license %}",
-      "inLanguage": {
-        "@type": "Language",
-        "name": "{% t website.language.name %}"
-        "alternateName": "{% t website.language.alternateName %}"
-      }
+<meta name="description" content="{%- translate website.description -%}" />
+<meta name="author" content="{{ site.author }}" />
+<link rel="canonical" href="{{ site.url }}{%- tl page.namespace -%}">
+
+<meta property="og:title" content="{%- translate home.title -%}" />
+<meta property="og:description" content="{%- translate website.description -%}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ site.url }}{%- tl page.namespace -%}" />
+<meta property="og:locale" content="{{ site.lang }}_{%- translate website.territory -%}" />
+<meta property="og:image" content="{{ site.url }}/assets/img/{%- translate pages.home.img -%}" />
+<meta property="og:site_name" content="{%- translate home.title -%}" />
+
+<meta property="twitter:title" content="{%- translate home.title -%}" />
+<meta name="twitter:card" content="{%- if page.twitter_card -%}{{ page.twitter_card }}{%- else -%}{{ site.data.social.twitter.defaultcard }}{%- endif -%}" />
+
+<script type="application/ld+json">
+
+  {
+
+    "@context": "http://schema.org/",
+    "@type": "WebSite",
+    "name": "{%- translate home.title -%}",
+    "image": "{{ site.url }}/assets/img/{%- translate pages.home.img -%}",
+    "description": "{%- translate website.description -%}",
+    "url": "{{ site.url }}{%- tl page.namespace -%}",
+    "author": "{{ site.author }}",
+    "license": "{%- translate website.license -%}",
+
+    "inLanguage": {
+
+      "@type": "Language",
+      "name": "{%- translate website.language.name -%}"
+      "alternateName": "{%- translate website.language.alternateName -%}"
+
     }
-  </script>
-  <!-- Finish home SEO -->
+
+  }
+
+</script>
+<!-- Finish SEO -->

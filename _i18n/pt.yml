@@ -1,8 +1,8 @@
 global:
-    english: English
-    portuguese: Português
-    pt: Português
-    en: English
+    english: "English"
+    portuguese: "Português"
+    pt: "Português"
+    en: "English"
     switch-to-en: "Switch to English"
     switch-to-pt: "Mudar para Português"
 
@@ -10,64 +10,64 @@ home:
     title: "LABB: Site Pessoal"
 
 website:
-    description: Blog & portfólio de um desenvolvedor.
+    description: "Blog & portfólio de um desenvolvedor."
     language:
-        name: Portuguese
-        alternateName: pt
-    territory: BR
-    timezone: America/Sao_Paulo
-    license: https://creativecommons.org/licenses/by/4.0/deed.pt_BR
+        name: "Portuguese"
+        alternateName: "pt"
+    territory: "BR"
+    timezone: "America/Sao_Paulo"
+    license: "https://creativecommons.org/licenses/by/4.0/deed.pt_BR"
     pagination:
         posts:
-            title: ':title (página :num)'
+            title: ":title (página :num)"
 
 pages:
-    default-img: default-pt.png
+    default-img: "default-pt.png"
     home:
-        img: default-pt.png
+        img: "default-pt.png"
     about:
-        title: Sobre
-        desc: Sobre mim e meu site pessoal.
-        img: about-pt.png
+        title: "Sobre"
+        desc: "Sobre mim e meu site pessoal."
+        img: "about-pt.png"
     portfolio:
-        title: Portfólio
-        desc: Todos os projetos em que estou trabalhando ou já trabalhei. Projetos atualizados mais recentemente aparecem primeiro.
-        img: portfolio-pt.png
+        title: "Portfólio"
+        desc: "Todos os projetos em que estou trabalhando ou já trabalhei. Projetos atualizados mais recentemente aparecem primeiro."
+        img: "portfolio-pt.png"
     posts:
-        title: Posts
-        desc: Todos os posts e artigos que eu escrevi em Português. Posts publicados mais recentemente aparecem primeiro.
-        img: default-pt.png
+        title: "Posts"
+        desc: "Todos os posts e artigos que eu escrevi em Português. Posts publicados mais recentemente aparecem primeiro."
+        img: "default-pt.png"
     skills:
-        title: Habilidades
+        title: "Habilidades"
         desc: "Todas as habilidades que venho adquirindo e/ou utilizando em projetos. Habilidates atualizadas mais recentemente aparecem primeiro."
-        img: default-pt.png
+        img: "default-pt.png"
 
 
 string:
-    lang: Língua
-    pinned-projects: Projetos Fixados
-    other-projects: Outros Projetos
-    all-projects: Todos os Projetos
-    pinned: Fixados
-    subscribe: inscreva-se
-    subscribe-rss: por RSS
-    proprietary: Proprietária
-    mixed: Mista*
-    mit: MIT
-    cc0: CC0
-    license: Licença
-    started-in: Iniciado em
-    launched-in: Lançado em
+    lang: "Língua"
+    pinned-projects: "Projetos Fixados"
+    other-projects: "Outros Projetos"
+    all-projects: "Todos os Projetos"
+    pinned: "Fixados"
+    subscribe: "inscreva-se"
+    subscribe-rss: "por RSS"
+    proprietary: "Proprietária"
+    mixed: "Mista*"
+    mit: "MIT"
+    cc0: "CC0"
+    license: "Licença"
+    started-in: "Iniciado em"
+    launched-in: "Lançado em"
     active-development-notice: "Este projeto está em desenvolvimento <strong>ativo</strong>."
-    founded-by: Criado por
-    empty-notice-title: Nada por aqui
+    founded-by: "Criado por"
+    empty-notice-title: "Nada por aqui"
     empty-notice-content: "Ei! Volte quando eu tiver algo pra mostrar, por favor."
     empty-recent-posts-notice: "Não há posts publicados."
     and: "e "
-    last-updated: Atualizado Em
+    last-updated: "Atualizado Em"
     comment-notice: "Comente este post dando reply "
-    comment-notice-link: nesse toot
-    join-the-discussion-notice: Participe da discussão!
+    comment-notice-link: "nesse toot"
+    join-the-discussion-notice: "Participe da discussão!"
     post-licensed-under-notice: "Este post está licenciado sob a "
     needs-help-notice: "Este projeto <strong>precisa de ajuda</strong>."
     older-posts: "Posts mais antigos"
@@ -104,16 +104,16 @@ project:
         name: "LABB: Site Pessoal"
         desc: " "
     ipd:
-        name: Iniciativa Privacidade Digital
+        name: "Iniciativa Privacidade Digital"
         desc: " "
     foedb:
-        name: foe db
+        name: "foe db"
         desc: " "
     spatium:
-        name: Spatium
+        name: "Spatium"
         desc: " "
     labb:
-        name: LABB
+        name: "LABB"
         desc: " "
 
 skills:
@@ -138,18 +138,18 @@ skills:
         name: "Shell Bash"
         desc: ""
     bootstrap-lib:
-        short-name: Bootstrap
+        short-name: "Bootstrap"
         name: "Biblioteca Bootstrap"
         desc: ""
     freebsd-os:
-        short-name: FreeBSD
+        short-name: "FreeBSD"
         name: "Sistema Operacional FreeBSD"
         desc: ""
     gnu-linux-os:
-        short-name: GNU/Linux
+        short-name: "GNU/Linux"
         name: "Sistema Operacional GNU/Linux"
         desc: ""
     jekyll-ssg:
-        short-name: Jekyll
+        short-name: "Jekyll"
         name: "Gerador de Sites Estáticos Jekyll"
         desc: ""

@@ -1,37 +1,43 @@
-  
+
   <!-- Start post SEO -->
   <title>{{ page.title }}</title>
-  <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}" />
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip }}{% endif %}" />
+  <meta name="author" content="{%- if page.author -%}{{ page.author }}{%- else -%}{{ site.author }}{%- endif -%}" />
+  <meta name="description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ page.excerpt | strip_html | strip }}{%- endif -%}" />
   <link rel="canonical" href="{{ site.baseurl }}{{ page.url|remove:'index.html' }}">
-  
+
   <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip }}{% endif %}" />
+  <meta property="og:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ page.excerpt | strip_html | strip }}{%- endif -%}" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ site.baseurl }}{{ page.url|remove:'index.html' }}" />
-  <meta property="og:locale" content="{{ site.lang }}_{%- t website.territory -%}" />
-  <meta property="og:image" content="{% if page.img %}{{ site.url }}/assets/img/posts/{{ page.img }}{% else %}{{ site.url }}/assets/img/posts/default.png{% endif %}" />
-  <meta property="og:site_name" content="{% t home.title %}" />
+  <meta property="og:locale" content="{{ site.lang }}_{%- translate website.territory -%}" />
+  <meta property="og:image" content="{%- if page.img -%}{{ site.url }}/assets/img/posts/{{ page.img }}{%- else -%}{{ site.url }}/assets/img/posts/default.png{%- endif -%}" />
+  <meta property="og:site_name" content="{%- translate home.title -%}" />
 
   <meta property="twitter:title" content="{{ page.title }}" />
-  <meta name="twitter:card" content="{% if page.twitter_card %}{{ page.twitter_card }}{% else %}{{ site.data.social.twitter.defaultcard }}{% endif %}" />
-  <meta name="twitter:creator" content="{% if page.author_twitter %}{{ page.author_twitter }}{% elsif page.author == nil %}{{ site.data.social.twitter.username }}{% endif %}" />
+  <meta name="twitter:card" content="{%- if page.twitter_card -%}{{ page.twitter_card }}{%- else -%}{{ site.data.social.twitter.defaultcard }}{%- endif -%}" />
+  <meta name="twitter:creator" content="{%- if page.author_twitter -%}{{ page.author_twitter }}{%- elsif page.author == nil -%}{{ site.data.social.twitter.username }}{%- endif -%}" />
 
   <script type="application/ld+json">
+
     {
+
       "@context": "http://schema.org/",
       "@type": "BlogPosting",
       "name": "{{ page.title }}",
-      "image": "{% if page.img %}{{ site.url }}/assets/img/posts/{{ page.img }}{% else %}{{ site.url }}/assets/img/posts/default.png{% endif %}",
-      "description": "{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip }}{% endif %}",
+      "image": "{%- if page.img -%}{{ site.url }}/assets/img/posts/{{ page.img }}{%- else -%}{{ site.url }}/assets/img/posts/default.png{%- endif -%}",
+      "description": "{%- if page.description -%}{{ page.description }}{%- else -%}{{ page.excerpt | strip_html | strip }}{%- endif -%}",
       "url": "{{ site.baseurl }}{{ page.url|remove:'index.html' }}",
-      "author": "{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}",
-      "license": "{% if page.license-link %}{{ page.license-link }}{% else %}{% t website.license %}{% endif %}",
+      "author": "{%- if page.author -%}{{ page.author }}{%- else -%}{{ site.author }}{%- endif -%}",
+      "license": "{%- if page.license-link -%}{{ page.license-link }}{%- else -%}{%- translate website.license -%}{%- endif -%}",
+
       "inLanguage": {
+
         "@type": "Language",
-        "name": "{% t website.language.name %}"
-        "alternateName": "{% t website.language.alternateName %}"
+        "name": "{%- translate website.language.name -%}"
+        "alternateName": "{%- translate website.language.alternateName -%}"
+
       }
+
     }
   </script>
 
