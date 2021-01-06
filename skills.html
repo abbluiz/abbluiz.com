@@ -18,7 +18,7 @@ permalink_pt: /habilidades/
 
   {%- for skill in all_skills -%}
 
-    <a href="{{ skill.url | relative_url }}">
+    <a href="{%- if site.lang != 'en' -%}/{{ site.lang }}{{ skill.url }}{%- else -%}{{ skill.url }}{%- endif -%}">
 
       <div class="chip">
 

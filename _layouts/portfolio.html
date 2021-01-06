@@ -19,7 +19,7 @@ layout: default
   {% for project in all_projects %}
 
     <div class="project-card" style="background-image: linear-gradient(to bottom right, {{ project.color1 }}, {{ project.color2 }});">
-      <a href='{{ project.url | relative_url }}'>
+      <a href="{%- if site.lang != 'en' -%}/{{ site.lang }}{{ project.url }}{%- else -%}{{ project.url }}{%- endif -%}">
         <span class="clickable-div"></span>
         <div class="project-card-content">
           {%- if project.fa-logo -%}
