@@ -55,7 +55,7 @@ layout: default
 
         <div class="badge badge-grey">
 
-          <a title="{% t string.posts-with-tag %} “{{ tag }}”" href="/posts/tags/{{ tag }}">
+          <a title="{% t string.posts-with-tag %} “{{ tag }}”" href="{%- if site.lang != 'en' -%}/{{ site.lang }}{%- endif -%}/posts/tags/{{ tag }}">
 
             <span class="clickable-div"></span>
             <span class="badge-text">{{ tag }}</span>
