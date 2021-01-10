@@ -38,7 +38,7 @@
     @extend %generic-badges;
 
     a {
-        color: $grey-color-light;
+        color: lighten($grey-color-light, 10%);
     }
 
     a:hover {
