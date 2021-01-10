@@ -50,7 +50,7 @@
 }
 
 .badge-grey {
-    background-color: $grey-color-dark;
+    background-color: lighten($grey-color-dark, 10%);
 }
 
 .badge-link {
