@@ -1,43 +1,80 @@
-# Astro Starter Kit: Minimal
+# abbluiz.com
 
-```sh
-npm create astro@latest -- --template minimal
+Site pessoal de LABB — blog e portfólio. Construído com Astro, hospedado no GitHub Pages.
+
+🌐 **https://www.abbluiz.com**
+
+## Stack
+
+- [Astro v6](https://astro.build) — gerador de sites estáticos
+- Content Collections com Zod para validação de frontmatter
+- Fontes self-hosted via [fontsource](https://fontsource.org) (Inter, Lora, Playfair Display, Space Grotesk, JetBrains Mono)
+- GitHub Actions para deploy automático no GitHub Pages
+
+## Estrutura
+
+```
+src/
+├── components/       # Header, Footer, PostCard, ProjetoCard
+├── content/
+│   ├── blog/         # Posts em Markdown
+│   └── projetos/     # Projetos em Markdown
+├── layouts/
+│   └── Base.astro    # Layout base HTML
+├── pages/
+│   ├── index.astro
+│   ├── sobre/
+│   ├── blog/
+│   ├── projetos/
+│   ├── tags/         # /tags/[tag]/
+│   ├── categorias/   # /categorias/[categoria]/
+│   ├── rss.xml.ts
+│   └── 404.astro
+└── styles/
+    └── global.css
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Comandos
 
-## 🚀 Project Structure
+| Comando           | Ação                                        |
+| :---------------- | :------------------------------------------ |
+| `npm install`     | Instala dependências                        |
+| `npm run dev`     | Inicia servidor de desenvolvimento          |
+| `npm run build`   | Gera o site estático em `./dist/`           |
+| `npm run preview` | Preview local do build                      |
 
-Inside of your Astro project, you'll see the following folders and files:
+## Conteúdo
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+Posts ficam em `src/content/blog/` e projetos em `src/content/projetos/`, ambos em Markdown com frontmatter tipado.
+
+**Frontmatter de post:**
+```yaml
+---
+title: "Título do post"
+description: "Descrição opcional"
+published: 2024-01-01
+updated: 2024-06-01       # opcional
+categories: ["categoria"]
+tags: ["tag1", "tag2"]
+draft: false
+lang: pt
+---
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+**Frontmatter de projeto:**
+```yaml
+---
+name: "Nome do Projeto"
+description: "Descrição"
+url: "https://exemplo.com"         # opcional
+repository: "https://github.com/…" # opcional
+status: "active"                   # active | paused | archived
+start: 2020-01-01                  # opcional
+featured: true
+tags: ["tag1", "tag2"]
+---
+```
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Licença
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+🄯 LABB — Copyleft
