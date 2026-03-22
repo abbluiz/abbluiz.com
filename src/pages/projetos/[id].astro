@@ -1,0 +1,265 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const projetos = await getCollection('projetos');
+  return projetos.map(projeto => ({
+    params: { id: projeto.id.replace(/\.md$/, '') },
+    props: { projeto },
+  }));
+}
+
+const { projeto } = Astro.props;
+const { name, description, url, repository, status, start, tags } = projeto.data;
+const { Content } = await render(projeto);
+
+const statusLabel: Record<string, string> = {
+  active: 'Ativo',
+  paused: 'Pausado',
+  archived: 'Arquivado',
+};
+
+const dataInicio = start?.toLocaleDateString('pt-BR', {
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<Base title={`${name} — Projetos — LABB`} description={description}>
+  <article class="container projeto">
+    <header class="projeto-header">
+      <div class="projeto-meta">
+        <span class:list={['projeto-status', `projeto-status--${status}`]}>
+          {statusLabel[status]}
+        </span>
+        {dataInicio && <span class="projeto-inicio">desde {dataInicio}</span>}
+      </div>
+
+      <h1 class="projeto-title">{name}</h1>
+      <p class="projeto-desc">{description}</p>
+
+      <div class="projeto-links">
+        {url && (
+          <a href={url} class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+            Site oficial ↗
+          </a>
+        )}
+        {repository && (
+          <a href={repository} class="btn btn--ghost" target="_blank" rel="noopener noreferrer">
+            Repositório ↗
+          </a>
+        )}
+      </div>
+
+      {tags.length > 0 && (
+        <div class="projeto-tags">
+          {tags.map(tag => <span class="tag">{tag}</span>)}
+        </div>
+      )}
+    </header>
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    <footer class="projeto-footer">
+      <a href="/projetos" class="back-link">← Todos os projetos</a>
+    </footer>
+  </article>
+</Base>
+
+<style>
+  .projeto {
+    padding-block: 3rem 5rem;
+  }
+
+  .projeto-header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .projeto-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .projeto-status {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 0.2em 0.65em;
+    border-radius: 99px;
+  }
+
+  .projeto-status--active {
+    background: color-mix(in srgb, #4caf50 15%, transparent);
+    color: #7ecf81;
+  }
+
+  .projeto-status--paused {
+    background: color-mix(in srgb, #ff9800 15%, transparent);
+    color: #ffb74d;
+  }
+
+  .projeto-status--archived {
+    background: color-mix(in srgb, var(--color-muted) 15%, transparent);
+    color: var(--color-muted);
+  }
+
+  .projeto-inicio {
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    color: var(--color-muted);
+  }
+
+  .projeto-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+  }
+
+  .projeto-desc {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    color: var(--color-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+  }
+
+  .projeto-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1.1rem;
+    border-radius: 6px;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+  }
+
+  .btn--primary {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: 1px solid var(--color-primary);
+  }
+
+  .btn--primary:hover {
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
+    color: #fff;
+  }
+
+  .btn--ghost {
+    background-color: transparent;
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+  }
+
+  .btn--ghost:hover {
+    background-color: var(--color-surface);
+    border-color: var(--color-muted);
+    color: var(--color-text);
+  }
+
+  .projeto-tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--color-primary);
+    background: color-mix(in srgb, var(--color-primary) 12%, transparent);
+    padding: 0.1em 0.5em;
+    border-radius: 4px;
+  }
+
+  /* Prosa */
+  .prose {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    line-height: 1.85;
+    max-width: 68ch;
+  }
+
+  .prose :global(h2) {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+  }
+
+  .prose :global(h3) {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .prose :global(p) {
+    margin-bottom: 1.4rem;
+  }
+
+  .prose :global(a) {
+    color: var(--color-primary);
+  }
+
+  .prose :global(ul),
+  .prose :global(ol) {
+    padding-left: 1.5rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .prose :global(li) {
+    margin-bottom: 0.4rem;
+  }
+
+  .prose :global(blockquote) {
+    border-left: 3px solid var(--color-primary);
+    padding-left: 1.25rem;
+    margin: 1.5rem 0;
+    color: var(--color-muted);
+    font-style: italic;
+  }
+
+  .projeto-footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .back-link {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-muted);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .back-link:hover {
+    color: var(--color-primary);
+  }
+</style>

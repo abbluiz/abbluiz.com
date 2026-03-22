@@ -4,7 +4,7 @@ import Base from '../../layouts/Base.astro';
 import ProjetoCard from '../../components/ProjetoCard.astro';
 
 const projetos = (await getCollection('projetos'))
-  .sort((a, b) => Number(b.data.destaque) - Number(a.data.destaque));
+  .sort((a, b) => Number(b.data.featured) - Number(a.data.featured));
 ---
 
 <Base title="Projetos — LABB" description="Projetos em que trabalho ou trabalhei.">

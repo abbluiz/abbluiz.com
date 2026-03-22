@@ -1,29 +1,31 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
   schema: z.object({
-    titulo: z.string(),
-    descricao: z.string().optional(),
-    publicado: z.coerce.date(),
-    atualizado: z.coerce.date().optional(),
+    title: z.string(),
+    description: z.string().optional(),
+    published: z.coerce.date(),
+    updated: z.coerce.date().optional(),
     tags: z.array(z.string()).default([]),
-    categorias: z.array(z.string()).default([]),
-    rascunho: z.boolean().default(false),
+    categories: z.array(z.string()).default([]),
+    draft: z.boolean().default(false),
+    lang: z.string().default('pt'),
   }),
 });
 
 const projetos = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/projetos' }),
   schema: z.object({
-    nome: z.string(),
-    descricao: z.string(),
+    name: z.string(),
+    description: z.string(),
     url: z.string().url().optional(),
-    repositorio: z.string().url().optional(),
-    status: z.enum(['ativo', 'pausado', 'arquivado']).default('ativo'),
-    inicio: z.coerce.date().optional(),
-    destaque: z.boolean().default(false),
+    repository: z.string().url().optional(),
+    status: z.enum(['active', 'paused', 'archived']).default('active'),
+    start: z.coerce.date().optional(),
+    featured: z.boolean().default(false),
     tags: z.array(z.string()).default([]),
   }),
 });

@@ -6,11 +6,11 @@ interface Props {
 }
 
 const { post } = Astro.props;
-const { titulo, descricao, publicado, tags } = post.data;
+const { title, description, published, tags } = post.data;
 const slug = post.id.replace(/\.md$/, '');
 const url = `/blog/${slug}/`;
 
-const dataFormatada = publicado.toLocaleDateString('pt-BR', {
+const dataFormatada = published.toLocaleDateString('pt-BR', {
   day: 'numeric',
   month: 'long',
   year: 'numeric',
@@ -20,15 +20,15 @@ const dataFormatada = publicado.toLocaleDateString('pt-BR', {
 <article class="post-card">
   <a href={url} class="post-card-link">
     <div class="post-meta">
-      <time datetime={publicado.toISOString()}>{dataFormatada}</time>
+      <time datetime={published.toISOString()}>{dataFormatada}</time>
       {tags.length > 0 && (
         <span class="post-tags">
           {tags.map(tag => <span class="tag">{tag}</span>)}
         </span>
       )}
     </div>
-    <h2 class="post-title">{titulo}</h2>
-    {descricao && <p class="post-desc">{descricao}</p>}
+    <h2 class="post-title">{title}</h2>
+    {description && <p class="post-desc">{description}</p>}
   </a>
 </article>
 
