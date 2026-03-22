@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <polygon id="hepta" points="500,50 852,219 939,600 695,905 305,905 61,600 148,219"/>
+  </defs>
+
+  <!-- Camada de sombra -->
+  <use href="#hepta" fill="#5c2e2e" transform="translate(12,12)"/>
+  <!-- Camada intermediária -->
+  <use href="#hepta" fill="#854040" transform="translate(6,6)"/>
+  <!-- Face principal -->
+  <use href="#hepta" fill="#A16060"/>
+  <!-- Círculo central — apenas borda -->
+  <circle cx="500" cy="500" r="175" fill="none" stroke="white" stroke-width="55"/>
+</svg>

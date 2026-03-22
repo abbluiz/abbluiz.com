@@ -1,0 +1,67 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ProjetoCard from '../../components/ProjetoCard.astro';
+
+const projetos = (await getCollection('projetos'))
+  .sort((a, b) => Number(b.data.destaque) - Number(a.data.destaque));
+---
+
+<Base title="Projetos — LABB" description="Projetos em que trabalho ou trabalhei.">
+  <div class="container page">
+    <header class="page-header">
+      <h1>Projetos</h1>
+      <p class="page-lead">O que estou construindo e o que já construí.</p>
+    </header>
+
+    {projetos.length > 0 ? (
+      <div class="projetos-grid">
+        {projetos.map(projeto => <ProjetoCard projeto={projeto} />)}
+      </div>
+    ) : (
+      <p class="empty">Nenhum projeto cadastrado ainda.</p>
+    )}
+  </div>
+</Base>
+
+<style>
+  .page {
+    padding-block: 3rem 4rem;
+  }
+
+  .page-header {
+    margin-bottom: 3rem;
+  }
+
+  .page-header h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-lead {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    color: var(--color-muted);
+    margin: 0;
+  }
+
+  .projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .empty {
+    color: var(--color-muted);
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
+
+  @media (max-width: 480px) {
+    .projetos-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

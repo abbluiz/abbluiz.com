@@ -1,0 +1,129 @@
+---
+const navLinks = [
+  { href: '/sobre', label: 'Sobre' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/projetos', label: 'Projetos' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="site-header">
+  <div class="container container--wide header-inner">
+    <a href="/" class="site-logo" aria-label="Início">
+      <img src="/logo.svg" alt="" class="logo-img" width="32" height="32" />
+      <span class="logo-name">LABB</span>
+    </a>
+
+    <nav aria-label="Navegação principal">
+      <ul class="nav-list">
+        {navLinks.map(({ href, label }) => (
+          <li>
+            <a
+              href={href}
+              class:list={['nav-link', { 'nav-link--active': currentPath.startsWith(href) }]}
+            >
+              {label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--color-border);
+    padding-block: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: color-mix(in srgb, var(--color-bg) 90%, transparent);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .site-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: var(--font-grotesk);
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.04em;
+  }
+
+  .site-logo:hover {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .logo-img {
+    width: 28px;
+    height: 28px;
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  .nav-link {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-muted);
+    text-decoration: none;
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    transition: color 0.15s, background-color 0.15s;
+  }
+
+  .nav-link:hover {
+    color: var(--color-text);
+    background-color: var(--color-surface);
+    text-decoration: none;
+  }
+
+  .nav-link--active {
+    color: var(--color-primary);
+  }
+
+  .nav-link--active:hover {
+    color: var(--color-primary-hover);
+  }
+
+  @media (max-width: 480px) {
+    .site-header {
+      padding-block: 0.75rem;
+    }
+
+    .header-inner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .nav-list {
+      gap: 0;
+    }
+
+    .nav-link {
+      padding: 0.4rem 0.6rem;
+      font-size: 0.85rem;
+    }
+  }
+</style>

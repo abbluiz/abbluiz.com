@@ -1,0 +1,154 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  projeto: CollectionEntry<'projetos'>;
+}
+
+const { projeto } = Astro.props;
+const { nome, descricao, url, repositorio, status, tags } = projeto.data;
+
+const statusLabel: Record<string, string> = {
+  ativo: 'Ativo',
+  pausado: 'Pausado',
+  arquivado: 'Arquivado',
+};
+---
+
+<article class="projeto-card">
+  <div class="projeto-header">
+    <h2 class="projeto-nome">
+      {url ? <a href={url} target="_blank" rel="noopener noreferrer">{nome}</a> : nome}
+    </h2>
+    <span class:list={['projeto-status', `projeto-status--${status}`]}>
+      {statusLabel[status]}
+    </span>
+  </div>
+
+  <p class="projeto-desc">{descricao}</p>
+
+  <div class="projeto-footer">
+    {tags.length > 0 && (
+      <div class="projeto-tags">
+        {tags.map(tag => <span class="tag">{tag}</span>)}
+      </div>
+    )}
+    {repositorio && (
+      <a href={repositorio} class="projeto-repo" target="_blank" rel="noopener noreferrer">
+        Repositório →
+      </a>
+    )}
+  </div>
+</article>
+
+<style>
+  .projeto-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: border-color 0.15s;
+  }
+
+  .projeto-card:hover {
+    border-color: var(--color-primary);
+  }
+
+  .projeto-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .projeto-nome {
+    font-family: var(--font-grotesk);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .projeto-nome a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .projeto-nome a:hover {
+    color: var(--color-primary);
+  }
+
+  .projeto-status {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 0.2em 0.65em;
+    border-radius: 99px;
+    white-space: nowrap;
+  }
+
+  .projeto-status--ativo {
+    background: color-mix(in srgb, #4caf50 15%, transparent);
+    color: #7ecf81;
+  }
+
+  .projeto-status--pausado {
+    background: color-mix(in srgb, #ff9800 15%, transparent);
+    color: #ffb74d;
+  }
+
+  .projeto-status--arquivado {
+    background: color-mix(in srgb, var(--color-muted) 15%, transparent);
+    color: var(--color-muted);
+  }
+
+  .projeto-desc {
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    color: var(--color-muted);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .projeto-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: auto;
+  }
+
+  .projeto-tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--color-primary);
+    background: color-mix(in srgb, var(--color-primary) 12%, transparent);
+    padding: 0.1em 0.5em;
+    border-radius: 4px;
+  }
+
+  .projeto-repo {
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--color-muted);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.15s;
+  }
+
+  .projeto-repo:hover {
+    color: var(--color-primary);
+  }
+</style>
