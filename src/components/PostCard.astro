@@ -7,8 +7,9 @@ interface Props {
 
 const { post } = Astro.props;
 const { title, description, published, tags } = post.data;
+const datePrefix = published.toISOString().split('T')[0];
 const slug = post.id.replace(/\.md$/, '');
-const url = `/blog/${slug}/`;
+const url = `/blog/${datePrefix}-${slug}/`;
 
 const dataFormatada = published.toLocaleDateString('pt-BR', {
   day: 'numeric',
@@ -18,18 +19,16 @@ const dataFormatada = published.toLocaleDateString('pt-BR', {
 ---
 
 <article class="post-card">
-  <a href={url} class="post-card-link">
-    <div class="post-meta">
-      <time datetime={published.toISOString()}>{dataFormatada}</time>
-      {tags.length > 0 && (
-        <span class="post-tags">
-          {tags.map(tag => <span class="tag">{tag}</span>)}
-        </span>
-      )}
-    </div>
-    <h2 class="post-title">{title}</h2>
-    {description && <p class="post-desc">{description}</p>}
-  </a>
+  <div class="post-meta">
+    <time datetime={published.toISOString()}>{dataFormatada}</time>
+    {tags.length > 0 && (
+      <span class="post-tags">
+        {tags.map(tag => <a href={`/tags/${tag}/`} class="tag">{tag}</a>)}
+      </span>
+    )}
+  </div>
+  <h2 class="post-title"><a href={url}>{title}</a></h2>
+  {description && <p class="post-desc">{description}</p>}
 </article>
 
 <style>
@@ -42,13 +41,13 @@ const dataFormatada = published.toLocaleDateString('pt-BR', {
     border-bottom: 1px solid var(--color-border);
   }
 
-  .post-card-link {
-    display: block;
+  .post-title a {
+    color: var(--color-text);
     text-decoration: none;
-    color: inherit;
+    transition: color 0.15s;
   }
 
-  .post-card-link:hover .post-title {
+  .post-title a:hover {
     color: var(--color-primary);
   }
 
@@ -79,6 +78,12 @@ const dataFormatada = published.toLocaleDateString('pt-BR', {
     background: color-mix(in srgb, var(--color-primary) 12%, transparent);
     padding: 0.1em 0.5em;
     border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .tag:hover {
+    background: color-mix(in srgb, var(--color-primary) 22%, transparent);
+    color: var(--color-primary);
   }
 
   .post-title {

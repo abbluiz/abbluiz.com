@@ -1,0 +1,105 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PostCard from '../../components/PostCard.astro';
+import ProjetoCard from '../../components/ProjetoCard.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  const projetos = await getCollection('projetos');
+
+  const allTags = new Set([
+    ...posts.flatMap(p => p.data.tags),
+    ...projetos.flatMap(p => p.data.tags),
+  ]);
+
+  return [...allTags].map(tag => ({ params: { tag } }));
+}
+
+const { tag } = Astro.params;
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft && data.tags.includes(tag)))
+  .sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+
+const projetos = (await getCollection('projetos', ({ data }) => data.tags.includes(tag)))
+  .sort((a, b) => Number(b.data.featured) - Number(a.data.featured));
+---
+
+<Base title={`${tag} — LABB`} description={`Conteúdo com a tag ${tag}.`}>
+  <div class="container container--wide page">
+    <header class="page-header">
+      <p class="page-label">tag</p>
+      <h1>{tag}</h1>
+    </header>
+
+    {projetos.length > 0 && (
+      <section class="section">
+        <h2 class="section-title">Projetos</h2>
+        <div class="projetos-grid">
+          {projetos.map(projeto => <ProjetoCard projeto={projeto} />)}
+        </div>
+      </section>
+    )}
+
+    {posts.length > 0 && (
+      <section class="section">
+        <h2 class="section-title">Posts</h2>
+        <div class="post-list">
+          {posts.map(post => <PostCard post={post} />)}
+        </div>
+      </section>
+    )}
+  </div>
+</Base>
+
+<style>
+  .page {
+    padding-block: 3rem 4rem;
+  }
+
+  .page-header {
+    margin-bottom: 3rem;
+  }
+
+  .page-label {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.25rem;
+  }
+
+  .page-header h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--color-primary);
+  }
+
+  .section {
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-family: var(--font-grotesk);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-muted);
+    margin-bottom: 1.25rem;
+  }
+
+  .projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.25rem;
+  }
+
+  @media (max-width: 480px) {
+    .projetos-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

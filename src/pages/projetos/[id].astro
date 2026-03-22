@@ -27,7 +27,7 @@ const dataInicio = start?.toLocaleDateString('pt-BR', {
 ---
 
 <Base title={`${name} — Projetos — LABB`} description={description}>
-  <article class="container projeto">
+  <article class="container container--wide projeto">
     <header class="projeto-header">
       <div class="projeto-meta">
         <span class:list={['projeto-status', `projeto-status--${status}`]}>
@@ -54,7 +54,7 @@ const dataInicio = start?.toLocaleDateString('pt-BR', {
 
       {tags.length > 0 && (
         <div class="projeto-tags">
-          {tags.map(tag => <span class="tag">{tag}</span>)}
+          {tags.map(tag => <a href={`/tags/${tag}/`} class="tag">{tag}</a>)}
         </div>
       )}
     </header>
@@ -190,6 +190,12 @@ const dataInicio = start?.toLocaleDateString('pt-BR', {
     background: color-mix(in srgb, var(--color-primary) 12%, transparent);
     padding: 0.1em 0.5em;
     border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .tag:hover {
+    background: color-mix(in srgb, var(--color-primary) 22%, transparent);
+    color: var(--color-primary);
   }
 
   /* Prosa */
