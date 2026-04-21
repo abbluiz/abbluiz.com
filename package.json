@@ -19,7 +19,7 @@
     "@fontsource/lora": "^5.2.8",
     "@fontsource/playfair-display": "^5.2.8",
     "@fontsource/space-grotesk": "^5.2.10",
-    "astro": "^6.0.8",
+    "astro": "^6.1.6",
     "remark-heading-id": "^1.0.1"
   }
 }
