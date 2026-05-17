@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Claude Code (recreated by scripts/symlink-claude.sh)
+.claude/
